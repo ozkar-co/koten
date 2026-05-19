@@ -2,6 +2,11 @@
 
 - Endpoint inicial: GET /health.
 - Imagenes: GET /image/{filename}
+- Lexico:
+	- POST /lexicon/analyze
+	- POST /lexicon/words
+	- GET /lexicon/roots/{root}
+	- GET /lexicon/words/search
 - Objetivo de la API: exponer entidades del mundo (historias, razas, idiomas, recursos y reglas).
 - Estilo: rutas simples, nombres directos, sin capas innecesarias.
 
