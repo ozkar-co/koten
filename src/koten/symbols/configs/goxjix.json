@@ -4,8 +4,8 @@
   "cols": 10,
   "rows": 3,
   "writing_mode": "horizontal",
-  "spacing": { "x": 10, "y": 10 },
-  "trim": { "left": 0, "right": 0, "top": 0, "bottom": 0 },
+  "spacing": { "x": 0, "y": 0 },
+  "trim": { "left": 24, "right": 0, "top": 0, "bottom": 0 },
   "overlay": {
     "enabled": true,
     "roots": ["i", "u", "e", "a", "o", "ai", "oi", "au", "eu", "iu", "ia"],

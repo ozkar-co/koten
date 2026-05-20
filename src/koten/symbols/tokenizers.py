@@ -6,7 +6,7 @@ from __future__ import annotations
 def tokenize_lapag(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
     Lapag: consonante+vocal (overlay) or vocal alone (= silencio+vocal).
-    Parses letter by letter.
+    Parses letter by letter. Returns only tokens that exist in root_mapping.
     """
     vowels = {"i", "u", "e", "a", "o"}
     tokens: list[str] = []
@@ -17,19 +17,27 @@ def tokenize_lapag(text: str, root_mapping: dict[str, list]) -> list[str]:
         char = text[i]
         
         if char in vowels:
-            # Vocal sola → silencio + vocal
-            tokens.append(char)
+            # Vocal sola
+            if char in root_mapping:
+                tokens.append(char)
+            i += 1
+        elif char == " ":
+            # Espacio
+            if char in root_mapping:
+                tokens.append(char)
             i += 1
         else:
-            # Consonante: check if next is vowel
+            # Consonante: try C+V first if exists in mapping, else just C
             if i + 1 < len(text) and text[i + 1] in vowels:
                 syllable = text[i:i+2]
-                tokens.append(syllable)
-                i += 2
-            else:
-                # Consonante solo
+                if syllable in root_mapping:
+                    tokens.append(syllable)
+                    i += 2
+                    continue
+            # Fallback: just consonante
+            if char in root_mapping:
                 tokens.append(char)
-                i += 1
+            i += 1
     
     return tokens
 
@@ -38,9 +46,9 @@ def tokenize_goxjix(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
     Gox'jix: consonante+vocal(es) or vocal(es) alone.
     Handles vowel pairs like ai, oi, au, eu, iu, ia.
+    Only returns tokens that exist in root_mapping.
     """
     vowels = {"i", "u", "e", "a", "o"}
-    vowel_pairs = {"ai", "oi", "au", "eu", "iu", "ia"}
     tokens: list[str] = []
     i = 0
     text = text.lower().strip()
@@ -48,34 +56,47 @@ def tokenize_goxjix(text: str, root_mapping: dict[str, list]) -> list[str]:
     while i < len(text):
         char = text[i]
         
-        if char in vowels:
-            # Check if next is also vowel and forms a valid pair
+        if char == " ":
+            if char in root_mapping:
+                tokens.append(char)
+            i += 1
+        elif char in vowels:
+            # Check for vowel pair first
             if i + 1 < len(text) and text[i+1] in vowels:
                 pair = text[i:i+2]
-                if pair in vowel_pairs:
+                if pair in root_mapping:
                     tokens.append(pair)
                     i += 2
                     continue
             # Single vowel
-            tokens.append(char)
+            if char in root_mapping:
+                tokens.append(char)
             i += 1
         else:
-            # Consonante
-            if i + 1 < len(text) and text[i + 1] in vowels:
-                # Check for vowel pair after consonante
+            # Consonante: try C+vowel pair or C+single vowel if those exist in mapping
+            if i + 1 < len(text) and text[i+1] in vowels:
+                # Try C + vowel pair first
                 if i + 2 < len(text) and text[i+2] in vowels:
                     pair = text[i+1:i+3]
-                    if pair in vowel_pairs:
+                    if pair in root_mapping:
                         syllable = text[i:i+3]
-                        tokens.append(syllable)
-                        i += 3
-                        continue
-                # Single vowel after consonante
+                        if syllable in root_mapping:
+                            tokens.append(syllable)
+                            i += 3
+                            continue
+                # Try C + single vowel
                 syllable = text[i:i+2]
-                tokens.append(syllable)
-                i += 2
+                if syllable in root_mapping:
+                    tokens.append(syllable)
+                    i += 2
+                    continue
+                # Not in mapping, just add consonant
+                if char in root_mapping:
+                    tokens.append(char)
+                i += 1
             else:
-                tokens.append(char)
+                if char in root_mapping:
+                    tokens.append(char)
                 i += 1
     
     return tokens
@@ -91,63 +112,106 @@ def tokenize_dekayun(text: str, root_mapping: dict[str, list]) -> list[str]:
 
 def tokenize_negelch(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
-    Negelch: cada símbolo es independiente, no hay sobreposición.
-    Solo dividir por espacios y caracteres individuales si no hay espacios.
+    Negelch: each symbol is independent, no layering.
+    Recognizes digraphs like ch as a single symbol.
+    Returns only tokens that exist in root_mapping.
     """
     text = text.lower().strip()
-    # Try splitting by space first
-    if " " in text:
-        return text.split()
-    # Otherwise each character is a token
-    return list(text)
+    tokens: list[str] = []
+    i = 0
+
+    while i < len(text):
+        char = text[i]
+
+        if char == " ":
+            if " " in root_mapping:
+                tokens.append(" ")
+            i += 1
+            continue
+
+        # Try digraph first (e.g., ch)
+        if i + 1 < len(text):
+            pair = text[i : i + 2]
+            if pair in root_mapping:
+                tokens.append(pair)
+                i += 2
+                continue
+
+        if char in root_mapping:
+            tokens.append(char)
+        i += 1
+
+    return tokens
 
 
 def tokenize_idoling(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
-    Idoling: similar a Negelch, símbolos independientes.
-    Maneja digrafos ts, ch.
+    Idoling: like Negelch, independent symbols.
+    Handles digraphs ts, ch. Only returns tokens in root_mapping.
     """
     text = text.lower().strip()
     if " " in text:
-        return text.split()
+        tokens = text.split()
+        return [t for t in tokens if t in root_mapping]
     
     # Handle digraphs
-    digraphs = {"ts", "ch"}
     tokens: list[str] = []
     i = 0
     while i < len(text):
+        # Try digraph first
         if i + 1 < len(text):
             pair = text[i:i+2]
-            if pair in digraphs:
+            if pair in root_mapping:
                 tokens.append(pair)
                 i += 2
                 continue
-        tokens.append(text[i])
+        # Single char
+        char = text[i]
+        if char in root_mapping:
+            tokens.append(char)
         i += 1
     return tokens
 
 
 def tokenize_jobide(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
-    Jobid'e: de a 2 caracteres (consonante+vocal).
-    La vocal puede ser i,u,e,a,o,'.
-    Si la palabra tiene longitud impar, la última es '.
+    Jobid'e: exactly 4 syllables. Each syllable is consonant+vowel.
+    Takes pairs of characters. If odd-length, implicitly adds ' at end.
+    
+    "jobid'e" (7 chars) → implicitly becomes "jobid'e'" (8 chars)
+    → pairs: jo, bi, d', e' → 4 syllables
     """
     text = text.lower().strip()
     text = text.replace(" ", "")  # Remove spaces
+    
+    # If odd-length, add implicit vowel at end
+    if len(text) % 2 == 1:
+        text += "'"
     
     tokens: list[str] = []
     i = 0
     
     while i < len(text):
         if i + 1 < len(text):
-            # Take pair
+            # Try to take pair (C+V)
             pair = text[i:i+2]
-            tokens.append(pair)
-            i += 2
+            if pair in root_mapping:
+                tokens.append(pair)
+                i += 2
+            else:
+                # Pair not in mapping; try individual chars
+                char = text[i]
+                if char in root_mapping:
+                    tokens.append(char)
+                char = text[i+1]
+                if char in root_mapping:
+                    tokens.append(char)
+                i += 2
         else:
-            # Last char alone (should be ')
-            tokens.append(text[i])
+            # Last char (shouldn't happen after padding)
+            char = text[i]
+            if char in root_mapping:
+                tokens.append(char)
             i += 1
     
     return tokens

@@ -136,15 +136,23 @@ class SymbolGenerator:
 
         symbols: list[Image.Image] = []
         previous_roots: list[str] = []
+        previous_had_overlay: list[bool] = []  # Track if previous symbol already has overlay
 
         for root in roots:
             norm = _nt(root)
             symbol = config.extract_symbol_for_root(norm)
 
+            # Can overlay if:
+            # 1. Overlay enabled
+            # 2. This root is in overlay_roots
+            # 3. There's a previous symbol
+            # 4. Previous symbol doesn't already have an overlay
+            # 5. Previous root is not in blockers
             can_overlay = (
                 overlay_enabled
                 and norm in overlay_roots
                 and symbols
+                and not previous_had_overlay[-1]  # NEW: check if previous already has overlay
                 and previous_roots[-1] not in overlay_blockers
             )
 
@@ -156,10 +164,12 @@ class SymbolGenerator:
                     offset_y=offset_y,
                 )
                 previous_roots[-1] = f"{previous_roots[-1]}+{norm}"
+                previous_had_overlay[-1] = True  # Mark that this symbol now has overlay
                 continue
 
             symbols.append(symbol)
             previous_roots.append(norm)
+            previous_had_overlay.append(False)  # New symbol, no overlay yet
 
         return symbols
 

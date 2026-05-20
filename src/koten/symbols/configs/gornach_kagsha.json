@@ -4,7 +4,7 @@
   "cols": 10,
   "rows": 3,
   "writing_mode": "columnar_right",
-  "spacing": { "x": 10, "y": 10 },
+  "spacing": { "x": 0, "y": 0 },
   "trim": { "left": 0, "right": 0, "top": 32, "bottom": 32 },
   "overlay": {
     "enabled": false,
