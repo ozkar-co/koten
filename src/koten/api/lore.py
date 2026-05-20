@@ -10,7 +10,7 @@ from koten.lore.md_parser import LANGUAGE_PREFIXES, parse_lore_file, parse_lore_
 router = APIRouter(prefix="/lore", tags=["lore"])
 
 # Root of the lore directory (relative to project root, resolved at import time)
-_LORE_DIR = Path(__file__).parent.parent.parent.parent.parent / "lore"
+_LORE_DIR = Path(__file__).parent.parent.parent.parent / "lore"
 
 
 def _resolve_lore_path(section: str, slug: str) -> Path:
