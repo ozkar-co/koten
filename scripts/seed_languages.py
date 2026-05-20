@@ -66,6 +66,11 @@ GORNACH_ALIASES: dict[str, list[str]] = {
     "m": ["nach"],
 }
 
+# Negelch digraph aliases: 'ch' is the digraph form of the 'c' root.
+NEGELCH_ALIASES: dict[str, list[str]] = {
+    "c": ["ch"],
+}
+
 SEMANTIC_ROOTS_TEXT = """
 c: diferente, alterado, contrario, otro
 d: aire, aliento, esencia, espíritu
@@ -282,6 +287,17 @@ def seed() -> None:
                     ON CONFLICT(language_code, language_root, lapag_root) DO NOTHING
                     """,
                     ("gornach_kagsha", alias.strip().lower(), lapag_root),
+                )
+
+            # Add explicit aliases for negelch roots when configured.
+            for alias in NEGELCH_ALIASES.get(lapag_root, []):
+                connection.execute(
+                    """
+                    INSERT INTO root_equivalences(language_code, language_root, lapag_root)
+                    VALUES (?, ?, ?)
+                    ON CONFLICT(language_code, language_root, lapag_root) DO NOTHING
+                    """,
+                    ("negelch", alias.strip().lower(), lapag_root),
                 )
 
         connection.commit()

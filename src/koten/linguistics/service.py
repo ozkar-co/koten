@@ -64,10 +64,10 @@ def _split_gornach_kagsha(text: str, known_roots: set[str]) -> list[str]:
 
 def _split_units(word: str, language_code: str, known_roots: set[str] | None = None) -> list[str]:
     text = normalize_word(word)
-    if language_code == "gornach_kagsha":
+    if language_code in {"gornach_kagsha", "negelch"}:
         return _split_gornach_kagsha(text, known_roots or set())
 
-    if language_code in {"lapag", "goxjix", "dekayun", "jobide", "negelch", "gornach_kagsha"}:
+    if language_code in {"lapag", "goxjix", "dekayun", "jobide", "gornach_kagsha"}:
         return [ch for ch in text if ch not in VOWELS]
 
     # Fallback for languages with syllabic roots or mixed systems.
