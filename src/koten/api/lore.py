@@ -9,8 +9,9 @@ from koten.lore.md_parser import LANGUAGE_PREFIXES, parse_lore_file, parse_lore_
 
 router = APIRouter(prefix="/lore", tags=["lore"])
 
-# Root of the lore directory (relative to project root, resolved at import time)
+# Root directories (resolved at import time)
 _LORE_DIR = Path(__file__).parent.parent.parent.parent / "lore"
+_IMAGES_DIR = Path(__file__).parent.parent.parent.parent / "data" / "images"
 
 
 def _resolve_lore_path(section: str, slug: str) -> Path:
@@ -22,6 +23,59 @@ def _resolve_lore_path(section: str, slug: str) -> Path:
     if not path.exists():
         raise HTTPException(status_code=404, detail=f"Lore file not found: {section}/{slug}")
     return path
+
+
+def _get_section_index(section: str) -> list[dict]:
+    """Return list of documents in a section."""
+    section_dir = (_LORE_DIR / section).resolve()
+    if not section_dir.exists():
+        raise HTTPException(status_code=404, detail=f"Section not found: {section}")
+    
+    docs = []
+    for md_file in sorted(section_dir.glob("*.md")):
+        if md_file.name == "README.md":
+            continue
+        slug = md_file.stem
+        # Read first line as title (typically the # Heading)
+        with open(md_file, "r", encoding="utf-8") as f:
+            first_line = f.readline().strip()
+            title = first_line.lstrip("# ").strip() if first_line.startswith("#") else slug
+        
+        docs.append({
+            "slug": slug,
+            "title": title,
+        })
+    
+    return docs
+
+
+@router.get("/index")
+def get_lore_index() -> dict:
+    """Return index of all lore sections and documents."""
+    try:
+        races = _get_section_index("races")
+        languages = _get_section_index("lang")
+    except HTTPException:
+        races = []
+        languages = []
+    
+    return {
+        "races": races,
+        "languages": languages,
+        "prefixes": LANGUAGE_PREFIXES,
+    }
+
+
+@router.get("/races")
+def list_races() -> dict:
+    """Return list of all races."""
+    return {"races": _get_section_index("races")}
+
+
+@router.get("/lang")
+def list_languages() -> dict:
+    """Return list of all languages."""
+    return {"languages": _get_section_index("lang")}
 
 
 @router.get("/races/{slug}", response_class=HTMLResponse)
