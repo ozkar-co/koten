@@ -7,8 +7,11 @@ class Settings(BaseSettings):
     images_dir: str = "data/images"
     cors_allow_origins: list[str] = [
         "http://localhost:3006",
+        "http://127.0.0.1:3006",
         "https://koten.ozkr.net",
+        "https://www.koten.ozkr.net",
     ]
+    cors_allow_origin_regex: str = r"https://([a-z0-9-]+\.)?ozkr\.net"
 
     model_config = SettingsConfigDict(
         env_file=".env",
