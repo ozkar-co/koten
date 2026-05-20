@@ -10,6 +10,7 @@ from koten.linguistics.service import (
     get_equivalent_roots_for_lapag,
     upsert_word,
 )
+from koten.lore.md_parser import LANGUAGE_PREFIXES
 
 router = APIRouter(prefix="/lexicon", tags=["lexicon"])
 
@@ -29,6 +30,31 @@ class SaveWordRequest(BaseModel):
     language_code: str = Field(min_length=2)
     word: str = Field(min_length=1)
     translations: list[TranslationInput] = Field(default_factory=list)
+
+
+@router.get("/languages")
+def list_languages() -> dict:
+    code_to_prefix = {code: prefix for prefix, code in LANGUAGE_PREFIXES.items()}
+
+    with get_connection() as connection:
+        rows = connection.execute(
+            """
+            SELECT code, name
+            FROM languages
+            ORDER BY code ASC
+            """
+        ).fetchall()
+
+    return {
+        "languages": [
+            {
+                "name": row["name"],
+                "prefix": code_to_prefix.get(row["code"]),
+                "code": row["code"],
+            }
+            for row in rows
+        ]
+    }
 
 
 @router.post("/analyze")
