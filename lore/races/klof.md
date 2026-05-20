@@ -1,6 +1,6 @@
 # Klof
 
-Son conocidos en su propia lengua como /gul ragor/, pero en el resto del mundo se les llama /klof/ devoradores de hombres. Son creados por los /mugot/ mediante un ritual oscuro y mantenidos bajo su dominio como bestias de guerra.
+Son conocidos en su propia lengua como /gul-ragor/, pero en el resto del mundo se les llama /klof/ devoradores de hombres. Son creados por los /mugot/ mediante un ritual oscuro y mantenidos bajo su dominio como bestias de guerra.
 
 Son irracionales, extremadamente salvajes y agresivos. Cazan en jaurías, atacan, despedazan y devoran a sus presas sin distinguir entre enemigos o aliados, por lo que incluso llegan a atacar a los mismos /mugot/.
 

@@ -6,7 +6,7 @@ Viven en promedio 50 /ani/. A los 10 /ani/ alcanzan la mayoría de edad y a los 
 
 No son especialmente fuertes, pero se caracterizan por su capacidad de adaptarse y sociabilidad. Se han ganado un lugar dentro de las sociedades de todas las demás razas, mezcándose con sus culturas.
 
-Presentan una gran diversidad física con muchos colores de piel, cabello y ojos. Suelen medir entre 9 mash/ y 11 mash/.
+Presentan una gran diversidad física con muchos colores de piel, cabello y ojos. Suelen medir entre 9 /mash/ y 11 /mash/.
 
 Se desempeñan muy bien en casi cualquier profesión, pero destacan especialmente como cazadores, campesinos, pastores, escribas y en todas las formas de arte. Tienen una gran capacidad de aprender y disposición para el trabajo.
 

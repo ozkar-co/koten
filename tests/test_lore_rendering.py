@@ -24,6 +24,16 @@ def test_parse_lore_md_normalizes_markdown_image_sources() -> None:
     assert '<img class="lore-image" src="/api/image/mapa.jpg"' in html
 
 
+def test_parse_lore_md_restores_more_than_ten_placeholders() -> None:
+    text = ' '.join(['/N/negelch/'] * 12)
+    html = parse_lore_md(text)
+
+    assert html.count('<span class="koten-word"') == 12
+    assert 'loading="lazy"></span>0' not in html
+    assert 'loading="lazy"></span>1' not in html
+    assert 'loading="lazy"></span>2' not in html
+
+
 def test_top_level_lore_document_renders() -> None:
     client = TestClient(app)
 

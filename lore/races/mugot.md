@@ -12,17 +12,17 @@ Son el terror de todas las razas. Solo conviven con aquellos a quienes han escla
 
 Su vida y su sociedad giran en torno al combate. Solo respetan la fuerza física. Tienen una figura de autoridad que es el Señor de la guerra, posición por la que combaten una vez al /ani/ en un enfrentamiento a muerte. No existe la figura del matrimonio. Los hijos son criados por su madre o sus esclavos y procuran deshacerse de ellos lo antes posible.
 
-Creen que los objetos celestes son las almas de los más grandes guerreros, y cuanto más brillantes, más fuertes son. /Duo uglug/, el más grande de todos, cuya luz ilumina el día. La luna la ven como un coliseo donde las almas se reúnen a pelear.
+Creen que los objetos celestes son las almas de los más grandes guerreros, y cuanto más brillantes, más fuertes son. /duo-uglug/, el más grande de todos, cuya luz ilumina el día. La luna la ven como un coliseo donde las almas se reúnen a pelear.
 
 Los coliseos son para ellos recintos sagrados. Creen que todo el mundo en sí mismo es un coliseo donde están en continua batalla.
 
-No ven con buenos ojos la magia. Es algo para cobardes. Es pelear sucio. Aun así, tienen algunos rituales para mejorarse y modificar su cuerpo. También tienen un oscuro ritual para crear a los /gul ragor/, o como se les conoce en el resto del mundo, /klof/: devoradores de hombres.
+No ven con buenos ojos la magia. Es algo para cobardes. Es pelear sucio. Aun así, tienen algunos rituales para mejorarse y modificar su cuerpo. También tienen un oscuro ritual para crear a los /gul-ragor/, o como se les conoce en el resto del mundo, /klof/: devoradores de hombres.
 
 A estos últimos, al igual que a unas pequeñas criaturas llamadas /shatar/ o /shotur/, los tienen completamente esclavizados.
 
 Los /klof/ son irracionales, muy salvajes y agresivos. Atacan, despedazan y devoran a sus presas. Se mueven en jaurías y, al igual que sus amos, no parecen obedecer otra regla que la de la violencia. Llegan incluso a atacar a los mismos /mugot/.
 
-Los /shotur/ son menos animales. En tamaño no superan los 5 mash/. Su apariencia se asemeja a la de los /ujom/, pero muy deformada. Logran comunicarse con frases muy simples y no parecen tener demasiada inteligencia. Son usados en el servicio doméstico y, aunque desprecian a sus amos, parecen resignados a obedecerles.
+Los /shotur/ son menos animales. En tamaño no superan los 5 /mash/. Su apariencia se asemeja a la de los /ujom/, pero muy deformada. Logran comunicarse con frases muy simples y no parecen tener demasiada inteligencia. Son usados en el servicio doméstico y, aunque desprecian a sus amos, parecen resignados a obedecerles.
 
 A los esclavos rara vez los usan en batalla. Son más usados en los campamentos para las tareas mínimas de higiene, construcción y alimentación. Pero la tarea para la que más los usan es para su entretenimiento, que a veces puede ser bastante cruel y despiadado.
 

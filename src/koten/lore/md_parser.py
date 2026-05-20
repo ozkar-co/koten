@@ -50,7 +50,8 @@ _IMAGE_LINE_RE = re.compile(
 _MARKDOWN_IMAGE_RE = re.compile(
     r"!\[(?P<alt>[^\]]*)\]\((?P<source>[^)\s]+)\)"
 )
-_PLACEHOLDER_PREFIX = "KOTEN_WORD_PLACEHOLDER_"
+_PLACEHOLDER_PREFIX = "@@KOTEN_WORD_PLACEHOLDER_"
+_PLACEHOLDER_SUFFIX = "@@"
 
 
 def _strip_accents(text: str) -> str:
@@ -108,15 +109,15 @@ def parse_lore_md(text: str) -> str:
 
     def replace_with_placeholder(match: re.Match) -> str:
         placeholders.append(_replace_koten_word(match))
-        return f"{_PLACEHOLDER_PREFIX}{len(placeholders) - 1}"
+        return f"{_PLACEHOLDER_PREFIX}{len(placeholders) - 1}{_PLACEHOLDER_SUFFIX}"
 
     def replace_image_with_placeholder(match: re.Match) -> str:
         placeholders.append(_replace_image_line(match))
-        return f"{_PLACEHOLDER_PREFIX}{len(placeholders) - 1}"
+        return f"{_PLACEHOLDER_PREFIX}{len(placeholders) - 1}{_PLACEHOLDER_SUFFIX}"
 
     def replace_markdown_image_with_placeholder(match: re.Match) -> str:
         placeholders.append(_replace_markdown_image(match))
-        return f"{_PLACEHOLDER_PREFIX}{len(placeholders) - 1}"
+        return f"{_PLACEHOLDER_PREFIX}{len(placeholders) - 1}{_PLACEHOLDER_SUFFIX}"
 
     # Render Markdown around inert placeholders, then restore the generated HTML.
     substituted = _IMAGE_LINE_RE.sub(replace_image_with_placeholder, text)
@@ -130,7 +131,7 @@ def parse_lore_md(text: str) -> str:
     )
 
     for index, replacement in enumerate(placeholders):
-        html = html.replace(f"{_PLACEHOLDER_PREFIX}{index}", replacement)
+        html = html.replace(f"{_PLACEHOLDER_PREFIX}{index}{_PLACEHOLDER_SUFFIX}", replacement)
 
     return html
 
