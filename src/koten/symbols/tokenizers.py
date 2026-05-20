@@ -183,6 +183,14 @@ def tokenize_jobide(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
     text = text.lower().strip()
     text = text.replace(" ", "")  # Remove spaces
+
+    consonantal_vowel_alias = {
+        "i": "ih",
+        "u": "uh",
+        "e": "eh",
+        "a": "ah",
+        "o": "oh",
+    }
     
     # If odd-length, add implicit vowel at end
     if len(text) % 2 == 1:
@@ -193,19 +201,24 @@ def tokenize_jobide(text: str, root_mapping: dict[str, list]) -> list[str]:
     
     while i < len(text):
         if i + 1 < len(text):
-            # Try to take pair (C+V)
+            # Take pair as a syllable (C+V).
             pair = text[i:i+2]
             if pair in root_mapping:
                 tokens.append(pair)
                 i += 2
             else:
-                # Pair not in mapping; try individual chars
-                char = text[i]
-                if char in root_mapping:
-                    tokens.append(char)
-                char = text[i+1]
-                if char in root_mapping:
-                    tokens.append(char)
+                # Pair not in mapping; emit internal consonant-vowel alias
+                # for the first slot when needed (e.g., e' -> eh + ').
+                first_char = text[i]
+                second_char = text[i + 1]
+
+                if first_char in consonantal_vowel_alias:
+                    tokens.append(consonantal_vowel_alias[first_char])
+                elif first_char in root_mapping:
+                    tokens.append(first_char)
+
+                if second_char in root_mapping:
+                    tokens.append(second_char)
                 i += 2
         else:
             # Last char (shouldn't happen after padding)
