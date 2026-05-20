@@ -4,8 +4,11 @@ import re
 import sqlite3
 import unicodedata
 from dataclasses import dataclass
-from itertools import product
 from typing import Iterable
+
+from koten.linguistics.equivalents import (
+    get_equivalent_roots_for_lapag as _get_equivalent_roots_for_lapag,
+)
 
 
 VOWELS = set("aeiou")
@@ -160,68 +163,7 @@ def _to_lapag_roots(
 def get_equivalent_roots_for_lapag(
     connection: sqlite3.Connection, lapag_root: str
 ) -> list[dict[str, str]]:
-    """
-    Return language equivalents for a Lapag root.
-
-    For multi-character roots, this composes equivalents by combining the
-    per-character equivalents for each language and concatenating them.
-    """
-    canonical_lapag = canonical_root(lapag_root)
-
-    direct_rows = connection.execute(
-        """
-        SELECT language_code, language_root
-        FROM root_equivalences
-        WHERE lapag_root = ?
-        ORDER BY language_code ASC, language_root ASC
-        """,
-        (canonical_lapag,),
-    ).fetchall()
-
-    by_language: dict[str, set[str]] = {}
-    for row in direct_rows:
-        by_language.setdefault(row["language_code"], set()).add(
-            normalize_language_root(row["language_root"])
-        )
-
-    if len(canonical_lapag) > 1:
-        languages = connection.execute("SELECT code FROM languages").fetchall()
-        for lang_row in languages:
-            language_code = lang_row["code"]
-
-            options_per_char: list[list[str]] = []
-            for char_root in canonical_lapag:
-                char_rows = connection.execute(
-                    """
-                    SELECT DISTINCT language_root
-                    FROM root_equivalences
-                    WHERE language_code = ? AND lapag_root = ?
-                    ORDER BY language_root ASC
-                    """,
-                    (language_code, char_root),
-                ).fetchall()
-
-                char_options = [normalize_language_root(row["language_root"]) for row in char_rows]
-                if not char_options:
-                    options_per_char = []
-                    break
-                options_per_char.append(char_options)
-
-            if not options_per_char:
-                continue
-
-            for parts in product(*options_per_char):
-                composed = "".join(parts)
-                by_language.setdefault(language_code, set()).add(composed)
-
-    return [
-        {
-            "language_code": language_code,
-            "language_root": language_root,
-        }
-        for language_code in sorted(by_language)
-        for language_root in sorted(by_language[language_code])
-    ]
+    return _get_equivalent_roots_for_lapag(connection, lapag_root)
 
 
 def analyze_word(connection: sqlite3.Connection, language_code: str, word: str) -> dict:

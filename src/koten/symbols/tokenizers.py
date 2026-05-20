@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-
 def tokenize_lapag(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
     Lapag: consonante+vocal (overlay) or vocal alone (= silencio+vocal).

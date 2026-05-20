@@ -32,9 +32,8 @@ LANGUAGE_NAMES = {
     "gornash_kagsha": "Gornash-Kagsha",
     "idoling": "Idoling",
 }
+LANGUAGES_WITHOUT_ROOTS = ("idoling",)
 
-
-# Seed data is embedded in this file on purpose.
 TRANSLATION_HEADER = [
     "lapag",
     "gox'jix",
@@ -63,12 +62,10 @@ TRANSLATION_ROWS = [
     ["x", "f", "t", "g", "j", "ruk"],
 ]
 
-# Compatibility alias for older lore spellings.
 GORNASH_ALIASES: dict[str, list[str]] = {
     "m": ["nash"],
 }
 
-# Negelsh digraph aliases: 'sh' is the digraph form of the 'c' root.
 NEGELSH_ALIASES: dict[str, list[str]] = {
     "c": ["sh"],
 }
@@ -176,31 +173,6 @@ py: reacción, relación, sexo
 """
 
 
-def _split_row(line: str) -> list[str]:
-    raw = [item.strip() for item in re.split(r"\s+", line.strip()) if item.strip()]
-    return raw
-
-
-def parse_translation_rows(text: str) -> tuple[list[str], list[list[str]]]:
-    lines = [line for line in text.splitlines() if line.strip()]
-    start = next(
-        i for i, line in enumerate(lines) if line.lower().startswith("lapag")
-    )
-
-    header = _split_row(lines[start])
-    rows: list[list[str]] = []
-
-    for line in lines[start + 1 :]:
-        if line.startswith("El carácter") or line.startswith("##"):
-            break
-
-        parts = _split_row(line)
-        if len(parts) == len(header):
-            rows.append(parts)
-
-    return header, rows
-
-
 def parse_semantic_roots(text: str) -> dict[str, str]:
     in_section = "## Raíces Semánticas" not in text
     roots: dict[str, list[str]] = {}
@@ -249,9 +221,7 @@ def seed() -> None:
                 (code, LANGUAGE_NAMES.get(code, code.capitalize())),
             )
 
-        # Add languages without roots (like Idoling)
-        languages_without_roots = ["idoling"]
-        for code in languages_without_roots:
+        for code in LANGUAGES_WITHOUT_ROOTS:
             if code not in language_codes:
                 connection.execute(
                     """
@@ -317,8 +287,7 @@ def seed() -> None:
 
         connection.commit()
 
-    languages_without_roots = ["idoling"]
-    total_languages = len(language_codes) + len(languages_without_roots)
+    total_languages = len(language_codes) + len(LANGUAGES_WITHOUT_ROOTS)
     print(f"Languages seeded: {total_languages}")
     print(f"Semantic roots seeded: {len(semantic_roots)}")
     print(f"Root equivalences seeded: {len(translation_rows) * len(language_codes)}")
