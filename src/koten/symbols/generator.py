@@ -8,6 +8,8 @@ from typing import Optional
 
 from PIL import Image
 
+from koten.symbols.tokenizers import get_tokenizer
+
 
 def _nt(token: str) -> str:
     """Normalize a token for symbol lookup: strip and lowercase, no sorting."""
@@ -114,11 +116,11 @@ class SymbolGenerator:
         return canvas
 
     def _tokenize(self, word: str, config: SymbolConfig) -> list[str]:
-        tokenizer_cfg = config.config.get("tokenizer", {})
-        separator = tokenizer_cfg.get("separator", " ")
-        if separator == "":
-            return [token for token in word if token]
-        return [token for token in word.split(separator) if token]
+        """Tokenize word using language-specific tokenizer."""
+        tokenizer = get_tokenizer(config.language_code)
+        root_mapping = config.config.get("root_mapping", {})
+        tokens = tokenizer(word, root_mapping)
+        return [t for t in tokens if t.strip()]
 
     def _compose_symbols(
         self,

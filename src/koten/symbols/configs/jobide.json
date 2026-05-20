@@ -17,7 +17,7 @@
   "description": "Jobid'e language character symbols",
   "notes": "Silencio en [0,0]. 6 vocales (i,u,e,a,o,') se sobreponen sobre consonante o silencio. Las mismas vocales repetidas en posiciones [0,7]-[1,1] son las FORMAS CONSONANTICAS (ic,uc,ec,ac,oc). La silaba es siempre consonante+vocal. La vocal final apostrofe puede omitirse en transliteracion. La palabra 'jobid'e' en realidad es 'jobid'e'' con 4 silabas: jo bi d' e'. Separador en ultima posicion.",
   "root_mapping": {
-    "_sil": [0, 0],
+    "_": [0, 0],
     "i":    [0, 1],
     "u":    [0, 2],
     "e":    [0, 3],

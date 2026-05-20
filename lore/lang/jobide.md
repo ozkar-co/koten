@@ -4,7 +4,7 @@
 
 - Estructura canonica: **palabras de exactamente 4 silabas**
 - Composicion espacial: cuadrante circular en sentido horario
-- Tiene simbolo de **silencio** (`_sil`)
+- Tiene simbolo de **silencio** (`_`)
 - **6 vocales** que se sobreponen a la consonante:
   - i, u, e, a, o, `'` (apostrofe)
 - Las mismas vocales tienen tambien una **forma consonantica** (glifo diferente en la hoja):
@@ -29,7 +29,7 @@ La silaba es siempre **consonante + vocal**. La posicion determina si un sonido 
 
 ## Inventario de simbolos (orden en la hoja)
 
-`_sil`, i, u, e, a, o, `'`, ic, uc, ec, ac, oc, d, t, s, l, n, m, j, g, b, f, y, `?`, `[espacio]`
+`_`, i, u, e, a, o, `'`, ic, uc, ec, ac, oc, d, t, s, l, n, m, j, g, b, f, y, `?`, `[espacio]`
 
 **Total: 25 simbolos**.
 

@@ -17,7 +17,7 @@ El relleno de la grilla sigue siempre este orden, de izquierda a derecha fila po
 
 | Posición | Símbolo |
 |----------|---------|
-| `[0,0]`  | **Silencio** `_sil` (si el idioma tiene silencio) o primer símbolo del listado |
+| `[0,0]`  | **Silencio** `_` (si el idioma tiene silencio) o primer símbolo del listado |
 | `[0,1]`… | Vocales en el orden declarado |
 | Siguiente | Consonantes en el orden declarado |
 | Penúltimo | `?` (signo de pregunta / punto) |
@@ -48,7 +48,7 @@ Cada idioma tiene un JSON en `src/koten/symbols/configs/`:
   "tokenizer": { "separator": " " },
   "description": "Lapag",
   "root_mapping": {
-    "_sil": [0, 0],
+    "_":    [0, 0],
     "i":    [0, 1],
     "a":    [0, 4],
     "sh":   [0, 6],
@@ -84,7 +84,7 @@ Símbolos de izquierda a derecha. Con `overlay.enabled = true`, todo token que e
 
 ```
 entrada: "k a"  →  símbolo k + overlay de a sobre k  → un solo glifo compuesto
-entrada: "_sil a" →  silencio + overlay de a  →  vocal "a" sola
+entrada: "_ a" →  silencio + overlay de a  →  vocal "a" sola
 ```
 
 ### `columnar_right`
@@ -111,7 +111,7 @@ Exactamente **4 sílabas** compuestas como un círculo. Las sílabas se rotan an
 
 | Token | Significado |
 |-------|-------------|
-| `_sil` | Silencio (placeholder; asignar a tu carácter especial al rellenar el mapping) |
+| `_` | Silencio (se inserta automáticamente para vocales solas) |
 | `" "` (espacio) | Separador de palabras |
 | `ic`, `uc`, `ec`, `ac`, `oc` | Forma **consonántica** de las vocales en Jobid'e |
 | `ai`, `oi`, `au`, `eu`, `iu`, `ia` | Vocales compuestas en Gox'jix |
@@ -120,12 +120,12 @@ Exactamente **4 sílabas** compuestas como un círculo. Las sílabas se rotan an
 
 | Idioma | Hoja | Silencio | Overlay | Vocales | Trim (px) | Modo |
 |--------|------|----------|---------|---------|-----------|------|
-| Lapag | lapeg.png | `_sil` | ✓ | i u e a o | L/R 20 | horizontal |
-| Gox'jix | goxjix.png | `_sil` | ✓ | i u e a o ai oi au eu iu ia | — | horizontal |
-| Dekayun | dekayun.png | `_sil` | ✓ | i u e a o | — | horizontal |
+| Lapag | lapeg.png | `_` | ✓ | i u e a o | L/R 20 | horizontal |
+| Gox'jix | goxjix.png | `_` | ✓ | i u e a o ai oi au eu iu ia | — | horizontal |
+| Dekayun | dekayun.png | `_` | ✓ | i u e a o | — | horizontal |
 | Negelch | negelch.png | — | ✗ | i u e a o | L/R 32 | horizontal |
 | Idoling | idoling.png | — | ✗ | a e i o u | L/R 24 | horizontal |
-| Jobid'e | jobide.png | `_sil` | ✓ | i u e a o ' | — | circular×4 |
+| Jobid'e | jobide.png | `_` | ✓ | i u e a o ' | — | circular×4 |
 | Gornach-Kagsha | gornach-kagsha.png | — | ✗ | — | T/B 32 | columnar_right |
 
 ## API
@@ -141,15 +141,15 @@ GET /word?language=lapag&text=k a m a&spacing_x=10
 ### Ejemplos
 
 ```
-# Lapag: "ka" → token k luego a (vocal overlay)
-GET /word?language=lapag&text=k a
+# Lapag: "kamama" → k-a m-a m-a (3 sílabas)
+GET /word?language=lapag&text=kamama
 
-# Gox'jix: consonante + vocal compuesta
-GET /word?language=goxjix&text=sh ai
+# Gox'jix: consonante + vocal simple o compuesta
+GET /word?language=goxjix&text=shaimu
 
-# Jobid'e: 4 sílabas "jo bi d' e'"  →  j o b i d ' _sil '
-GET /word?language=jobide&text=j o b i d ' _sil '
+# Jobid'e: "jobide" → j-o b-i d-e (3 de 4 sílabas)
+GET /word?language=jobide&text=jobide
 
-# Garnach-Kagsha: gar nach - kag sha
-GET /word?language=gornach_kagsha&text=gar nach - kag sha
+# Garnach-Kagsha: "garnachkagsha" → gar nach kag sha
+GET /word?language=gornach_kagsha&text=garnachkagsha
 ```
