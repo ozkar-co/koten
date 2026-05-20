@@ -4,7 +4,7 @@ Llamados gigantes o señores del bosque, son muy pocos en el mundo y suelen vivi
 
 No se sabe cuánto viven. Se cree que son inmortales. Nunca se les ha visto infantes. Parece ser que no se pueden reproducir, y por su escasez, sumado al hecho de que suelen vivir aislados, incluso muchos consideran que no existen.
 
-Su apariencia física es muy variada. Son similares a los /ujom/, pero mucho más grandes. En promedio /3 pash/. Tienen una forma animal en la cual pueden transformarse.
+Su apariencia física es muy variada. Son similares a los /ujom/, pero mucho más grandes. En promedio 3 pash/. Tienen una forma animal en la cual pueden transformarse.
 
 Están en gran sintonía con la naturaleza. Han aprendido a leer los ciclos de las plantas y el comportamiento de los animales. Ejercen para ellos mismos las tareas de supervivencia que han aprendido de los animales: cazar, pescar, pastorear, cultivar, minar, etc.
 
@@ -41,7 +41,7 @@ No tienen ninguna forma de gobierno, ya que viven en soledad. La única regla qu
 - Forma de gobierno: 
 
 ### Demografía
-- Porcentaje de población mundial: 
+- Porcentaje de población mundial: desconocido
 
 ### Relaciones
 | Raza | Relación | Notas |

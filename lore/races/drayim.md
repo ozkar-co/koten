@@ -43,7 +43,7 @@ Guardan además un profundo respeto por unas criaturas llamadas /yodki/, aves gi
 - Forma de gobierno: 
 
 ### Demografía
-- Porcentaje de población mundial: 
+- Porcentaje de población mundial: 10%
 
 ### Relaciones
 | Raza | Relación | Notas |

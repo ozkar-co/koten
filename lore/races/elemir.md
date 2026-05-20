@@ -2,9 +2,9 @@
 
 Son muy pocos en el mundo. Casi todos viven en la isla de /nayedet/, cuya ubicación guardan en secreto con recelo. Se llaman a sí mismos el pueblo de los celestiales y creen que sus ancestros vinieron del cielo.
 
-Llegan a vivir hasta los /100 /ani/. A los /20 /ani/ alcanzan la madurez, momento en el que terminan su formación. Solo se les considera adultos y miembros de la sociedad si la han terminado. Su vejez llega a los /90 /ani/, etapa de su vida que buscan pasar en su isla, pues morir lejos de su tierra es para ellos una gran tragedia.
+Llegan a vivir hasta los 100 /ani/. A los 20 /ani/ alcanzan la madurez, momento en el que terminan su formación. Solo se les considera adultos y miembros de la sociedad si la han terminado. Su vejez llega a los 90 /ani/, etapa de su vida que buscan pasar en su isla, pues morir lejos de su tierra es para ellos una gran tragedia.
 
-Miden alrededor de /11 mash/. Carecen completamente de cabello y vello corporal. Son de piel blanca y tienen el iris gris claro o completamente blanco. Las mujeres tienen facciones más delicadas, cinturas estrechas, caderas anchas y senos. Casi todos los individuos tienen musculatura marcada y bien definida.
+Miden alrededor de 11 mash/. Carecen completamente de cabello y vello corporal. Son de piel blanca y tienen el iris gris claro o completamente blanco. Las mujeres tienen facciones más delicadas, cinturas estrechas, caderas anchas y senos. Casi todos los individuos tienen musculatura marcada y bien definida.
 
 Son la cultura que más prohibiciones presenta. Su religión está completamente integrada a su sociedad. Tienen prohibido robar, matar, traficar, usar la magia o la alquimia. Son estrictamente veganos. No cazan, no pescan, no se embriagan ni propician que otros lo hagan. No ejercen el pastoreo ni la minería.
 
@@ -47,7 +47,7 @@ A los herejes los condenan al destierro en las tierras malditas /chóseg/, donde
 - Forma de gobierno: 
 
 ### Demografía
-- Porcentaje de población mundial: 
+- Porcentaje de población mundial: 6%
 
 ### Relaciones
 | Raza | Relación | Notas |

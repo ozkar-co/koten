@@ -36,7 +36,7 @@ La falta de un linaje que los respalde, suelen verse polarizados en su desarroll
 - Forma de gobierno: 
 
 ### Demografía
-- Porcentaje de población mundial: 
+- Porcentaje de población mundial: desconocido
 
 ### Relaciones
 | Raza | Relación | Notas |

@@ -2,7 +2,7 @@
 
 No se sabe cuántos son en el mundo. Están en constante movimiento. Son clanes nómadas que recorren los pueblos del mundo. Tienen un único lugar físico: una montaña sagrada, pero solo ellos pueden entrar.
 
-Viven generalmente hasta los /70 /ani/. Desde los /10 /ani/ ya se les considera adultos, y hasta los /60 /ani/ conservan toda su fuerza y vitalidad.
+Viven generalmente hasta los 70 /ani/. Desde los 10 /ani/ ya se les considera adultos, y hasta los 60 /ani/ conservan toda su fuerza y vitalidad.
 
 Físicamente son muy parecidos a los /perim/, aunque su piel suele ser mayoritariamente de tonos rojizos, violáceos y azulados. Su principal característica es que les crecen cuernos de diversas formas y tamaños.
 
@@ -55,7 +55,7 @@ Entre sus muchas supersticiones ocupan un lugar especial los /yodki/, criaturas 
 - Forma de gobierno: 
 
 ### Demografía
-- Porcentaje de población mundial: 
+- Porcentaje de población mundial: desconocido
 
 ### Relaciones
 | Raza | Relación | Notas |
