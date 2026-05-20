@@ -12,19 +12,24 @@ def tokenize_lapag(text: str, root_mapping: dict[str, list]) -> list[str]:
     tokens: list[str] = []
     i = 0
     text = text.lower().strip()
+    at_word_start = True
     
     while i < len(text):
         char = text[i]
         
         if char in vowels:
-            # Vocal sola
+            # Vocal sola o al inicio: silencio + vocal
+            if at_word_start and "_" in root_mapping:
+                tokens.append("_")
             if char in root_mapping:
                 tokens.append(char)
+            at_word_start = False
             i += 1
         elif char == " ":
             # Espacio
             if char in root_mapping:
                 tokens.append(char)
+            at_word_start = True
             i += 1
         else:
             # Consonante: try C+V first if exists in mapping, else just C
@@ -32,11 +37,13 @@ def tokenize_lapag(text: str, root_mapping: dict[str, list]) -> list[str]:
                 syllable = text[i:i+2]
                 if syllable in root_mapping:
                     tokens.append(syllable)
+                    at_word_start = False
                     i += 2
                     continue
             # Fallback: just consonante
             if char in root_mapping:
                 tokens.append(char)
+            at_word_start = False
             i += 1
     
     return tokens
