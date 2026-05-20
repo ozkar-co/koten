@@ -54,10 +54,10 @@ Hay un pequeño grupo de radicales que intenta crear una cultura /ujóm/ unifica
 | Nekles | | |
 
 ### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
+- **Destacadas**: Cazador, Campesino, Escriba, Pastor, Artesano, Artista
+- **Normales**: Hechicero, Sacerdote, Guerrero, Mercader, Traficante, Ladron, Asesino, Tabernero, Navegante, Ingeniero, Alquimista, Carnicero, Leñador, Minero, Forjador
+- **Malas**: Esclavista
+- **Prohibidas**: Ninguna
 
 ### Religión y espiritualidad
 - Creencias: 

@@ -30,9 +30,6 @@ Viven por siglos y rara vez intervienen con los asuntos del mundo. No se sabe mu
 - Ubicación geográfica: 
 - Forma de gobierno: 
 
-### Demografía
-- Porcentaje de población mundial: 
-
 ### Relaciones
 | Raza | Relación | Notas |
 |------|----------|-------|
@@ -46,12 +43,6 @@ Viven por siglos y rara vez intervienen con los asuntos del mundo. No se sabe mu
 | Denjom | | |
 | Mugot | | |
 | Kalosh | | |
-
-### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
 
 ### Religión y espiritualidad
 - Creencias: 

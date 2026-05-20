@@ -62,10 +62,10 @@ Son estrictamente vegetarianos. De los animales solo usan aquello que ofrecen li
 | Nekles | | |
 
 ### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
+- **Destacadas**: Hechicero, Mercader, Escriba, Artesano, Leñador
+- **Normales**: Sacerdote, Guerrero, Campesino, Navegante, Ingeniero, Artista.
+- **Malas**: Cazador, Tabernero, Alquimista, Pastor, Carnicero, Minero, Forjador.
+- **Prohibidas**: Traficante, Ladrón, Esclavista, Asesino.
 
 ### Religión y espiritualidad
 - Creencias: 

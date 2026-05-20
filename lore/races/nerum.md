@@ -62,10 +62,10 @@ A sus muertos los entierran en cámaras especiales donde son devorados por gusan
 | Nekles | | |
 
 ### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
+- **Destacadas**: Mercader, Ingeniero, Alquimista, Minero, Forjador
+- **Normales**: Cazador, Guerrero, Traficante, Escriba, Tabernero, Pastor, Carnicero, Artesano
+- **Malas**: Sacerdote, Campesino, Ladron, Esclavista, Asesino, Navegante, Leñador, Artista.
+- **Prohibidas**: Hechicero.
 
 ### Religión y espiritualidad
 - Creencias: 

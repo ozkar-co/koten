@@ -58,10 +58,10 @@ En su religión adoran el fuego. El sol es para ellos el fuego primordial. Cada 
 | Nekles | | |
 
 ### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
+- **Destacadas**: Cazador, Guerrero, Ingeniero, Alquimista, Carnicero, Forjador.
+- **Normales**: Sacerdote, Campesino, Mercader, Traficante, Esclavista, Asesino, Tabernero, Pastor, Artesano, Leñador, Minero.
+- **Malas**: Hechicero, Ladrón, Escriba, Artista.
+- **Prohibidas**: Navegante.
 
 ### Religión y espiritualidad
 - Creencias: 

@@ -68,10 +68,10 @@ A los esclavos rara vez los usan en batalla. Son más usados en los campamentos 
 | Nekles | | |
 
 ### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
+- **Destacadas**: Guerrero, Esclavista.
+- **Normales**: Cazador, Asesino, Navegante, Carnicero, Leñador.
+- **Malas**: Sacerdote, Traficante, Ladrón, Tabernero, Pastor, Artesano, Minero, Forjador.
+- **Prohibidas**: Hechicero, Campesino, Escriba, Ingeniero, Alquimista, Artista.
 
 ### Religión y espiritualidad
 - Creencias: 

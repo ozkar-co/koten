@@ -64,10 +64,10 @@ A los herejes los condenan al destierro en las tierras malditas /chóseg/, donde
 | Nekles | | |
 
 ### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
+- **Destacadas**: Sacerdote, Escriba, Forjador, Artista.
+- **Normales**: Campesino, Navegante, Ingeniero, Artesano, Leñador.
+- **Malas**: Mercader, Pastor, Minero.
+- **Prohibidas**: Cazador, Hechicero, Ladrón, Esclavista, Asesino, Tabernero, Alquimista, Carnicero.
 
 ### Religión y espiritualidad
 - Creencias: 

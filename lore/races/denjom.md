@@ -70,10 +70,10 @@ El comportamiento de los gatos es una inspiración para ellos. Tratan de imitarl
 | Nekles | | |
 
 ### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
+- **Destacadas**: Sacerdote, Traficante, Ladrón, Asesino, Tabernero.
+- **Normales**: Cazador, Hechicero, Pastor, Carnicero, Artesano, Leñador.
+- **Malas**: Campesino, Esclavista, Navegante, Ingeniero, Alquimista, Minero, Forjador, Artista.
+- **Prohibidas**: Guerrero, Mercader, Escriba.
 
 ### Religión y espiritualidad
 - Creencias: 

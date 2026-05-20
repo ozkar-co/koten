@@ -58,10 +58,10 @@ No tienen ninguna forma de gobierno, ya que viven en soledad. La única regla qu
 | Nekles | | |
 
 ### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
+- **Destacadas**: Cazador, Campesino, Navegante, Minero.
+- **Normales**: Asesino, Artesano, Leñador.
+- **Malas**: Guerrero, Mercader, Traficante, Ladrón, Tabernero, Ingeniero, Alquimista, Pastor, Carnicero, Forjador, Artista.
+- **Prohibidas**: Hechicero, Sacerdote, Esclavista, Escriba.
 
 ### Religión y espiritualidad
 - Creencias: 

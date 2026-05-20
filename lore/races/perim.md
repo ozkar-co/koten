@@ -62,10 +62,10 @@ Hablan el /lapág/ principalmente, pero llegan a dominar diversas lenguas en sus
 | Nekles | | |
 
 ### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
+- **Destacadas**: Cazador, Traficante, Ladron, Asesino, Tabernero, Navegante, Carnicero
+- **Normales**: Sacerdote, Campesino, Mercader, Alquimista, Artesano, Leñador, Minero, Artista
+- **Malas**: Hechicero, Guerrero, Escriba, Ingeniero, Pastor, Forjador
+- **Prohibidas**: Esclavista
 
 ### Religión y espiritualidad
 - Creencias: 

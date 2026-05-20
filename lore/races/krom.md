@@ -24,9 +24,6 @@
 - Ubicación geográfica: 
 - Forma de gobierno: 
 
-### Demografía
-- Porcentaje de población mundial: 
-
 ### Relaciones
 | Raza | Relación | Notas |
 |------|----------|-------|
@@ -41,12 +38,6 @@
 | Mugot | | |
 | Kalosh | | |
 | Nekles | | |
-
-### Profesiones
-- **Destacadas**: 
-- **Normales**: 
-- **Malas**: 
-- **Prohibidas**: 
 
 ### Religión y espiritualidad
 - Creencias: 
