@@ -11,7 +11,9 @@ class Settings(BaseSettings):
         "https://koten.ozkr.net",
         "https://www.koten.ozkr.net",
     ]
-    cors_allow_origin_regex: str = r"https://([a-z0-9-]+\.)?ozkr\.net"
+    cors_allow_origin_regex: str = (
+        r"https://([a-z0-9-]+\.)?ozkr\.net|https?://(localhost|127\.0\.0\.1)(:\\d+)?"
+    )
 
     model_config = SettingsConfigDict(
         env_file=".env",
