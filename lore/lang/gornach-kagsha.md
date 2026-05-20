@@ -12,6 +12,7 @@
 - Los simbolos se apilan verticalmente dentro de una columna
 - El token `-` cierra la columna y abre una nueva a la derecha
 - Recorte: 32 px simetrico arriba y abajo
+- El inventario inicia con `.` y luego `-`
 
 ## Ejemplo: `garnach-kagsha`
 
@@ -28,11 +29,40 @@ Tokens: `gar nach - kag sha`
 
 ## Nota sobre el diccionario
 
-Este idioma asigna una raiz interna a cada particula/silaba. El usuario debe proveer el diccionario de particulas → token interno. Las raices de `garnach-kagsha` son `km-lp`.
+Este idioma asigna una raiz interna a cada particula/silaba. Las raices de `garnach-kagsha` son `km-lp`.
+
+## Diccionario silaba -> raiz
+
+- ar -> a
+- ek -> e
+- ug -> u
+- esh -> e
+- ak -> a
+- or -> o
+- rag -> c
+- lar -> d
+- kor -> t
+- gor -> s
+- gar -> k
+- rek -> r
+- kag -> l
+- lok -> n
+- nash -> m
+- dur -> j
+- tar -> g
+- ket -> b
+- gul -> f
+- lug -> y
+- sha -> p
+- ruk -> x
 
 ## Inventario de simbolos
 
-Pendiente: el usuario proporcionara el listado completo en orden de la hoja.
+Orden en la hoja (izquierda a derecha, fila por fila):
+
+., -, ar, ek, ug, esh, ak, or, rag, lar, kor, gor, gar, rek, kag, lok, nash, dur, tar, ket, gul, lug, sha, ruk, [espacio]
+
+Total: 25 simbolos.
 
 ## Notas
 

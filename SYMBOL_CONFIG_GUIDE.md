@@ -12,7 +12,7 @@
 | Negelch | negelch.png | negelch.json | ✓ completo |
 | Idoling | idoling.png | idoling.json | ✓ completo |
 | Jobid'e | jobide.png | jobide.json | ✓ completo |
-| Gornach-Kagsha | gornach-kagsha.png | gornach_kagsha.json | pendiente (usuario proveerá diccionario) |
+| Gornach-Kagsha | gornach-kagsha.png | gornach_kagsha.json | ✓ completo |
 
 ## Convenio de orden de símbolos
 
@@ -25,6 +25,8 @@ Para que el usuario provea el orden de una hoja nueva:
 5. **Último: `" "` (espacio / separador de palabras)** — siempre fijo
 
 Ejemplo: Lapag tiene silencio + 5 vocales + 16 consonantes + ? + espacio = 24 posiciones usadas.
+
+Excepcion Gornach-Kagsha: el orden inicia con `.` y `-`, seguido por sus silabas/particulas; aun asi mantiene el separador de palabras `" "` al final.
 
 ## Convenio para vocales consonanticas (Jobid'e)
 
