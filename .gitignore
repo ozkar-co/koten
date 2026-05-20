@@ -13,3 +13,7 @@ env/
 !.env.example
 .DS_Store
 temp/
+
+# SQLite sidecar files (journal/WAL shared-memory)
+*.sqlite3-wal
+*.sqlite3-shm

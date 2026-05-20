@@ -4,7 +4,12 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, Field
 
 from koten.db.connection import get_connection
-from koten.linguistics.service import analyze_word, canonical_root, upsert_word
+from koten.linguistics.service import (
+    analyze_word,
+    canonical_root,
+    get_equivalent_roots_for_lapag,
+    upsert_word,
+)
 
 router = APIRouter(prefix="/lexicon", tags=["lexicon"])
 
@@ -80,26 +85,12 @@ def get_root(root: str) -> dict:
         if not root_row:
             raise HTTPException(status_code=404, detail="Root not found")
 
-        equivalents = connection.execute(
-            """
-            SELECT language_code, language_root
-            FROM root_equivalences
-            WHERE lapag_root = ?
-            ORDER BY language_code ASC, language_root ASC
-            """,
-            (lapag_root,),
-        ).fetchall()
+        equivalents = get_equivalent_roots_for_lapag(connection, lapag_root)
 
     return {
         "lapag_root": root_row["lapag_root"],
         "meaning": root_row["meaning"],
-        "equivalents": [
-            {
-                "language_code": row["language_code"],
-                "language_root": row["language_root"],
-            }
-            for row in equivalents
-        ],
+        "equivalents": equivalents,
     }
 
 
