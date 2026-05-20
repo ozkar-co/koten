@@ -47,6 +47,9 @@ _KOTEN_RE = re.compile(
 _IMAGE_LINE_RE = re.compile(
     r"(?m)^(?P<indent>[ \t]*)(?P<source>(?:/api/image/)?[A-Za-z0-9_.-]+\.(?:png|jpg|jpeg|gif|webp)(?:\?type=(?:full|thumb))?)[ \t]*$"
 )
+_MARKDOWN_IMAGE_RE = re.compile(
+    r"!\[(?P<alt>[^\]]*)\]\((?P<source>[^)\s]+)\)"
+)
 _PLACEHOLDER_PREFIX = "KOTEN_WORD_PLACEHOLDER_"
 
 
@@ -63,6 +66,19 @@ def _replace_image_line(match: re.Match) -> str:
     return (
         f'<img class="lore-image" src="{html.escape(image_url, quote=True)}" '
         f'alt="{html.escape(alt, quote=True)}" loading="lazy">'
+    )
+
+
+def _replace_markdown_image(match: re.Match) -> str:
+    alt = match.group("alt")
+    source = match.group("source")
+    image_url = source if source.startswith("/api/image/") else f"/api/image/{source.lstrip('/')}"
+    image_name = source.split("?", 1)[0].rsplit("/", 1)[-1]
+    fallback_alt = Path(image_name).stem.replace("_", " ")
+    final_alt = alt or fallback_alt
+    return (
+        f'<img class="lore-image" src="{html.escape(image_url, quote=True)}" '
+        f'alt="{html.escape(final_alt, quote=True)}" loading="lazy">'
     )
 
 
@@ -98,8 +114,13 @@ def parse_lore_md(text: str) -> str:
         placeholders.append(_replace_image_line(match))
         return f"{_PLACEHOLDER_PREFIX}{len(placeholders) - 1}"
 
+    def replace_markdown_image_with_placeholder(match: re.Match) -> str:
+        placeholders.append(_replace_markdown_image(match))
+        return f"{_PLACEHOLDER_PREFIX}{len(placeholders) - 1}"
+
     # Render Markdown around inert placeholders, then restore the generated HTML.
     substituted = _IMAGE_LINE_RE.sub(replace_image_with_placeholder, text)
+    substituted = _MARKDOWN_IMAGE_RE.sub(replace_markdown_image_with_placeholder, substituted)
     substituted = _KOTEN_RE.sub(replace_with_placeholder, substituted)
 
     # Step 2: render standard Markdown → HTML

@@ -18,6 +18,12 @@ def test_parse_lore_md_renders_standalone_image_routes() -> None:
     assert '<img class="lore-image" src="/api/image/mapa.jpg"' in html
 
 
+def test_parse_lore_md_normalizes_markdown_image_sources() -> None:
+    html = parse_lore_md('![Mapa](mapa.jpg)')
+
+    assert '<img class="lore-image" src="/api/image/mapa.jpg"' in html
+
+
 def test_top_level_lore_document_renders() -> None:
     client = TestClient(app)
 
