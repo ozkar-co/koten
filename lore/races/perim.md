@@ -26,10 +26,10 @@ Hablan el /lapag/ principalmente, pero llegan a dominar diversas lenguas en sus 
 - Lapag: 
 - Gox'jix: 
 - Dekayun: 
-- Negelch: 
+- Negelsh: 
 - Idoling: 
 - Jobid'e: 
-- Gornach-Kagsha: 
+- Gornash-Kagsha: 
 
 ### Datos físicos
 - Altura promedio: 

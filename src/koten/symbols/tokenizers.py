@@ -121,10 +121,10 @@ def tokenize_dekayun(text: str, root_mapping: dict[str, list]) -> list[str]:
     return tokenize_lapag(text, root_mapping)
 
 
-def tokenize_negelch(text: str, root_mapping: dict[str, list]) -> list[str]:
+def tokenize_negelsh(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
-    Negelch: each symbol is independent, no layering.
-    Recognizes digraphs like ch as a single symbol.
+    Negelsh: each symbol is independent, no layering.
+    Recognizes digraphs like sh as a single symbol.
     Returns only tokens that exist in root_mapping.
     """
     text = text.lower().strip()
@@ -140,7 +140,7 @@ def tokenize_negelch(text: str, root_mapping: dict[str, list]) -> list[str]:
             i += 1
             continue
 
-        # Try digraph first (e.g., ch)
+        # Try digraph first (e.g., sh)
         if i + 1 < len(text):
             pair = text[i : i + 2]
             if pair in root_mapping:
@@ -157,8 +157,8 @@ def tokenize_negelch(text: str, root_mapping: dict[str, list]) -> list[str]:
 
 def tokenize_idoling(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
-    Idoling: like Negelch, independent symbols.
-    Handles digraphs ts, ch. Only returns tokens in root_mapping.
+    Idoling: like Negelsh, independent symbols.
+    Handles digraphs ts, sh. Only returns tokens in root_mapping.
     """
     text = text.lower().strip()
     if " " in text:
@@ -241,9 +241,9 @@ def tokenize_jobide(text: str, root_mapping: dict[str, list]) -> list[str]:
     return tokens
 
 
-def tokenize_gornach_kagsha(text: str, root_mapping: dict[str, list]) -> list[str]:
+def tokenize_gornash_kagsha(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
-    Gornach-Kagsha: longest match greedy parsing.
+    Gornash-Kagsha: longest match greedy parsing.
     Tries lengths 4, 3, 2, 1 in that order.
     Token '-' stays as-is for column breaks.
     """
@@ -288,10 +288,10 @@ TOKENIZERS = {
     "lapag": tokenize_lapag,
     "goxjix": tokenize_goxjix,
     "dekayun": tokenize_dekayun,
-    "negelch": tokenize_negelch,
+    "negelsh": tokenize_negelsh,
     "idoling": tokenize_idoling,
     "jobide": tokenize_jobide,
-    "gornach_kagsha": tokenize_gornach_kagsha,
+    "gornash_kagsha": tokenize_gornash_kagsha,
 }
 
 

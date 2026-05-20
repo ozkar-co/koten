@@ -18,8 +18,8 @@ LANGUAGE_LABEL_TO_CODE = {
     "gox'jix": "goxjix",
     "dekayun": "dekayun",
     "jobid'e": "jobide",
-    "negelch": "negelch",
-    "gornach-kagsha": "gornach_kagsha",
+    "negelsh": "negelsh",
+    "gornash-kagsha": "gornash_kagsha",
 }
 
 LANGUAGE_NAMES = {
@@ -27,8 +27,8 @@ LANGUAGE_NAMES = {
     "goxjix": "Gox'jix",
     "dekayun": "Dekayun",
     "jobide": "Jobid'e",
-    "negelch": "Negelch",
-    "gornach_kagsha": "Gornach-Kagsha",
+    "negelsh": "Negelsh",
+    "gornash_kagsha": "Gornash-Kagsha",
 }
 
 
@@ -38,8 +38,8 @@ TRANSLATION_HEADER = [
     "gox'jix",
     "dekayun",
     "jobid'e",
-    "negelch",
-    "gornach-kagsha",
+    "negelsh",
+    "gornash-kagsha",
 ]
 
 TRANSLATION_ROWS = [
@@ -61,14 +61,14 @@ TRANSLATION_ROWS = [
     ["x", "f", "t", "g", "j", "ruk"],
 ]
 
-# Compatibility alias for legacy lore spelling.
-GORNACH_ALIASES: dict[str, list[str]] = {
-    "m": ["nach"],
+# Compatibility alias for older lore spellings.
+GORNASH_ALIASES: dict[str, list[str]] = {
+    "m": ["nash"],
 }
 
-# Negelch digraph aliases: 'ch' is the digraph form of the 'c' root.
-NEGELCH_ALIASES: dict[str, list[str]] = {
-    "c": ["ch"],
+# Negelsh digraph aliases: 'sh' is the digraph form of the 'c' root.
+NEGELSH_ALIASES: dict[str, list[str]] = {
+    "c": ["sh"],
 }
 
 SEMANTIC_ROOTS_TEXT = """
@@ -278,26 +278,26 @@ def seed() -> None:
                     (language_code, language_root, lapag_root),
                 )
 
-            # Add explicit aliases for gornach-kagsha roots when configured.
-            for alias in GORNACH_ALIASES.get(lapag_root, []):
+            # Add explicit aliases for gornash-kagsha roots when configured.
+            for alias in GORNASH_ALIASES.get(lapag_root, []):
                 connection.execute(
                     """
                     INSERT INTO root_equivalences(language_code, language_root, lapag_root)
                     VALUES (?, ?, ?)
                     ON CONFLICT(language_code, language_root, lapag_root) DO NOTHING
                     """,
-                    ("gornach_kagsha", alias.strip().lower(), lapag_root),
+                    ("gornash_kagsha", alias.strip().lower(), lapag_root),
                 )
 
-            # Add explicit aliases for negelch roots when configured.
-            for alias in NEGELCH_ALIASES.get(lapag_root, []):
+            # Add explicit aliases for negelsh roots when configured.
+            for alias in NEGELSH_ALIASES.get(lapag_root, []):
                 connection.execute(
                     """
                     INSERT INTO root_equivalences(language_code, language_root, lapag_root)
                     VALUES (?, ?, ?)
                     ON CONFLICT(language_code, language_root, lapag_root) DO NOTHING
                     """,
-                    ("negelch", alias.strip().lower(), lapag_root),
+                    ("negelsh", alias.strip().lower(), lapag_root),
                 )
 
         connection.commit()

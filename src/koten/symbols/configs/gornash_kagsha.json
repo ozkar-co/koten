@@ -1,5 +1,5 @@
 {
-  "sheet_file": "gornach-kagsha.png",
+  "sheet_file": "gornash-kagsha.png",
   "symbol_size": 160,
   "cols": 10,
   "rows": 3,
@@ -18,7 +18,7 @@
     "draw_break_symbol_in_previous_column": true
   },
   "tokenizer": { "separator": " " },
-  "description": "Gornach-Kagsha language character symbols",
+  "description": "Gornash-Kagsha language character symbols",
   "notes": "Escritura por columnas de arriba hacia abajo. El token '-' indica salto de columna y se dibuja al final de la columna actual. El simbolo '.' va al inicio del inventario. Recorte vertical superior/inferior de 32 px.",
   "syllable_to_root": {
     "ar": "a",

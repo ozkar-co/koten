@@ -34,8 +34,8 @@ def normalize_language_root(root: str) -> str:
     return re.sub(r"[^a-z]", "", normalized)
 
 
-def _split_gornach_kagsha(text: str, known_roots: set[str]) -> list[str]:
-    """Split gornach-kagsha words by longest matching known syllable tokens."""
+def _split_gornash_kagsha(text: str, known_roots: set[str]) -> list[str]:
+    """Split gornash-kagsha words by longest matching known syllable tokens."""
     if not text:
         return []
 
@@ -64,10 +64,10 @@ def _split_gornach_kagsha(text: str, known_roots: set[str]) -> list[str]:
 
 def _split_units(word: str, language_code: str, known_roots: set[str] | None = None) -> list[str]:
     text = normalize_word(word)
-    if language_code in {"gornach_kagsha", "negelch"}:
-        return _split_gornach_kagsha(text, known_roots or set())
+    if language_code in {"gornash_kagsha", "negelsh"}:
+        return _split_gornash_kagsha(text, known_roots or set())
 
-    if language_code in {"lapag", "goxjix", "dekayun", "jobide", "gornach_kagsha"}:
+    if language_code in {"lapag", "goxjix", "dekayun", "jobide", "gornash_kagsha"}:
         return [ch for ch in text if ch not in VOWELS]
 
     # Fallback for languages with syllabic roots or mixed systems.
@@ -231,7 +231,7 @@ def analyze_word(connection: sqlite3.Connection, language_code: str, word: str) 
         known_roots = {row["lapag_root"] for row in known_lapag}
 
     units = _split_units(word, language_code, known_roots)
-    if language_code == "gornach_kagsha":
+    if language_code == "gornash_kagsha":
         source_roots = [normalize_language_root(unit) for unit in units if unit]
     else:
         source_roots = _greedy_extract(units, known_roots) if units else []

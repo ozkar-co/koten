@@ -17,11 +17,11 @@ TEST_CASES = [
     ("goxjix", "gox'jix"),
     ("goxjix", "yuxejai"),
     ("dekayun", "dekayun"),
-    ("negelch", "negelch"),
+    ("negelsh", "negelsh"),
     ("idoling", "idoling"),
     ("jobide", "jobid'e"),
-    ("gornach_kagsha", "gornash-kagsha"),
-    ("gornach_kagsha", "garor-kageshlug"),
+    ("gornash_kagsha", "gornash-kagsha"),
+    ("gornash_kagsha", "garor-kageshlug"),
 ]
 
 def main():

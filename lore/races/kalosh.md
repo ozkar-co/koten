@@ -17,10 +17,10 @@ La falta de un linaje que los respalde, suelen verse polarizados en su desarroll
 - Lapag: 
 - Gox'jix: 
 - Dekayun: 
-- Negelch: 
+- Negelsh: 
 - Idoling: 
 - Jobid'e: 
-- Gornach-Kagsha: 
+- Gornash-Kagsha: 
 
 ### Datos físicos
 - Altura promedio: 

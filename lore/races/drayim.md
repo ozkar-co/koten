@@ -24,10 +24,10 @@ Guardan además un profundo respeto por unas criaturas llamadas /yodki/, aves gi
 - Lapag: 
 - Gox'jix: 
 - Dekayun: 
-- Negelch: 
+- Negelsh: 
 - Idoling: 
 - Jobid'e: 
-- Gornach-Kagsha: 
+- Gornash-Kagsha: 
 
 ### Datos físicos
 - Altura promedio: 

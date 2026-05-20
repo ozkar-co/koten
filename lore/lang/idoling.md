@@ -3,7 +3,7 @@
 ## Escritura
 
 - Direccion: horizontal (izquierda a derecha)
-- Similar a Negelch
+- Similar a Negelsh
 - **Sin silencio**
 - Vocales independientes, sin sobreposicion
 - Alfabeto extendido con digrafos: `ts`, `ch`

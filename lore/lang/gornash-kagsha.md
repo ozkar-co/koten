@@ -1,4 +1,4 @@
-# Gornach-Kagsha
+# Gornash-Kagsha
 
 ## Escritura
 
@@ -14,22 +14,22 @@
 - Recorte: 32 px simetrico arriba y abajo
 - El inventario inicia con `.` y luego `-`
 
-## Ejemplo: `garnach-kagsha`
+## Ejemplo: `garnash-kagsha`
 
 La palabra se descompone en 5 particulas con raices `km-lp`:
 
 ```
 Columna 1:         Columna 2:
   gar                 kag
-  nach                sha
+  nash                sha
   [guion -]
 ```
 
-Tokens: `gar nach - kag sha`
+Tokens: `gar nash - kag sha`
 
 ## Nota sobre el diccionario
 
-Este idioma asigna una raiz interna a cada particula/silaba. Las raices de `garnach-kagsha` son `km-lp`.
+Este idioma asigna una raiz interna a cada particula/silaba. Las raices de `garnash-kagsha` son `km-lp`.
 
 ## Diccionario silaba -> raiz
 

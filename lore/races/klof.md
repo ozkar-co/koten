@@ -10,10 +10,10 @@ Son irracionales, extremadamente salvajes y agresivos. Cazan en jaurías, atacan
 - Lapag: 
 - Gox'jix: 
 - Dekayun: 
-- Negelch: 
+- Negelsh: 
 - Idoling: 
 - Jobid'e: 
-- Gornach-Kagsha: 
+- Gornash-Kagsha: 
 
 ### Datos físicos
 - Altura promedio: 

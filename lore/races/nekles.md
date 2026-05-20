@@ -14,10 +14,10 @@ Entre las pocas criaturas con las que mantienen una mala relación destacan los 
 - Lapag: 
 - Gox'jix: 
 - Dekayun: 
-- Negelch: 
+- Negelsh: 
 - Idoling: 
 - Jobid'e: 
-- Gornach-Kagsha: 
+- Gornash-Kagsha: 
 
 ### Datos físicos
 - Altura promedio: 

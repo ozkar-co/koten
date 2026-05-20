@@ -5,7 +5,7 @@ from koten.main import app
 
 
 def test_parse_lore_md_keeps_quotes_around_koten_words() -> None:
-    html = parse_lore_md('tierras malditas "/choseg/". Aun')
+    html = parse_lore_md('tierras malditas "/shoseg/". Aun')
 
     assert '"<span class="koten-word"' in html
     assert '&gt;&lt;img' not in html
@@ -25,7 +25,7 @@ def test_parse_lore_md_normalizes_markdown_image_sources() -> None:
 
 
 def test_parse_lore_md_restores_more_than_ten_placeholders() -> None:
-    text = ' '.join(['/N/negelch/'] * 12)
+    text = ' '.join(['/N/negelsh/'] * 12)
     html = parse_lore_md(text)
 
     assert html.count('<span class="koten-word"') == 12
@@ -41,7 +41,7 @@ def test_top_level_lore_document_renders() -> None:
 
     assert response.status_code == 200
     assert '/api/image/mapa.jpg' in response.text
-    assert '/api/word/lapag/choseg' in response.text
+    assert '/api/word/lapag/shoseg' in response.text
 
 
 def test_dynamic_section_document_renders() -> None:

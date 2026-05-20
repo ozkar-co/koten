@@ -20,7 +20,7 @@ No usan dinero entre ellos. Tienen arcas comunes y solo lo usan para comerciar c
 
 Vivir una vida correcta según sus leyes es algo supremamente importante. Creen que su muerte, a diferencia de la de las demás creaturas, es solo un sueño del que despertarán al regreso de los celestiales. Pero transgredir su ley les puede llevar a perder su condición de celestial. Por eso es tan importante para ellos morir en su isla, porque allí están los cuartos donde sus cuerpos reposan incorruptibles hasta la llegada de los celestiales.
 
-A los herejes los condenan al destierro en las tierras malditas /choseg/, donde su destino será peor que la muerte.
+A los herejes los condenan al destierro en las tierras malditas /shoseg/, donde su destino será peor que la muerte.
 
 ## Ficha Técnica
 
@@ -28,10 +28,10 @@ A los herejes los condenan al destierro en las tierras malditas /choseg/, donde 
 - Lapag: 
 - Gox'jix: 
 - Dekayun: 
-- Negelch: 
+- Negelsh: 
 - Idoling: 
 - Jobid'e: 
-- Gornach-Kagsha: 
+- Gornash-Kagsha: 
 
 ### Datos físicos
 - Altura promedio: 

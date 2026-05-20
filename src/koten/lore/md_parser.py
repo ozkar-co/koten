@@ -6,10 +6,10 @@ Koten word syntax within MD text:
   /L/word/        → explicit Lapag
   /G/word/        → Gox'jix
   /D/word/        → Dekayun
-  /N/word/        → Negelch
+    /N/word/        → Negelsh
   /I/word/        → Idoling
   /J/word/        → Jobid'e
-  /K/word/        → Gornach-Kagsha
+    /K/word/        → Gornash-Kagsha
 
 Output: HTML with <span class="koten-word"> tags that the frontend
 can use to request the symbol image from /api/word/{language}/{word}.
@@ -30,10 +30,10 @@ LANGUAGE_PREFIXES: dict[str, str] = {
     "L": "lapag",
     "G": "goxjix",
     "D": "dekayun",
-    "N": "negelch",
+    "N": "negelsh",
     "I": "idoling",
     "J": "jobide",
-    "K": "gornach_kagsha",
+    "K": "gornash_kagsha",
 }
 
 DEFAULT_LANGUAGE = "lapag"

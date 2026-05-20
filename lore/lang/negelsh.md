@@ -1,4 +1,4 @@
-# Negelch
+# Negelsh
 
 ## Escritura
 
@@ -10,7 +10,7 @@
 
 ## Inventario de simbolos (orden en la hoja)
 
-i, u, e, a, o, ch, d, t, s, k, r, l, n, m, j, g, b, f, y, p, x, `?`, `[espacio]`
+i, u, e, a, o, sh, d, t, s, k, r, l, n, m, j, g, b, f, y, p, x, `?`, `[espacio]`
 
 **Total: 23 simbolos**. El primero es directamente la vocal `i` (sin silencio).
 

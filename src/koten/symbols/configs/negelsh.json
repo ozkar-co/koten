@@ -1,5 +1,5 @@
 {
-  "sheet_file": "negelch.png",
+  "sheet_file": "negelsh.png",
   "symbol_size": 160,
   "cols": 10,
   "rows": 3,
@@ -14,7 +14,7 @@
     "offset_y": 0
   },
   "tokenizer": { "separator": " " },
-  "description": "Negelch language character symbols",
+  "description": "Negelsh language character symbols",
   "notes": "Sin silencio (empieza en [0,0]). Vocales independientes, sin sobreposicion. Separador de palabra en ultima posicion.",
   "root_mapping": {
     "i":   [0, 0],
@@ -22,7 +22,7 @@
     "e":   [0, 2],
     "a":   [0, 3],
     "o":   [0, 4],
-    "ch":  [0, 5],
+    "sh":  [0, 5],
     "d":   [0, 6],
     "t":   [0, 7],
     "s":   [0, 8],

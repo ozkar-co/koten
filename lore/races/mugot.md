@@ -1,6 +1,6 @@
 # Mugot
 
-No se sabe cuántos son. Se cree que vienen de /choreg/, las tierras malditas. Se han estado expandiendo por las llanuras de todo /koten/, sembrando el terror por donde pasan. Viven en campamentos.
+No se sabe cuántos son. Se cree que vienen de /shoreg/, las tierras malditas. Se han estado expandiendo por las llanuras de todo /koten/, sembrando el terror por donde pasan. Viven en campamentos.
 
 Viven en promedio hasta los 40 /ani/. Difícilmente llegan a la vejez. En cuanto empiezan a valerse por sí mismos, son abandonados a su suerte.
 
@@ -32,10 +32,10 @@ A los esclavos rara vez los usan en batalla. Son más usados en los campamentos 
 - Lapag: 
 - Gox'jix: 
 - Dekayun: 
-- Negelch: 
+- Negelsh: 
 - Idoling: 
 - Jobid'e: 
-- Gornach-Kagsha: 
+- Gornash-Kagsha: 
 
 ### Datos físicos
 - Altura promedio: 
