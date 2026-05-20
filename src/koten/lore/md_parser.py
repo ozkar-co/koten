@@ -61,7 +61,7 @@ def _strip_accents(text: str) -> str:
 
 def _replace_image_line(match: re.Match) -> str:
     source = match.group("source")
-    image_url = source if source.startswith("/api/image/") else f"/api/image/{source}"
+    image_url = source if source.startswith("/image/") else f"/image/{source}"
     image_name = source.split("?", 1)[0].rsplit("/", 1)[-1]
     alt = Path(image_name).stem.replace("_", " ")
     return (
@@ -73,7 +73,7 @@ def _replace_image_line(match: re.Match) -> str:
 def _replace_markdown_image(match: re.Match) -> str:
     alt = match.group("alt")
     source = match.group("source")
-    image_url = source if source.startswith("/api/image/") else f"/api/image/{source.lstrip('/')}"
+    image_url = source if source.startswith("/image/") else f"/image/{source.lstrip('/')}"
     image_name = source.split("?", 1)[0].rsplit("/", 1)[-1]
     fallback_alt = Path(image_name).stem.replace("_", " ")
     final_alt = alt or fallback_alt
@@ -88,7 +88,7 @@ def _replace_koten_word(match: re.Match) -> str:
     word = match.group(2)
     language = LANGUAGE_PREFIXES.get(prefix, DEFAULT_LANGUAGE) if prefix else DEFAULT_LANGUAGE
     normalized_word = _strip_accents(word)
-    image_url = f"/api/word/{language}/{quote(normalized_word, safe='')}"
+    image_url = f"/word/{language}/{quote(normalized_word, safe='')}"
     return (
         f'<span class="koten-word" data-language="{html.escape(language, quote=True)}" '
         f'data-word="{html.escape(normalized_word, quote=True)}">'

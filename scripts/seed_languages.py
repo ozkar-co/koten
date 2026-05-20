@@ -20,6 +20,7 @@ LANGUAGE_LABEL_TO_CODE = {
     "jobid'e": "jobide",
     "negelsh": "negelsh",
     "gornash-kagsha": "gornash_kagsha",
+    "idoling": "idoling",
 }
 
 LANGUAGE_NAMES = {
@@ -29,6 +30,7 @@ LANGUAGE_NAMES = {
     "jobide": "Jobid'e",
     "negelsh": "Negelsh",
     "gornash_kagsha": "Gornash-Kagsha",
+    "idoling": "Idoling",
 }
 
 
@@ -247,6 +249,19 @@ def seed() -> None:
                 (code, LANGUAGE_NAMES.get(code, code.capitalize())),
             )
 
+        # Add languages without roots (like Idoling)
+        languages_without_roots = ["idoling"]
+        for code in languages_without_roots:
+            if code not in language_codes:
+                connection.execute(
+                    """
+                    INSERT INTO languages(code, name, parser)
+                    VALUES (?, ?, 'greedy')
+                    ON CONFLICT(code) DO UPDATE SET name = excluded.name
+                    """,
+                    (code, LANGUAGE_NAMES.get(code, code.capitalize())),
+                )
+
         for lapag_root, meaning in semantic_roots.items():
             connection.execute(
                 """
@@ -302,7 +317,9 @@ def seed() -> None:
 
         connection.commit()
 
-    print(f"Languages seeded: {len(language_codes)}")
+    languages_without_roots = ["idoling"]
+    total_languages = len(language_codes) + len(languages_without_roots)
+    print(f"Languages seeded: {total_languages}")
     print(f"Semantic roots seeded: {len(semantic_roots)}")
     print(f"Root equivalences seeded: {len(translation_rows) * len(language_codes)}")
 

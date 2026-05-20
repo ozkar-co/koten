@@ -13,15 +13,15 @@ def test_parse_lore_md_keeps_quotes_around_koten_words() -> None:
 
 
 def test_parse_lore_md_renders_standalone_image_routes() -> None:
-    html = parse_lore_md('/api/image/mapa.jpg')
+    html = parse_lore_md('mapa.jpg')
 
-    assert '<img class="lore-image" src="/api/image/mapa.jpg"' in html
+    assert '<img class="lore-image" src="/image/mapa.jpg"' in html
 
 
 def test_parse_lore_md_normalizes_markdown_image_sources() -> None:
     html = parse_lore_md('![Mapa](mapa.jpg)')
 
-    assert '<img class="lore-image" src="/api/image/mapa.jpg"' in html
+    assert '<img class="lore-image" src="/image/mapa.jpg"' in html
 
 
 def test_parse_lore_md_restores_more_than_ten_placeholders() -> None:
@@ -40,8 +40,8 @@ def test_top_level_lore_document_renders() -> None:
     response = client.get('/lore/koten')
 
     assert response.status_code == 200
-    assert '/api/image/mapa.jpg' in response.text
-    assert '/api/word/lapag/shoseg' in response.text
+    assert '/image/mapa.jpg' in response.text
+    assert '/word/lapag/shoseg' in response.text
 
 
 def test_dynamic_section_document_renders() -> None:
