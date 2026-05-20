@@ -21,4 +21,5 @@ Son muchas y muy variadas las formas de vida que habitan este mundo. Entre las r
 - [Gomur](gomur.md)
 - [Torka](torka.md)
 - [Krom](krom.md)
-- [Marog](marog.md)
+- [Tofa](tofa.md)
+- [Sotif](sotif.md)
