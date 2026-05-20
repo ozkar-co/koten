@@ -45,7 +45,7 @@ _KOTEN_RE = re.compile(
     r"/(?:(" + _PREFIX_PATTERN + r")/)?([^/\s][^/]*)/",
 )
 _IMAGE_LINE_RE = re.compile(
-    r"(?m)^(?P<indent>[ \t]*)(?P<source>(?:/api/image/)?[A-Za-z0-9_.-]+\.(?:png|jpg|jpeg|gif|webp)(?:\?type=(?:full|thumb))?)[ \t]*$"
+    r"(?m)^(?P<indent>[ \t]*)(?P<source>[A-Za-z0-9_.-]+\.(?:png|jpg|jpeg|gif|webp)(?:\?type=(?:full|thumb))??)[ \t]*$"
 )
 _MARKDOWN_IMAGE_RE = re.compile(
     r"!\[(?P<alt>[^\]]*)\]\((?P<source>[^)\s]+)\)"

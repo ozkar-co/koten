@@ -4,7 +4,7 @@ Es un mundo que sustenta diversas formas de vida, que hacen lo que pueden para s
 
 El mundo no ha sido explorado en su totalidad aun hay muchos misterios por descubrir y poco a poco cada vez son mas los aventureros que se arriesgan a buscar fortuna y atreverse a ir mas alla de los confines del mundo conocido.
 
-/api/image/mapa.jpg
+mapa.jpg
 
 El mas grande continente recibe el nombre de /kanoga/ y en su mitad oeste concentra casi toda la poblacion, al este las tierras se van haciendo mas y mas frias, las leyendas hablan de un mar de hielo pero nadie que se haya aventureado por esas tierras ha vuelto con vida. al noroeste, en el mar que llaman /topats/ se encuentra el archipielago /tapiga/ un lugar de tierras fertiles y dias de paz
 

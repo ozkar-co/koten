@@ -85,7 +85,7 @@ def get_image_meta(filename: str) -> dict:
     
     return {
         "name": stem,
-        "full": f"/api/image/{stem}?type=full",
-        "thumb": f"/api/image/{stem}?type=thumb" if thumb_path.exists() else f"/api/image/{stem}?type=full",
+        "full": f"/image/{stem}?type=full",
+        "thumb": f"/image/{stem}?type=thumb" if thumb_path.exists() else f"/image/{stem}?type=full",
         "has_thumb": thumb_path.exists(),
     }

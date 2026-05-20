@@ -21,7 +21,7 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_ROOTS = [PROJECT_ROOT / "lore"]
-ALLOWED_STANDALONE_PREFIXES = ("/api/image/",)
+ALLOWED_STANDALONE_PREFIXES = ()
 KOTEN_TOKEN_RE = re.compile(
     r"/(?:(?P<prefix>[A-Z])/(?P<prefix_body>[^/\n]+)|(?P<body>[^/\n]+))/"
 )
