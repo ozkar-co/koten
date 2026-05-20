@@ -12,7 +12,7 @@ Son grandes conocedores de las artes místicas. Consideran el conocimiento un re
 
 Suelen ser bastante amables con todas las razas, excepto con los /nugot/, a los que consideran portadores de muerte. Además, ven con recelo a los /denjom/, pues su estilo de vida despreocupado y de dudosa moralidad va en contra de lo que ellos consideran correcto. Aun así, no le dan demasiada relevancia, ya que tienen una filosofía de no entrometerse en asuntos ajenos.
 
-Hablan el /dekáyun/, lengua que sienten propia, además del /idóling/, la lengua que llaman de los ancestros o de los sabios, que es la lengua con la que funciona toda la magia. Su gobierno está encabezado por dos reyes, uno para cada etnia, quien, además de ser una figura pública, participa en la toma de decisiones más importantes. Luego están los ministros encargados de los oficios, los gobernadores que mandan sobre cada territorio, y los sacerdotes encargados de la religión y la cultura.
+Hablan el /dekayun/, lengua que sienten propia, además del /idoling/, la lengua que llaman de los ancestros o de los sabios, que es la lengua con la que funciona toda la magia. Su gobierno está encabezado por dos reyes, uno para cada etnia, quien, además de ser una figura pública, participa en la toma de decisiones más importantes. Luego están los ministros encargados de los oficios, los gobernadores que mandan sobre cada territorio, y los sacerdotes encargados de la religión y la cultura.
 
 Tienen poca fertilidad, lo que los ha llevado a ser una sociedad muy promiscua. El matrimonio solo aparece una vez hay un embarazo y dura hasta la emancipación del hijo.
 

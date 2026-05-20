@@ -25,6 +25,16 @@ def _resolve_lore_path(section: str, slug: str) -> Path:
     return path
 
 
+def _resolve_top_level_lore_path(slug: str) -> Path:
+    """Return the path for a top-level lore file, raising 404 if not found."""
+    path = (_LORE_DIR / f"{slug}.md").resolve()
+    if not str(path).startswith(str(_LORE_DIR.resolve())):
+        raise HTTPException(status_code=400, detail="Invalid path")
+    if not path.exists() or path.parent != _LORE_DIR.resolve():
+        raise HTTPException(status_code=404, detail=f"Lore file not found: {slug}")
+    return path
+
+
 def _get_section_index(section: str) -> list[dict]:
     """Return list of documents in a section."""
     section_dir = (_LORE_DIR / section).resolve()
@@ -89,6 +99,13 @@ def get_race_lore(slug: str) -> HTMLResponse:
 def get_language_lore(slug: str) -> HTMLResponse:
     """Return rendered HTML for a language lore document."""
     path = _resolve_lore_path("lang", slug)
+    return HTMLResponse(content=parse_lore_file(str(path)))
+
+
+@router.get("/{slug}", response_class=HTMLResponse)
+def get_top_level_lore(slug: str) -> HTMLResponse:
+    """Return rendered HTML for a top-level lore document."""
+    path = _resolve_top_level_lore_path(slug)
     return HTMLResponse(content=parse_lore_file(str(path)))
 
 

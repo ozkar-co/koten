@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from io import BytesIO
+import unicodedata
 from urllib.parse import unquote
 
 from fastapi import APIRouter, HTTPException, Query
@@ -12,6 +13,11 @@ from koten.symbols import SymbolGenerator
 
 router = APIRouter(tags=["symbols"])
 generator = SymbolGenerator()
+
+
+def _normalize_render_word(word: str) -> str:
+    normalized = unicodedata.normalize("NFD", word)
+    return "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn")
 
 
 @router.get("/word/{language}/{word}")
@@ -40,7 +46,7 @@ def generate_word_image(
         PNG image of the rendered word
     """
     try:
-        normalized_word = unquote(word)
+        normalized_word = _normalize_render_word(unquote(word))
         img = generator.generate_word_image(
             normalized_word,
             language,

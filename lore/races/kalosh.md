@@ -2,9 +2,9 @@
 
 También conocidos como mestizos, son el resultado de las mezclas entre las distintas razas. Cuando se parecen mayoritariamente a la raza de alguno de sus padres, se le suele aceptar como miembro de la raza. Pero cuando su apariencia deja en evidencia que es mestizo suele acarrear un poco de estigma en la sociedad, aunque generalmente son bien aceptados.
 
-Solo hay dos razas de las que no existen mestizos, porque no pueden llegar a cruzarse con otras: los /kalchásh/, que ni entre ellos mismos logran reproducirse, y los /drayom/, que tienen una biología completamente diversa.
+Solo hay dos razas de las que no existen mestizos, porque no pueden llegar a cruzarse con otras: los /kalchash/, que ni entre ellos mismos logran reproducirse, y los /drayom/, que tienen una biología completamente diversa.
 
-Hay dos razas donde el desprecio a los mestizos es muy marcado y suele acarrear graves consecuencias, tanto para la criatura como para sus padres. Por un lado, los /elémir/, para los que es una profanación de su condición de celestial y conlleva un castigo al nivel de los herejes. Por otra parte, están los /denjom/, los cuales ven a los mestizos como una abominación que no solo debe ser evitada, sino exterminada del mundo, al menos en lo que corresponde a los de su raza.
+Hay dos razas donde el desprecio a los mestizos es muy marcado y suele acarrear graves consecuencias, tanto para la criatura como para sus padres. Por un lado, los /elemir/, para los que es una profanación de su condición de celestial y conlleva un castigo al nivel de los herejes. Por otra parte, están los /denjom/, los cuales ven a los mestizos como una abominación que no solo debe ser evitada, sino exterminada del mundo, al menos en lo que corresponde a los de su raza.
 
 Existen distintos niveles de aceptación aun entre las mismas razas. Así que depende totalmente del lugar en el mundo en que se encuentre, de la sociedad que lo rodea, pero en especial de las condiciones específicas de su historia y su ser lo que define la posición o aceptación en 
 sociedad de un mestizo. Por lo general, deben labrarse su propio nombre y demostrar su valía.

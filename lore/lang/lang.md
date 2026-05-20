@@ -4,7 +4,7 @@ La mayoría de lenguas de /koten/ siguen un sistema similar en el que los sonido
 
 A estos sonidos consonantes y sus agrupaciones se les da el nombre de raíces, cada raíz encierra algunos significados relacionados y permite interpretar el sentido de una palabra aunque sea desconocida, o traducir palabras a partir de raíces relacionadas.
 
-El /négelch/ tiene algunas palabras que usan este sistema, pero también palabras provenientes de otro idioma, uno antiguo, del que ya no existen registros (Inglés). El /idoling/ es el único idioma que no usa para nada el sistema de raíces, es el idioma de la magia y muy pocos lo dominan. (Ido)
+El /negelch/ tiene algunas palabras que usan este sistema, pero también palabras provenientes de otro idioma, uno antiguo, del que ya no existen registros (Inglés). El /idoling/ es el único idioma que no usa para nada el sistema de raíces, es el idioma de la magia y muy pocos lo dominan. (Ido)
 
 Para representar las raíces se usará su sonido aproximado y la siguiente tabla de equivalencias entre lenguajes, se parte de la lengua más extendida.
 

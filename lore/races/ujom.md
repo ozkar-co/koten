@@ -10,7 +10,7 @@ Presentan una gran diversidad física con muchos colores de piel, cabello y ojos
 
 Se desempeñan muy bien en casi cualquier profesión, pero destacan especialmente como cazadores, campesinos, pastores, escribas y en todas las formas de arte. Tienen una gran capacidad de aprender y disposición para el trabajo.
 
-Hay un pequeño grupo de radicales que intenta crear una cultura /ujóm/ unificada bajo la premisa de que ellos son los más antiguos habitantes del mundo y tienen derecho a gobernarlo.
+Hay un pequeño grupo de radicales que intenta crear una cultura /ujom/ unificada bajo la premisa de que ellos son los más antiguos habitantes del mundo y tienen derecho a gobernarlo.
 
 ## Ficha Técnica
 

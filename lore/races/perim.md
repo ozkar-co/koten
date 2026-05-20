@@ -1,6 +1,6 @@
 # Perim
 
-Casi tan abundantes como los /ujóm/, los /perím/ suelen habitar cerca de las costas o en las riberas de los ríos. Han desarrollado su cultura alrededor de la navegación, la pesca y la fiesta.
+Casi tan abundantes como los /ujom/, los /perim/ suelen habitar cerca de las costas o en las riberas de los ríos. Han desarrollado su cultura alrededor de la navegación, la pesca y la fiesta.
 
 Suelen vivir hasta los 70 /ani/. Comienzan su vida adulta a los 15 /ani/ y empiezan su vejez a los 55 /ani/.
 
@@ -10,15 +10,15 @@ Gustan de vivir una vida tranquila, de poco trabajo y mucha fiesta. Destacan com
 
 Por sus propios principios jamás se dedicarían a ser esclavistas. Hay trabajos en los que no se les suele ver, pues los consideran demasiado laboriosos o inconvenientes: forjador, ingeniero, escriba, pastor, hechicero o soldado.
 
-Acogen en sus poblados a gente de todas las razas. Es con los /ujóm/ con los que más suelen convivir, o con los /denjos/, aunque estos últimos no suelen quedarse por mucho tiempo. Tienen muy buenas relaciones comerciales con los /nerum/ y los /alish/, incluso algunos se han ido a vivir con ellos a las islas /tapigá/.
+Acogen en sus poblados a gente de todas las razas. Es con los /ujom/ con los que más suelen convivir, o con los /denjos/, aunque estos últimos no suelen quedarse por mucho tiempo. Tienen muy buenas relaciones comerciales con los /nerum/ y los /alish/, incluso algunos se han ido a vivir con ellos a las islas /tapiga/.
 
-Viven en tribus matriarcales. Son famosos por los brebajes alcohólicos que preparan, especialmente por el ron. Valoran por encima de cualquier cosa la libertad y el matrimonio. Su pena máxima es el destierro en un bote sin remos en el /topósme/, el mar que se extiende en los confines oeste del mundo.
+Viven en tribus matriarcales. Son famosos por los brebajes alcohólicos que preparan, especialmente por el ron. Valoran por encima de cualquier cosa la libertad y el matrimonio. Su pena máxima es el destierro en un bote sin remos en el /toposme/, el mar que se extiende en los confines oeste del mundo.
 
 Tienen un amplio panteón de dioses, donde incluso entran los dioses de otras culturas. Cada tribu tiene su propio patrono y sus propios rituales. Aun así, tienen una diosa principal: /Fik/, la diosa del mar, que está casada con /Kog/, el dios de la tierra, y de cuya unión nacen todos los seres vivientes.
 
 Creen que al morir van a reunirse con /Fik/ y /Kog/. Sus rituales funerarios suelen atar con rocas ceremoniales los cuerpos y enviarlos a las profundidades del mar o, si no es posible, enterarlos en fosas. A sus muertos los recuerdan mediante canciones y en festivales bastante alegres.
 
-Hablan el /lapág/ principalmente, pero llegan a dominar diversas lenguas en sus viajes.
+Hablan el /lapag/ principalmente, pero llegan a dominar diversas lenguas en sus viajes.
 
 ## Ficha Técnica
 

@@ -6,7 +6,7 @@ Viven aproximadamente 120 /ani/ y conservan su fuerza hasta el último de sus d�
 
 Su principal característica física es su cuerpo escamado, que puede presentar una gran variedad de colores. Los ojos tienen la pupila alargada verticalmente y la esclerótica amarilla. Producen dentro de ellos un aceite combustible, a veces ácido, que pueden llegar a escupir, en ocasiones involuntariamente.
 
-Nunca se ha llegado a ver un /drayim/ navegante o pirata, y posiblemente nadie quiera subirse a un barco con uno. No suelen ejercer la hechicería. No destacan como artistas ni se dedican a ser escribas. Es muy raro también llegar a ver un /drayím/ que se dedique a ser ladrón. En cambio, destacan como forjadores, alquimistas e ingenieros. Son grandes cazadores y carniceros. Sus preparaciones con carne son famosas por todo el mundo. También son buenos soldados y artesanos.
+Nunca se ha llegado a ver un /drayim/ navegante o pirata, y posiblemente nadie quiera subirse a un barco con uno. No suelen ejercer la hechicería. No destacan como artistas ni se dedican a ser escribas. Es muy raro también llegar a ver un /drayim/ que se dedique a ser ladrón. En cambio, destacan como forjadores, alquimistas e ingenieros. Son grandes cazadores y carniceros. Sus preparaciones con carne son famosas por todo el mundo. También son buenos soldados y artesanos.
 
 Se la llevan muy bien con casi todas las razas. Dan la bienvenida en su cultura a toda la gente, pero nadie se adapta a las condiciones extremas de su estilo de vida.
 

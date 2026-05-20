@@ -22,7 +22,7 @@ Adoran a los gatos. Saben que entre ellos hay /nekles/, a los que consideran dio
 
 Creen en la reencarnación. Tienen un complejo ciclo de reencarnaciones que termina con la reencarnación como gato, luego de la cual pasan al cielo de los gatos. Cuando un /denjom/ muere, su cuerpo es quemado, excepto si se trata de un sacerdote, al cual le dan un trato similar al de los gatos.
 
-ciclo_reencarnacion.jpg
+/api/image/ciclo_reencarnacion.png
 
 Una vida interesante y respetuosa de sus leyes les garantiza "avanzar" en el ciclo de reencarnaciones, mientras que incumplir con su deber o llevar una vida aburrida los condena a "retroceder" en el ciclo de reencarnaciones.
 

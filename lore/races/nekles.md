@@ -1,6 +1,6 @@
 # Nekles
 
-Son seres místicos que habitan el mundo desde antes de la llegada de las razas actuales. Tienen la apariencia de gatos comunes, pero poseen una inteligencia superior y la capacidad de hablar la lengua de los sabios: /idóling/.
+Son seres místicos que habitan el mundo desde antes de la llegada de las razas actuales. Tienen la apariencia de gatos comunes, pero poseen una inteligencia superior y la capacidad de hablar la lengua de los sabios: /idoling/.
 
 No tienen una sociedad organizada ni ciudades. Viven dispersos por el mundo, observando el caminar de las demás razas. Son considerados dioses por los /denjom/ y respetados como "eternos" por los gigantes /kalchad/.
 
