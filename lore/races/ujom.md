@@ -2,7 +2,7 @@
 
 Esta raza, que recibe diversos nombres en diversas lenguas, es sin lugar a dudas la más extendida y abundante del mundo.
 
-Viven en promedio /50 ani/. A los /10 ani/ alcanzan la mayoría de edad y a los /35 ani/ comienza su declive hacia la vejez.
+Viven en promedio /50 /ani/. A los /10 /ani/ alcanzan la mayoría de edad y a los /35 /ani/ comienza su declive hacia la vejez.
 
 No son especialmente fuertes, pero se caracterizan por su capacidad de adaptarse y sociabilidad. Se han ganado un lugar dentro de las sociedades de todas las demás razas, mezcándose con sus culturas.
 

@@ -60,6 +60,10 @@ def tokenize_goxjix(text: str, root_mapping: dict[str, list]) -> list[str]:
             if char in root_mapping:
                 tokens.append(char)
             i += 1
+        elif char == "'":
+            # Comilla = silencio explícito
+            tokens.append("_")
+            i += 1
         elif char in vowels:
             # Check for vowel pair first
             if i + 1 < len(text) and text[i+1] in vowels:

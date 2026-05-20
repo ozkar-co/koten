@@ -2,7 +2,7 @@
 
 No se sabe cuántos son. Se cree que vienen de /chóreg/, las tierras malditas. Se han estado expandiendo por las llanuras de todo /koten/, sembrando el terror por donde pasan. Viven en campamentos.
 
-Viven en promedio hasta los /40 ani/. Difícilmente llegan a la vejez. En cuanto empiezan a valerse por sí mismos, son abandonados a su suerte.
+Viven en promedio hasta los /40 /ani/. Difícilmente llegan a la vejez. En cuanto empiezan a valerse por sí mismos, son abandonados a su suerte.
 
 Casi tan altos como los /alish/, son formidos y de cuerpo musculoso, ya que desde niños se entrenan para el combate. Suelen tener cabello largo, pues es signo de poder, ya que solo se lo cortan cuando son derrotados en combate. Su piel abarca toda clase de colores. Los más comunes son los tonos terracota, verdes y azulados.
 

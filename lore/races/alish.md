@@ -2,7 +2,7 @@
 
 Mucho menos abundante que otros grupos, divididos en dos etnias particulares, habitan principalmente en los bosques. Se concentra la gran mayoría en el bosque que rodea al río grande /pobijat/, al que ellos llaman en su propia lengua /kekobef/.
 
-Llegan a vivir en promedio hasta los /210 ani/. Aunque completan su desarrollo físico a la edad de /10 ani/, se les considera inmaduros hasta los /30 ani/, edad a la que pueden aspirar a las pruebas de emancipación, un festival que se celebra cada año y en donde pueden tratar de demostrar su valía como adultos. A los /150 ani/ comienza su vejez, que más que un declive físico corresponde a un cambio social.
+Llegan a vivir en promedio hasta los /210 /ani/. Aunque completan su desarrollo físico a la edad de /10 /ani/, se les considera inmaduros hasta los /30 /ani/, edad a la que pueden aspirar a las pruebas de emancipación, un festival que se celebra cada año y en donde pueden tratar de demostrar su valía como adultos. A los /150 /ani/ comienza su vejez, que más que un declive físico corresponde a un cambio social.
 
 Son muy altos, llegando a superar los /13 mash/. Presentan principalmente dos grupos étnicos que rara vez se juntan: los /setach/, hijos del sol, de piel blanca, cabellos rubios y ojos verdes; y los /kutach/, hijos de la luna, de piel oscura, cabellos blancos y ojos azules. Ambos grupos presentan facciones delicadas y andróginas, tanto hombres como mujeres. También tienen orejas largas y puntiagudas.
 

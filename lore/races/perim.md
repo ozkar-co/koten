@@ -2,7 +2,7 @@
 
 Casi tan abundantes como los /ujóm/, los /perím/ suelen habitar cerca de las costas o en las riberas de los ríos. Han desarrollado su cultura alrededor de la navegación, la pesca y la fiesta.
 
-Suelen vivir hasta los /70 ani/. Comienzan su vida adulta a los /15 ani/ y empiezan su vejez a los /55 ani/.
+Suelen vivir hasta los /70 /ani/. Comienzan su vida adulta a los /15 /ani/ y empiezan su vejez a los /55 /ani/.
 
 Presentan diversos colores de piel, con una marcada tendencia a los colores oscuros. Cabello y ojos abarcan una amplia gama de colores. Saben moverse sin hacer ruido y pasar desapercibidos. Son de pequeña estatura; los más altos no superan los /6 mash/.
 

@@ -2,7 +2,7 @@
 
 Menos numerosos que los /perim/, pero todavía muy abundantes, esta raza vive principalmente dentro de las montañas, donde construyen ruidosas ciudades, intrincados sistemas de túneles y profundas minas.
 
-Viven hasta los /80 ani/. Desde los /10 ani/ ya comienzan a trabajar, generalmente en las minas. Aunque a los /70 ani/ comienza su vejez, trabajan prácticamente hasta el último de sus días.
+Viven hasta los /80 /ani/. Desde los /10 /ani/ ya comienzan a trabajar, generalmente en las minas. Aunque a los /70 /ani/ comienza su vejez, trabajan prácticamente hasta el último de sus días.
 
 Son bajos de estatura, una de las razas más pequeñas del mundo. Son robustos, de piernas y brazos cortos y gruesos, cabeza ancha y cuello corto. Su piel es dura y resistente, de color claro, y tienen vello corporal y facial abundante, tanto en hombres como en mujeres.
 

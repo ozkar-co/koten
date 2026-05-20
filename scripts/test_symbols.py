@@ -14,7 +14,7 @@ from koten.symbols.tokenizers import get_tokenizer
 # Test cases: supports multiple words for the same language
 TEST_CASES = [
     ("lapag", "lapag"),
-    ("goxjix", "gox_jix"),
+    ("goxjix", "gox'jix"),
     ("goxjix", "yuxejai"),
     ("dekayun", "dekayun"),
     ("negelch", "negelch"),
