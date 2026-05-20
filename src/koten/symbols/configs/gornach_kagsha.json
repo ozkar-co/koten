@@ -1,0 +1,24 @@
+{
+  "sheet_file": "gornach-kagsha.png",
+  "symbol_size": 160,
+  "cols": 10,
+  "rows": 3,
+  "writing_mode": "columnar_right",
+  "spacing": { "x": 10, "y": 10 },
+  "trim": { "left": 0, "right": 0, "top": 32, "bottom": 32 },
+  "overlay": {
+    "enabled": false,
+    "roots": [],
+    "blockers": [],
+    "offset_x": 0,
+    "offset_y": 0
+  },
+  "columnar": {
+    "break_token": "-",
+    "draw_break_symbol_in_previous_column": true
+  },
+  "tokenizer": { "separator": " " },
+  "description": "Gornach-Kagsha language character symbols",
+  "notes": "Escritura por columnas de arriba hacia abajo. El token '-' indica salto de columna y se dibuja al final de la columna actual. Cada simbolo representa una silaba o particula con sonido propio. El usuario proporcionara el diccionario de particulas.",
+  "root_mapping": {}
+}

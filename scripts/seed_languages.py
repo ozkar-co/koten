@@ -13,7 +13,7 @@ from koten.db.connection import get_connection
 from koten.db.schema import create_schema
 from koten.linguistics.service import canonical_root
 
-LORE_PATH = Path("lore/lang.md")
+LORE_PATH = Path("lore/lang/lang.md")
 
 LANGUAGE_LABEL_TO_CODE = {
     "lapag": "lapag",
