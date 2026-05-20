@@ -12,9 +12,9 @@ El frontend consume dos conjuntos de APIs complementarios:
 ### Endpoints
 
 ```
-GET /api/image/{filename}         — Get image (default: full size)
-GET /api/image/{filename}?type=thumb  — Get thumbnail or full if unavailable
-GET /api/image/{filename}/meta    — Get image metadata (URLs for thumb + full)
+GET /image/{filename}         — Get image (default: full size)
+GET /image/{filename}?type=thumb  — Get thumbnail or full if unavailable
+GET /image/{filename}/meta    — Get image metadata (URLs for thumb + full)
 ```
 
 ### Image Naming Convention
@@ -29,8 +29,8 @@ If only full exists, thumbnail endpoint falls back to full.
 ```json
 {
   "name": "mapa",
-  "full": "/api/image/mapa?type=full",
-  "thumb": "/api/image/mapa?type=thumb",
+  "full": "/image/mapa?type=full",
+  "thumb": "/image/mapa?type=thumb",
   "has_thumb": true
 }
 ```
@@ -39,10 +39,10 @@ If only full exists, thumbnail endpoint falls back to full.
 
 ```html
 <!-- Full image -->
-<img src="/api/image/mapa?type=full" />
+<img src="/image/mapa?type=full" />
 
 <!-- Thumbnail (or full if thumb not available) -->
-<img src="/api/image/mapa?type=thumb" />
+<img src="/image/mapa?type=thumb" />
 ```
 
 ## Symbol API
@@ -50,14 +50,14 @@ If only full exists, thumbnail endpoint falls back to full.
 ### Endpoints
 
 ```
-GET /api/word/{language}/{word}
-GET /api/word?language={language}&text={word}&spacing_x={int}&spacing_y={int}
+GET /word/{language}/{word}
+GET /word?language={language}&text={word}&spacing_x={int}&spacing_y={int}
 ```
 
 ### Languages
 
 ```
-lapag, goxjix, dekayun, negelch, idoling, jobide, gornach_kagsha
+lapag, goxjix, dekayun, negelsh, idoling, jobide, gornash_kagsha
 ```
 
 ### Response
@@ -69,7 +69,7 @@ lapag, goxjix, dekayun, negelch, idoling, jobide, gornach_kagsha
 ### Example
 
 ```html
-<img src="/api/word/lapag/kamama" alt="kamama" loading="lazy" />
+<img src="/word/lapag/kamama" alt="kamama" loading="lazy" />
 ```
 
 ### Spacing
@@ -79,242 +79,149 @@ lapag, goxjix, dekayun, negelch, idoling, jobide, gornach_kagsha
 
 ## Lore API
 
-### Index & Navigation Endpoints
+### Endpoints
 
 ```
-GET /api/lore/index              — Complete index of all sections
-GET /api/lore/races              — List all races
-GET /api/lore/lang               — List all languages
+GET /lore/{section}/{slug}
+GET /lore/index
+GET /lore/sections
 ```
 
-Response format (index):
-```json
-{
-  "races": [
-    {"slug": "alish", "title": "Alish"},
-    {"slug": "drayim", "title": "Drayim"},
-    ...
-  ],
-  "languages": [
-    {"slug": "lapag", "title": "Lapag"},
-    ...
-  ],
-  "prefixes": {
-    "L": "lapag",
-    "G": "goxjix",
-    ...
-  }
-}
+### Lore File Format
+
+The `/lore/` API automatically parses Markdown with embedded Koten word references:
+
+```markdown
+# World Title
+
+Text with /lapag/ words here. You can also specify language explicitly:
+
+- /L/lapag/
+- /G/goxjix/
+- /D/dekayun/
+- /N/negelsh/
+- /I/idoling/
+- /J/jobide/
+- /K/gornash_kagsha/
+
+Images work with Markdown or standalone:
+
+![alt](filename.png)
+
+filename.png
 ```
 
-### Document Rendering Endpoints
+### Parser Behavior
 
-```
-GET /api/lore/races/{slug}          — Render race lore document
-GET /api/lore/lang/{slug}           — Render language lore document
-GET /api/lore/prefixes              — Get language prefix mappings
-POST /api/lore/render               — Render arbitrary markdown
-```
+1. **Koten words** (`/word/` or `/LANG/word/`) → `<span class="koten-word"><img src="/word/{language}/{word}"></span>`
+2. **Markdown images** (`![alt](file.png)`) → `<img class="lore-image" src="/image/file.png">`
+3. **Standalone images** (filename on its own line) → `<img class="lore-image" src="/image/file.png">`
 
-### Response
-
-**Content-Type:** `text/html` or `application/json`
-
-### Language Prefixes
-
-Single-letter prefix → language code mapping:
-
-```json
-{
-  "L": "lapag",
-  "G": "goxjix",
-  "D": "dekayun",
-  "N": "negelch",
-  "I": "idoling",
-  "J": "jobide",
-  "K": "gornach_kagsha"
-}
-```
-
-### Markdown Syntax (Koten Words)
-
-Within lore markdown documents, reference Koten words using slash notation:
-
-```
-/word/           → implicit Lapag (default)
-/L/word/         → explicit Lapag
-/G/word/         → Gox'jix
-/D/, /N/, /I/, /J/, /K/  → other languages
-```
-
-Example markdown:
-```
-Los /alish/ escuchan el llamado de /G/goxjix/.
-```
-
-### HTML Output
-
-Each word reference is converted to a `<span>` tag with embedded image:
+### Response Format
 
 ```html
-<p>Los <span class="koten-word" data-language="lapag" data-word="alish">
-  <img src="/api/word/lapag/alish" alt="alish" loading="lazy">
-</span> escuchan el llamado de <span class="koten-word" data-language="goxjix" data-word="goxjix">
-  <img src="/api/word/goxjix/goxjix" alt="goxjix" loading="lazy">
-</span>.</p>
+<html>
+  <body>
+    <h1>World Title</h1>
+    <p>Text with <span class="koten-word" data-language="lapag" data-word="lapag">
+      <img src="/word/lapag/lapag" alt="lapag" loading="lazy">
+    </span> words here. ...</p>
+    
+    <img class="lore-image" src="/image/filename.png" alt="filename" loading="lazy">
+  </body>
+</html>
 ```
 
-### Styling
+### Koten Word Parsing Rules
 
-The frontend can style `.koten-word` spans:
+- `/word/` or `/ word/` → Defaults to **lapag**
+- `/L/word/` or `/LANG/word/` → Explicit language (case-sensitive prefix)
+- Word extraction stops at `/`, space, or end of line
+- Accents are normalized (áéíóú → aeio) for rendering
 
-```css
-.koten-word {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 2px;
-}
+### Integration Example
 
-.koten-word img {
-  max-height: 1.5em;
-  width: auto;
-}
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .koten-word {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .koten-word img, .lore-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Fetch and inject lore -->
+    <div id="content"></div>
+    
+    <script>
+        fetch('/lore/koten')
+            .then(r => r.text())
+            .then(html => {
+                document.getElementById('content').innerHTML = html;
+                // <img> tags pointing to /word/... load automatically
+            });
+    </script>
+</body>
+</html>
 ```
 
-## Integration Pattern
+## Character Encoding
 
-### Dynamic Navigation (Recommended)
-
-**Do not maintain hardcoded lists.** Load the index on app startup:
+All language/word parameters should be URL-encoded. Accents are stripped during rendering:
 
 ```javascript
-// On app load
-fetch('/api/lore/index')
-  .then(res => res.json())
-  .then(index => {
-    buildRaceMenu(index.races);      // [{"slug":"alish","title":"Alish"},...] 
-    buildLanguageMenu(index.languages);
-  });
-
-// On menu click
-function viewRace(slug) {
-  fetch(`/api/lore/races/${slug}`)
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('content').innerHTML = html;
-      // <img> tags pointing to /api/word/... load automatically
-    });
-}
-```
-
-### Markdown Links (Ignore)
-
-The markdown files contain links like `[Ujom](ujom.md)`.  
-These are for **documentation purposes only**.  
-The frontend should **block or intercept** these and use its own router instead:
-
-```javascript
-document.addEventListener('click', (e) => {
-  if (e.target.tagName === 'A' && e.target.href.endsWith('.md')) {
-    e.preventDefault();
-    const slug = e.target.href.split('/').pop().replace('.md', '');
-    viewRace(slug); // or viewLanguage(slug)
-  }
-});
-```
-
-Or simpler: just ignore them and build the full menu from the index.
-
----
-
-### 1. Display a Race/Language Document
-
-```javascript
-async function loadRace(raceName) {
-  const response = await fetch(`/api/lore/races/${raceName}`);
-  const html = await response.text();
-  document.getElementById('content').innerHTML = html;
-  // Images load from /api/word/... automatically
-}
-```
-
-### 2. Render Custom Markdown
-
-```javascript
-async function renderCustom(markdownText) {
-  const response = await fetch('/api/lore/render', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ text: markdownText })
-  });
-  const html = await response.text();
-  document.getElementById('content').innerHTML = html;
-}
-```
-
-### 3. Display Standalone Word Image
-
-```javascript
-function getWordImageUrl(language, word) {
-  return `/api/word/${language}/${word}`;
+function encodeWord(word) {
+    // Strip accents
+    const normalized = word.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    return encodeURIComponent(normalized);
 }
 
 // Usage
-<img src="/api/word/lapag/kamama" alt="kamama" />
-```
-
-## Special Cases
-
-### Jobid'e (4-syllable circular layout)
-
-Input: `jobid'e` (7 chars)  
-Internal: `jobid'e'` (8 chars, apostrophe padded)  
-Output: 320×320 px circular arrangement  
-
-User writes naturally; padding is automatic.
-
-### Gox'jix (apostrophe as silence)
-
-The apostrophe `'` in Gox'jix text is treated as silencio (silence marker):
-
-```
-/G/sat'ue/  → goxjix word with internal silence
-```
-
-### Gornach-Kagsha (columnbreak token)
-
-Hyphen `-` marks column breaks in columnar layout:
-
-```
-/K/gar-kag/  → two columns: [gar] [kag]
-```
-
-## Error Handling
-
-### 404 — Document/Word Not Found
-
-```json
-{
-  "detail": "Lore file not found: races/unknown"
+function buildWordImageUrl(language, word) {
+    return `/word/${language}/${encodeWord(word)}`;
 }
+
+// Examples
+buildWordImageUrl("lapag", "kamama")          // → /word/lapag/kamama
+buildWordImageUrl("goxjix", "goxjix")          // → /word/goxjix/goxjix
+buildWordImageUrl("dekayun", "néshta")         // → /word/dekayun/neshta (accent stripped)
 ```
-
-### 400 — Invalid Path (traversal attempt)
-
-```json
-{
-  "detail": "Invalid path"
-}
-```
-
-### Missing Word in Language
-
-No error; endpoint attempts to render what's available.  
-Tokenizer skips unmapped characters.
 
 ## Performance Notes
 
-- Symbol images are generated on-demand; cache them on the frontend if needed
-- Lore documents render once; HTML is static + embedded images
-- All images use `loading="lazy"` for deferred loading
-- Image size typically 300–800 px wide, 160–330 px tall
+- Symbol images are generated on-demand and should be cached by the frontend
+- Lore documents are rendered on-demand (consider caching if heavy use)
+- Image files (full + thumbnails) should be cached aggressively since they're static
+
+## Debugging
+
+### Check available languages
+
+```bash
+curl https://koten-api.ozkr.net/lexicon/languages | jq
+```
+
+### Generate a word image directly
+
+```bash
+curl https://koten-api.ozkr.net/word/lapag/kamama -o kamama.png
+```
+
+### Fetch lore document
+
+```bash
+curl https://koten-api.ozkr.net/lore/koten
+```
+
+### Check image metadata
+
+```bash
+curl https://koten-api.ozkr.net/image/mapa/meta | jq
+```

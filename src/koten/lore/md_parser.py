@@ -12,7 +12,7 @@ Koten word syntax within MD text:
     /K/word/        → Gornash-Kagsha
 
 Output: HTML with <span class="koten-word"> tags that the frontend
-can use to request the symbol image from /api/word/{language}/{word}.
+can use to request the symbol image from /word/{language}/{word}.
 """
 
 from __future__ import annotations
