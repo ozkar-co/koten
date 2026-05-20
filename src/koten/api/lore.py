@@ -1,6 +1,7 @@
 """Lore document endpoints — return rendered HTML from Markdown lore files."""
 
 from pathlib import Path
+import re
 
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import HTMLResponse
@@ -11,12 +12,38 @@ router = APIRouter(prefix="/lore", tags=["lore"])
 
 # Root directories (resolved at import time)
 _LORE_DIR = Path(__file__).parent.parent.parent.parent / "lore"
-_IMAGES_DIR = Path(__file__).parent.parent.parent.parent / "data" / "images"
+_SECTION_RE = re.compile(r"^[a-z0-9_-]+$")
+
+
+def _resolve_section_dir(section: str) -> Path:
+    """Resolve and validate a lore section directory."""
+    if not _SECTION_RE.match(section):
+        raise HTTPException(status_code=400, detail="Invalid section")
+
+    section_dir = (_LORE_DIR / section).resolve()
+    if not str(section_dir).startswith(str(_LORE_DIR.resolve())):
+        raise HTTPException(status_code=400, detail="Invalid path")
+    if not section_dir.exists() or not section_dir.is_dir():
+        raise HTTPException(status_code=404, detail=f"Section not found: {section}")
+    return section_dir
+
+
+def _list_sections() -> list[str]:
+    """Return all first-level section directory names under lore/."""
+    if not _LORE_DIR.exists():
+        return []
+    sections = [
+        item.name
+        for item in _LORE_DIR.iterdir()
+        if item.is_dir() and not item.name.startswith(".")
+    ]
+    return sorted(sections)
 
 
 def _resolve_lore_path(section: str, slug: str) -> Path:
     """Return the path for a lore file, raising 404 if not found."""
-    path = (_LORE_DIR / section / f"{slug}.md").resolve()
+    section_dir = _resolve_section_dir(section)
+    path = (section_dir / f"{slug}.md").resolve()
     # Guard against path traversal
     if not str(path).startswith(str(_LORE_DIR.resolve())):
         raise HTTPException(status_code=400, detail="Invalid path")
@@ -37,9 +64,7 @@ def _resolve_top_level_lore_path(slug: str) -> Path:
 
 def _get_section_index(section: str) -> list[dict]:
     """Return list of documents in a section."""
-    section_dir = (_LORE_DIR / section).resolve()
-    if not section_dir.exists():
-        raise HTTPException(status_code=404, detail=f"Section not found: {section}")
+    section_dir = _resolve_section_dir(section)
     
     docs = []
     for md_file in sorted(section_dir.glob("*.md")):
@@ -62,18 +87,24 @@ def _get_section_index(section: str) -> list[dict]:
 @router.get("/index")
 def get_lore_index() -> dict:
     """Return index of all lore sections and documents."""
-    try:
-        races = _get_section_index("races")
-        languages = _get_section_index("lang")
-    except HTTPException:
-        races = []
-        languages = []
+    sections_index: dict[str, list[dict]] = {}
+    for section in _list_sections():
+        sections_index[section] = _get_section_index(section)
     
     return {
-        "races": races,
-        "languages": languages,
+        # Backward compatible keys
+        "races": sections_index.get("races", []),
+        "languages": sections_index.get("lang", []),
+        # Dynamic section index
+        "sections": sections_index,
         "prefixes": LANGUAGE_PREFIXES,
     }
+
+
+@router.get("/sections")
+def list_sections() -> dict[str, list[str]]:
+    """Return all lore section names discovered under lore/."""
+    return {"sections": _list_sections()}
 
 
 @router.get("/races")
@@ -102,10 +133,10 @@ def get_language_lore(slug: str) -> HTMLResponse:
     return HTMLResponse(content=parse_lore_file(str(path)))
 
 
-@router.get("/{slug}", response_class=HTMLResponse)
-def get_top_level_lore(slug: str) -> HTMLResponse:
-    """Return rendered HTML for a top-level lore document."""
-    path = _resolve_top_level_lore_path(slug)
+@router.get("/{section}/{slug}", response_class=HTMLResponse)
+def get_section_lore(section: str, slug: str) -> HTMLResponse:
+    """Return rendered HTML for any lore section document."""
+    path = _resolve_lore_path(section, slug)
     return HTMLResponse(content=parse_lore_file(str(path)))
 
 
@@ -123,3 +154,10 @@ def render_markdown(body: dict) -> HTMLResponse:
     """
     text = body.get("text", "")
     return HTMLResponse(content=parse_lore_md(text))
+
+
+@router.get("/{slug}", response_class=HTMLResponse)
+def get_top_level_lore(slug: str) -> HTMLResponse:
+    """Return rendered HTML for a top-level lore document."""
+    path = _resolve_top_level_lore_path(slug)
+    return HTMLResponse(content=parse_lore_file(str(path)))

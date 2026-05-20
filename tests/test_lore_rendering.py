@@ -26,3 +26,24 @@ def test_top_level_lore_document_renders() -> None:
     assert response.status_code == 200
     assert '/api/image/mapa.jpg' in response.text
     assert '/api/word/lapag/choseg' in response.text
+
+
+def test_dynamic_section_document_renders() -> None:
+    client = TestClient(app)
+
+    response = client.get('/lore/rules/rules')
+
+    assert response.status_code == 200
+    assert '<h1>Rules</h1>' in response.text
+
+
+def test_index_includes_dynamic_rules_section() -> None:
+    client = TestClient(app)
+
+    response = client.get('/lore/index')
+
+    assert response.status_code == 200
+    payload = response.json()
+    assert 'sections' in payload
+    assert 'rules' in payload['sections']
+    assert any(doc['slug'] == 'rules' for doc in payload['sections']['rules'])
