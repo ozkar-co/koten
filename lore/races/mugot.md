@@ -18,11 +18,11 @@ Los coliseos son para ellos recintos sagrados. Creen que todo el mundo en sí mi
 
 No ven con buenos ojos la magia. Es algo para cobardes. Es pelear sucio. Aun así, tienen algunos rituales para mejorarse y modificar su cuerpo. También tienen un oscuro ritual para crear a los /gul ragor/, o como se les conoce en el resto del mundo, /klof/: devoradores de hombres.
 
-A estos últimos, al igual que a unas pequeñas criaturas llamadas /shatar/ o /skotur/, los tienen completamente esclavizados.
+A estos últimos, al igual que a unas pequeñas criaturas llamadas /shatar/ o /shotur/, los tienen completamente esclavizados.
 
 Los /klof/ son irracionales, muy salvajes y agresivos. Atacan, despedazan y devoran a sus presas. Se mueven en jaurías y, al igual que sus amos, no parecen obedecer otra regla que la de la violencia. Llegan incluso a atacar a los mismos /mugot/.
 
-Los /skotur/ son menos animales. En tamaño no superan los /5 mash/. Su apariencia se asemeja a la de los /ujóm/, pero muy deformada. Logran comunicarse con frases muy simples y no parecen tener demasiada inteligencia. Son usados en el servicio doméstico y, aunque desprecian a sus amos, parecen resignados a obedecerles.
+Los /shotur/ son menos animales. En tamaño no superan los /5 mash/. Su apariencia se asemeja a la de los /ujóm/, pero muy deformada. Logran comunicarse con frases muy simples y no parecen tener demasiada inteligencia. Son usados en el servicio doméstico y, aunque desprecian a sus amos, parecen resignados a obedecerles.
 
 A los esclavos rara vez los usan en batalla. Son más usados en los campamentos para las tareas mínimas de higiene, construcción y alimentación. Pero la tarea para la que más los usan es para su entretenimiento, que a veces puede ser bastante cruel y despiadado.
 

@@ -1,4 +1,8 @@
-# Gomur
+# Shotur
+
+También llamados /shatar/, los /shotur/ son pequeñas criaturas esclavizadas por los /mugot/. No superan los /5 mash/ y su apariencia recuerda a la de los /ujóm/, aunque con rasgos marcadamente deformados.
+
+Pueden comunicarse con frases simples y muestran una inteligencia limitada. Cumplen tareas de servicio doméstico en los campamentos /mugot/ y, aunque desprecian a sus amos, suelen vivir resignados a obedecer.
 
 ## Ficha Técnica
 

@@ -18,8 +18,8 @@ Son muchas y muy variadas las formas de vida que habitan este mundo. Entre las r
 
 ## Razas No Jugables
 
-- [Gomur](gomur.md)
-- [Torka](torka.md)
-- [Krom](krom.md)
+- [Shotur](shotur.md)
+- [Yodki](yodki.md)
+- [Klof](klof.md)
 - [Tofa](tofa.md)
 - [Sotif](sotif.md)

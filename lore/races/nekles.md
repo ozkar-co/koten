@@ -6,6 +6,8 @@ No tienen una sociedad organizada ni ciudades. Viven dispersos por el mundo, obs
 
 Viven por siglos y rara vez intervienen con los asuntos del mundo. No se sabe mucho más de ellos. Hay momentos de la historia en los que han intervenido, pero se desconocen los motivos que los pudieran llevar a ello. Para la mayoría de las razas, son simplemente un mito.
 
+Entre las pocas criaturas con las que mantienen una mala relación destacan los /yodki/. Casi nada se sabe de esa enemistad, salvo que es antigua y que incluso los /nekles/ prefieren no hablar de ella.
+
 ## Ficha Técnica
 
 ### Nombres en idiomas

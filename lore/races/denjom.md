@@ -28,6 +28,8 @@ Una vida interesante y respetuosa de sus leyes les garantiza "avanzar" en el cic
 
 El comportamiento de los gatos es una inspiración para ellos. Tratan de imitarlos, por eso llevan una vida nocturna, despreocupada y juguetona.
 
+Entre sus muchas supersticiones ocupan un lugar especial los /yodki/, criaturas que la mayoría cree imaginarias, pero que aun así inspiran un miedo inmenso. En sus relatos se los presenta como presencias funestas de fuego y oscuridad, ligadas a montañas lejanas y noches de mal agüero.
+
 ## Ficha Técnica
 
 ### Nombres en idiomas

@@ -16,6 +16,8 @@ Viven de forma seminómada. Se instalan por temporadas en una zona y, cuando han
 
 En su religión adoran el fuego. El sol es para ellos el fuego primordial. Cada ser lleva en su interior un fuego que es lo que le da la vida, alimentado por su aceite interior. Las obras buenas y malas afectan la calidad de su aceite y, por tanto, la fuerza de su fuego interno. Al morir pasan a otro plano donde deberán purificar su aceite antes de arder eternamente en el cielo junto al sol. Cada /drayim/ lleva una lámpara que refleja el estado de su fuego interno y siempre está encendida. Se fían mucho de la adivinación, especialmente mirando el fuego. Al morir queman los cuerpos, signo de purificación, y un pequeño puñado de cenizas son conservados por su familia en un baúl.
 
+Guardan además un profundo respeto por unas criaturas llamadas /yodki/, aves gigantescas que escupen fuego y habitan en las cercanías de los volcanes. Los /drayim/ se saben descendientes de ellas, por lo que las consideran seres ancestrales y dignos de gran reverencia. Encontrarse con una de estas criaturas es visto como un augurio extraordinario.
+
 ## Ficha Técnica
 
 ### Nombres en idiomas
