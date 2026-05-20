@@ -47,7 +47,7 @@ A los herejes los condenan al destierro en las tierras malditas /shoseg/, donde 
 - Forma de gobierno: 
 
 ### Demografía
-- Porcentaje de población mundial: 6%
+- Porcentaje de población mundial: 5%
 
 ### Relaciones
 | Raza | Relación | Notas |
