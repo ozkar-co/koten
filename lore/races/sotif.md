@@ -1,5 +1,9 @@
 # Sotif
 
+Los /sotif/ son bestias magicas: criaturas de inteligencia limitada, pero con una conexion profunda con el mundo natural y los espiritus de la naturaleza.
+
+No estudian ni sistematizan la magia como otras razas; la dominan de forma instintiva, como una extension de su propio cuerpo y de su entorno. Su presencia suele asociarse a lugares cargados de energia natural.
+
 ## Ficha Técnica
 
 ### Nombres en idiomas

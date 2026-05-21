@@ -23,5 +23,5 @@ Son muchas y muy variadas las formas de vida que habitan este mundo. Entre las r
 - [Shotur](shotur.md): Pequenas criaturas esclavizadas por los /mugot/, usadas en tareas domesticas.
 - [Yodki](yodki.md): Misteriosas aves que habitan zonas volcanicas, inteligentes y capaces de escupir fuego.
 - [Klof](klof.md): Devoradores de hombres creados por rituales oscuros /mugot/ para la guerra.
-- [Tofa](tofa.md): Raza no jugable con registro inicial, aun sin descripcion detallada.
-- [Sotif](sotif.md): Raza no jugable con registro inicial, aun sin descripcion detallada.
+- [Tofa](tofa.md): Bestias y animales de formas y conductas diversas, presentes en todo el mundo.
+- [Sotif](sotif.md): Bestias magicas de inteligencia limitada, ligadas a la naturaleza y a sus espiritus.

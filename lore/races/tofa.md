@@ -1,5 +1,9 @@
 # Tofa
 
+Los /tofa/ son basicamente las bestias y animales del mundo. No forman civilizaciones complejas ni estructuras sociales comparables a las razas inteligentes, pero constituyen una parte esencial del equilibrio natural.
+
+Presentan una enorme diversidad de formas, tamaños y comportamientos, y se encuentran extendidos por casi todos los territorios de /koten/: bosques, montanas, llanuras, desiertos, rios, mares y zonas heladas.
+
 ## Ficha Técnica
 
 ### Nombres en idiomas
