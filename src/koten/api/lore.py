@@ -40,6 +40,26 @@ def _list_sections() -> list[str]:
     return sorted(sections)
 
 
+def _get_top_level_documents() -> list[dict]:
+    """Return list of top-level lore documents (outside section directories)."""
+    if not _LORE_DIR.exists():
+        return []
+
+    docs = []
+    for md_file in sorted(_LORE_DIR.glob("*.md")):
+        slug = md_file.stem
+        with open(md_file, "r", encoding="utf-8") as f:
+            first_line = f.readline().strip()
+            title = first_line.lstrip("# ").strip() if first_line.startswith("#") else slug
+
+        docs.append({
+            "slug": slug,
+            "title": title,
+        })
+
+    return docs
+
+
 def _resolve_lore_path(section: str, slug: str) -> Path:
     """Return the path for a lore file, raising 404 if not found."""
     section_dir = _resolve_section_dir(section)
@@ -86,18 +106,14 @@ def _get_section_index(section: str) -> list[dict]:
 
 @router.get("/index")
 def get_lore_index() -> dict:
-    """Return index of all lore sections and documents."""
+    """Return a standard index with sections and top-level documents."""
     sections_index: dict[str, list[dict]] = {}
     for section in _list_sections():
         sections_index[section] = _get_section_index(section)
-    
+
     return {
-        # Backward compatible keys
-        "races": sections_index.get("races", []),
-        "languages": sections_index.get("lang", []),
-        # Dynamic section index
         "sections": sections_index,
-        "prefixes": LANGUAGE_PREFIXES,
+        "documents": _get_top_level_documents(),
     }
 
 
