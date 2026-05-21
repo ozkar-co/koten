@@ -1,4 +1,4 @@
-# Los idiomas de Koten
+# Idiomas
 
 La mayoría de lenguas de /koten/ siguen un sistema similar en el que los sonidos consonantes marcan el sentido semántico o significado de la palabra, y su orden o las vocales que los acompañan indican su conjugación.
 

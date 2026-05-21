@@ -1,4 +1,4 @@
-# Razas de Koten
+# Razas
 
 Son muchas y muy variadas las formas de vida que habitan este mundo. Entre las razas inteligentes encontramos una gran diversidad, no solo en su forma física, sino en su cultura y visión del mundo.
 

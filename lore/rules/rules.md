@@ -1,4 +1,4 @@
-# Sistema de Juego
+# Reglas
 
 Sistema de rol basado en **xD6 + Fate Acelerado**.
 
