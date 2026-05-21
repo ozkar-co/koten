@@ -1,5 +1,13 @@
 # Geografía de Koten
 
+Koten es un mundo vasto y complejo, moldeado por fuerzas tanto naturales como sobrenaturales. Su geografía es tan diversa como las civilizaciones que la habitan: desde las heladas llanuras del este hasta los mares tempestuosos del oeste, desde los bosques ancestrales hasta los desiertos ardientes.
+
+mapa.jpg
+
+El continente principal, /kanoga/, alberga la mayor concentración de poblaciones conocidas y es el corazón del comercio, la diplomacia y la cultura. Sin embargo, más allá de sus fronteras civilizadas, el mundo guarda misterios sin explorar, tierras prohibidas y lugares donde la magia aún campea sin restricción alguna.
+
+La geografía de Koten no es meramente un telón de fondo: es un personaje activo en la historia. Las montañas aisladas, los mares peligrosos y los territorios malditos han definido la historia de las razas, sus relaciones y sus destinos. Comprender el mundo es comprender los conflictos y alianzas que lo habitan.
+
 ## Continentes y Regiones Principales
 
 ### Kanoga
