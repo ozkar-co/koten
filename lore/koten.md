@@ -6,14 +6,75 @@ El mundo no ha sido explorado en su totalidad aun hay muchos misterios por descu
 
 mapa.jpg
 
-El mas grande continente recibe el nombre de /kanoga/ y en su mitad oeste concentra casi toda la poblacion, al este las tierras se van haciendo mas y mas frias, las leyendas hablan de un mar de hielo pero nadie que se haya aventureado por esas tierras ha vuelto con vida. al noroeste, en el mar que llaman /topats/ se encuentra el archipielago /tapiga/ un lugar de tierras fertiles y dias de paz
+## Bienvenida a Koten
 
-El continente al suroeste del mapa es conocido como /shoseg/ las tierras malditas, es un lugar donde solo habitan la muerte, la enfermedad y la destrucción.
+Te encuentras frente a un mundo vasto y lleno de posibilidades. Antes de comenzar tu aventura, te recomendamos explorar los siguientes aspectos:
 
-Mas allá del oeste se habla del mar de las sombras /toposme/ la ultima barrera antes de los dominios de la muerte, un lugar del que casi nadie ha regresado, y quienes han vuelto han traido la muerte consigo.
+- [Geografía](geografia.md): Conoce los continentes, mares y regiones que conforman el mundo.
+- [Razas](races/races.md): Descubre las formas de vida inteligente que habitan Koten.
+- [Idiomas](lang/lang.md): Aprende sobre las lenguas que se hablan en este mundo.
+- [Reglas](rules/rules.md): Entiende los sistemas que rigen la magia, el combate y la narrativa.
+- [Historias](koten.md#historias): Explora los eventos canónicos que han marcado el devenir de Koten.
 
-En este basto mundo se hablan diversas lenguas, tan diversas como aquellos que las hablan, aun asi uno de ellos ha logrado posicionarse como lengua comun entre las diversas razas, es el /lapag/, el lenguaje de la tierra.
+## Historias
 
-Otros idiomas en los que profundizaremos mas adelante son el /G/gox'jix/ llamado idioma del desierto, tambien esta el /D/dekayun/ el lenguaje del bosque, /N/negelsh/ el lenguaje de las montañas, /I/idoling/ que es el lenguaje de los sabios, otro, de los mas peculiares, que se escribe en circulos es llamado el lenguaje sagrado, /J/jobid'e/
+Esta seccion concentra los hechos canonicos del mundo y las circunstancias que lo van transformando con el tiempo.
 
-Luego esta la lengua llamada de la guerra, o de los guerreros, que se escribe mediante pictogramas y en sentido vertical, /K/gornash-kagsha/
+### Cronologia Base
+
+La cronologia completa aun esta en construccion. Mientras tanto, los eventos se registran como hitos canonicos.
+
+### Hitos Canonicos
+
+- [pendiente] Nombre del evento
+	- Fecha o era: por definir
+	- Regiones afectadas: por definir
+	- Consecuencias: por definir
+
+- [pendiente] Nombre del evento
+	- Fecha o era: por definir
+	- Regiones afectadas: por definir
+	- Consecuencias: por definir
+
+### Circunstancias Actuales del Mundo
+
+- [pendiente] Tensiones politicas relevantes
+- [pendiente] Conflictos activos entre pueblos o facciones
+- [pendiente] Fenomenos sobrenaturales o catastrofes en curso
+
+## Informacion General del Mundo
+
+Esta seccion define convenciones comunes para juego, narrativa y consistencia del mundo.
+
+### Sistemas Numericos
+
+- Nombre del sistema: [pendiente]
+- Base numerica: [pendiente]
+- Simbologia: [pendiente]
+- Convenciones de uso: [pendiente]
+- Justificacion cultural/historica: [pendiente]
+
+### Dinero y Economia
+
+- Monedas principales: [pendiente]
+- Equivalencias: [pendiente]
+- Denominaciones locales por region: [pendiente]
+- Practicas de comercio y tributo: [pendiente]
+
+### Tiempo
+
+- Unidad minima usada en juego: [pendiente]
+- Estructura de dia, mes y anio: [pendiente]
+- Calendarios regionales o rituales: [pendiente]
+- Convenciones narrativas: [pendiente]
+
+### Distancia y Medidas
+
+- Unidad base de longitud: /mash/
+- Unidades mayores y menores: [pendiente]
+- Equivalencias y conversiones: [pendiente]
+- Convenciones por region o cultura: [pendiente]
+
+### Convenciones y Tablas de Referencia
+
+Aqui se consolidaran las tablas oficiales de conversion, uso y contexto historico para mantener coherencia en todo el material.
