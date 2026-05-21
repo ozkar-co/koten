@@ -8,7 +8,7 @@ Como Master de Juego, tu rol es:
 2. **Arbitrar Tiradas** - Determina dificultades, valida acciones
 3. **Narrar Mundo** - Describe NPCs, escenas, consecuencias
 4. **Mantener Empatía** - Evita TPKs (Total Party Kills) sin consenso
-5. **Facilitar Consenso** - Si algo no funciona, ajusta reglas con la mesa
+5. **Facilitar Consenso** - Si algo no funciona, ajustar las reglas con la mesa
 
 ## Otorgar Puntos de Destino
 
@@ -41,17 +41,17 @@ Todos los NPCs pueden tener:
 - **Estrés/Consecuencias** - Pueden ser dañados como jugadores
 - **Destino** - Pueden gastar puntos como jugadores si son significativos
 
-Los enemigos menores (mobs) simplifican: 1-2 rasgos, estrés bajo.
+Los enemigos menores se  simplifican: 1-2 rasgos, estrés bajo.
 
 ## Crear Drama
 
 La narración siempre gana:
-- Si una tirada mata la drama, rehazla o negocia resultado
+- Si una tirada mata la trama, rehazla o negocia resultado
 - Las consecuencias deben llevar la historia adelante
-- Falla ≠ mal, simplemente crea nuevas complicaciones
+- Fallar no necerariamente esta mal, simplemente crea nuevas complicaciones
 
 ## Consenso
 
-**Línea de Oro**: Si un jugador objeta fuertemente un resultado, discutelo antes de tirar. Si pasa después, negocia con la mesa.
+**Regla de Oro**: El juego es colaborativo, no competitivo.
 
-El juego es colaborativo, no adversarial.
+Se considera un exito mientras sea entretenido y exista consenso.

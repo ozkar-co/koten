@@ -31,7 +31,7 @@ El Master puede ajustar la dificultad con penalizadores:
 
 | Resultado | Descripción | Acción |
 |---|---|---|
-| **Fallo** | No alcanzas la dificultad | La situación empeora o cambio de escena |
+| **Fallo** | No alcanzas la dificultad | La situación empeora |
 | **Empate** | Iguales | Pequeño éxito con complicación |
 | **Éxito** | Superas la dificultad | Logras lo que buscas |
 | **Triunfo** | Superas por +3 o más | Éxito total + ventaja adicional |

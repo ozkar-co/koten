@@ -4,32 +4,33 @@
 
 El daño produce **estrés** hasta un máximo de 3 puntos:
 
+- Cada impacto exitoso causa **1 de daño**, independiente del margen
 - Representa agotamiento, mareos, dolor manejable
-- Se limpia cuando la escena termina o tomas un descanso
-- Es el "colchón" antes de las consecuencias
+- Se limpia gastando puntos de destino y se justifica como un descanso o un cambio favorable.
+- A discrecion del master pueden recuperarse con el tiempo.
+- Es el raspaldo antes de las consecuencias, es mas barato de curar y requiere menos tiempo.
 
 ## Consecuencias
 
-Cuando el daño supera tu estrés actual (máximo 3):
+Cuando el daño supera tu estrés actual (máximo 3), o viene de un triunfo, causa una consecuencia:
 
-### Por Margen
-
-- **Margen 1-3**: Consecuencia menor (penaliza -1 un rasgo, dura una sesión)
-- **Margen 4+**: Consecuencia mayor (penaliza -1 un rasgo permanentemente)
-- **Triunfo del atacante**: Siempre causa una consecuencia, independiente del daño
+- Elige **un rasgo** y aplícale un penalizador de -1
+- La justificación debe ser una condición **física o mental**
+- Esa condición debe afectar de forma **duradera** ese rasgo (no solo en una acción puntual)
+- La consecuencia funciona como un **rasgo negativo** que contrarresta al rasgo afectado
 
 ### Ejemplos de Consecuencias
 
-- "Brazo fracturado" (-1 a acciones físicas)
-- "Traidor revelado" (-1 a persuasión)
-- "Profundamente asustado" (-1 a tiradas de valor)
-- "Deuda de vida" (-1 hasta que la saldes)
+- Rasgo: "Gran tirador" -> Consecuencia: "Brazo lesionado" (Penalización de -1)
+- Rasgo: "Gran tirador" -> Consecuencia: "Ojo lastimado" (Penalización de -2)
+- Rasgo: "Ladrón experimentado" -> Consecuencia: "Miedo a la oscuridad" (Penalización de -1)
+- Rasgo: "Ladrón experimentado" -> Consecuencia: "Ansiedad persistente" (Penalización de -2)
 
 ## Muerte
 
 Cuando **todos tus rasgos descienden a 0** por acumulación de consecuencias:
 - Mueres o quedas incapacitado
-- Es permanente a menos que negocias resurrección con el Master
+- Es permanente a menos que negocies con el Master
 
 ## Rendición (Conceder)
 
@@ -39,4 +40,4 @@ Cuando **todos tus rasgos descienden a 0** por acumulación de consecuencias:
 - Aceptas una situación desfavorable negociada (captura, humillación, deuda)
 - Es un acto narrativo, no una pérdida de agencia
 
-Ejemplo: Te rendiste en combate pero negocias convertirte en sirviente en lugar de morir.
+Ejemplo: Te rendiste en combate pero negocias con el Master ser secuestrado en lugar de morir.

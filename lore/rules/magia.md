@@ -12,7 +12,7 @@ Ejemplos de rasgos mágicos:
 ## Uso en Combate
 
 Se usa igual que cualquier ataque:
-- Tiras el rasgo mágico contra defensa del target
+- Tiras el rasgo mágico contra defensa del objetivo
 - Sigue las mismas reglas de daño y consecuencias
 - Puede causar estrés o consecuencias adicionales si el Master lo decide
 
@@ -31,15 +31,15 @@ La magia puede tener un precio:
 
 ### Costo de Estrés
 
-Hechizos menores cuestan 1 punto de estrés. Complejos cuestan 2-3.
+Hechizos fuertes causan una perdida de 1 punto de estrés en su usuario.
 
 ### Costo de Consecuencia
 
-Hechizos muy poderosos pueden requerir sufrir una consecuencia (quemaduras, corrupción, deuda con seres oscuros).
+Hechizos muy poderosos pueden requerir sufrir una consecuencia (quemaduras, corrupción, deuda con seres oscuros) que agotan la vida de su usuario.
 
 ### Usos Limitados
 
-Un rasgo mágico puede tener "3 usos por sesión" o "hasta que medites 1 hora" según el Master.
+Un rasgo mágico puede tener "3 usos por sesión", "hasta que medites 1 hora", aleatoriamente se interrumpirá, según el criterio del Master.
 
 ## Límites
 

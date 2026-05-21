@@ -31,7 +31,8 @@ Ejemplos:
 ### 3. Atacar
 
 Intenta infligir daño o causar consecuencias:
-- Tiras tu rasgo de combate contra **defensa automática** del oponente
+- Tiras tu rasgo de combate contra el oponente
+- El oponente elige que rasgo usará para defenderse y tira los dados.
 - En **éxito o más**: El oponente recibe estrés o consecuencias
 - En **fallo**: El ataque no conecta
 
@@ -39,6 +40,7 @@ Ver: [Daño y Consecuencias](daño.md)
 
 ### 4. Defender (o Reaccionar)
 
-Es automático, no es una acción que ejecutes en turno.
+Es automático, si te estan atcando.
+Puedes intervenir a una ataque aliado sacrificando tu proximo turno.
 
 Ver: [Defensa](defensa.md)

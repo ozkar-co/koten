@@ -7,13 +7,14 @@ No solo los personajes jugadores tienen profundidad. Cualquier elemento puede te
 ## Objetos Mágicos
 
 **Trasfondo**: Historia, maldiciones, destino  
-**Rasgos**: "Espada de Fuego", "Auto-curativo"  
+**Rasgos**: "Espada de Fuego", "Auto-curativo", "Filo Inquebrantable"  
 **Consecuencias**: Puede romperse, maldecirse, consumirse
 
 Ejemplo:
-- *La Espada de Keldir* (trasfondo: fue forjada en volcán)
-- Rasgos: "Nunca se empaña", "Fuego de dragón"
-- Consecuencia: "Maldición del Forjador" (-1 a portador si es injusto)
+- Nombre: *La Espada de Keldir*
+- Trasfondo: fue forjada en volcán e inbuhida con magia de fuego.
+- Rasgos: "Esapda Flamigera"
+- Consecuencias: Se ha fundido por su propio calor, penalizacion -1
 
 ## Enemigos
 
@@ -22,9 +23,10 @@ Ejemplo:
 **Estrés/Consecuencias**: Pueden ser heridos progresivamente
 
 Ejemplo:
-- *El Señor Oscu* (trasfondo: antiguo rey destronado)
+- Nombre: *El Señor Sombrio*
+- Trasfondo: antiguo rey destronado
 - Rasgos: "Mago Oscuro", "Liderazgo Tiránico", "Ejército de Sombras"
-- Estrés: 3, Consecuencias: Ya tiene "Brazo Podrido"
+- Estrés: 3, Consecuencias: Ha perdido un brazo en combate.
 
 ## Lugares
 
@@ -33,10 +35,10 @@ Ejemplo:
 **Estrés/Consecuencias**: Pueden ser "dañados" narrativamente
 
 Ejemplo:
-- *La Catedral Olvidada*
+- Nombre: *La Catedral Olvidada*
 - Trasfondo: Construida por orden de un culto, abandonada hace siglos
 - Rasgos: "Atmósfera Sobrenatural", "Acústica Extraña", "Guardianes Espectrales"
-- Consecuencia: "Grieta en la Realidad" (efectos impredecibles)
+- Consecuencia: "Estructura severamente dañada" (efectos impredecibles)
 
 ## Problemas / Situaciones
 
@@ -45,10 +47,10 @@ Ejemplo:
 **Estrés/Consecuencias**: Se pueden "resolver" progresivamente
 
 Ejemplo:
-- *La Hambruna Creciente*
-- Trasfondo: Maldición de brujo vengativo
-- Rasgos: "Campos Muertos", "Hambre en las Ciudades", "Pánico Social"
-- Para resolverlo: Debe atacarse cada rasgo o removerse la maldición
+- Nombre: *Envenenado*
+- Trasfondo: Se ha producido por una cortadura con un arma envenenada
+- Rasgos: "Veneno Necrotico nivel Experto", hace 1 ataque cada turno.
+- Para resolverlo: Debe reducirse el nivel mediante medicinas o resistencia fisica.
 
 ## Aliados
 
@@ -57,10 +59,10 @@ Ejemplo:
 **Estrés/Consecuencias**: Pueden ser heridos o volverse problemáticos
 
 Ejemplo:
-- *Kael el Mercenario*
+- Nombre: *Kael el Mercenario*
 - Trasfondo: Debe dinero, busca honor y redención
 - Rasgos: "Maestro de armas", "Instinto de Supervivencia", "Código del Guerrero"
-- Puede recibir Consecuencias: "Deuda Pagada" (ahora es aliado verdadero)
+- Puede recibir Consecuencias: "Antigua Deuda" (afecta su codigo de Guerrero, se puede volver enemigo)
 
 ## Aplicación Práctica
 

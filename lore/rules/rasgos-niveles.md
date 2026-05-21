@@ -2,16 +2,16 @@
 
 ## Escala de Competencia
 
-Cada rasgo tiene un nivel que indica tu maestría:
+Cada rasgo tiene un nivel que indica tu maestría y dan un bono igual a su nivel a la tirada del dado:
 
-| Nivel | Nombre | Tirada |
-|-------|--------|--------|
-| 0 | Ignorante | 0 dados |
-| 1 | Mediocre | 1 dado |
-| 2 | Competente | 2 dados |
-| 3 | Experto | 3 dados |
-| 4 | Maestro | 4 dados |
-| 5 | Leyenda | 5 dados |
+| Nivel | Nombre |
+|-------|--------|
+| 0 | Ignorante |
+| 1 | Mediocre |
+| 2 | Competente |
+| 3 | Experto |
+| 4 | Maestro |
+| 5 | Leyenda |
 
 ## Rasgos Iniciales
 
@@ -29,6 +29,7 @@ Los rasgos pueden mejorar de los siguientes modos:
 
 Las consecuencias penalizan tus rasgos:
 
-- Una consecuencia menor penaliza un rasgo -1 durante X turno/sesión
-- Una consecuencia mayor penaliza un rasgo -1 indefinidamente hasta recuperarse
+- Las penalizaciones sobre un mismo rasgo se agravan en escala: -1, -2, -3...
+- La penalización máxima no puede superar el nivel actual del rasgo penalizado
+- Las consecuencias solo se quitan gastando Puntos de Destino (o a discreción del Master)
 - Si **todos tus rasgos llegan a 0** por penalizaciones, mueres o quedas incapacitado
