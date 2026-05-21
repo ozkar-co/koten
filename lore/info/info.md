@@ -1,4 +1,3 @@
-
 # Información
 
 ## Descripción General
