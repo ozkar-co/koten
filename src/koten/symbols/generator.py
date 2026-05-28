@@ -60,7 +60,7 @@ class SymbolGenerator:
         tokenizer = get_tokenizer(config.language_code)
         root_mapping = config.config.get("root_mapping", {})
         tokens = tokenizer(word, root_mapping)
-        return [t for t in tokens if t.strip()]
+        return [t for t in tokens if t == " " or t.strip()]
 
     def _compose_symbols(
         self,

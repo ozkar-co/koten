@@ -43,6 +43,7 @@ DEFAULT_LANGUAGE = "lapag"
 _PREFIX_PATTERN = "|".join(re.escape(k) for k in LANGUAGE_PREFIXES)
 _KOTEN_RE = re.compile(
     r"/(?:(" + _PREFIX_PATTERN + r")/)?([^/\s][^/]*)/",
+    flags=re.IGNORECASE,
 )
 _IMAGE_LINE_RE = re.compile(
     r"(?m)^(?P<indent>[ \t]*)(?P<source>[A-Za-z0-9_.-]+\.(?:png|jpg|jpeg|gif|webp)(?:\?type=(?:full|thumb))??)[ \t]*$"
@@ -86,7 +87,11 @@ def _replace_markdown_image(match: re.Match) -> str:
 def _replace_koten_word(match: re.Match) -> str:
     prefix = match.group(1)
     word = match.group(2)
-    language = LANGUAGE_PREFIXES.get(prefix, DEFAULT_LANGUAGE) if prefix else DEFAULT_LANGUAGE
+    language = (
+        LANGUAGE_PREFIXES.get(prefix.upper(), DEFAULT_LANGUAGE)
+        if prefix
+        else DEFAULT_LANGUAGE
+    )
     normalized_word = _strip_accents(word)
     image_url = f"/word/{language}/{quote(normalized_word, safe='')}"
     return (
