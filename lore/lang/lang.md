@@ -32,19 +32,19 @@ El dígrafo `sh` representa el sonido /sh/.
 
 ### Lenguas Principales
 
-- **Lapag**: El lenguaje de la tierra. Es la lengua común más extendida entre todas las razas y ha logrado posicionarse como lingua franca del comercio y la diplomacia.
+- **[Lapag](lapag.md)**: El lenguaje de la tierra. Es la lengua común más extendida entre todas las razas y ha logrado posicionarse como lingua franca del comercio y la diplomacia.
 
-- **Gox'jix**: El idioma del desierto, hablado principalmente por los /drayim/ en sus territorios áridos. Está caracterizado por sus sonidos duros y su escritura sobre placas de metal o tablillas de arcilla.
+- **[Gox'jix](goxjix.md)**: El idioma del desierto, hablado principalmente por los /drayim/ en sus territorios áridos. Está caracterizado por sus sonidos duros y su escritura sobre placas de metal o tablillas de arcilla.
 
-- **Dekayun**: El lenguaje del bosque, hablado por los /alish/. Tiene un sonido más suave y líquido, adaptado a su filosofía armónica con la naturaleza.
+- **[Dekayun](dekayun.md)**: El lenguaje del bosque, hablado por los /alish/. Tiene un sonido más suave y líquido, adaptado a su filosofía armónica con la naturaleza.
 
-- **Negelsh**: El lenguaje de las montañas, hablado principalmente por los /nerum/. Contiene palabras del antiguo /inglés/, un idioma olvidado del que apenas quedan registros.
+- **[Negelsh](negelsh.md)**: El lenguaje de las montañas, hablado principalmente por los /nerum/. Contiene palabras del antiguo /inglés/, un idioma olvidado del que apenas quedan registros.
 
-- **Idoling**: El lenguaje de los sabios. Lengua sagrada de la magia, no sigue el sistema de raíces del resto de idiomas. Solo unos pocos lo dominan, principalmente hechiceros y sabios.
+- **[Idoling](idoling.md)**: El lenguaje de los sabios. Lengua sagrada de la magia, no sigue el sistema de raíces del resto de idiomas. Solo unos pocos lo dominan, principalmente hechiceros y sabios.
 
-- **Jobid'e**: Una lengua peculiar que se escribe en círculos. Su estructura es única entre los idiomas conocidos.
+- **[Jobid'e](jobide.md)**: Una lengua peculiar que se escribe en círculos. Su estructura es única entre los idiomas conocidos.
 
-- **Gornash-Kagsha**: La lengua de la guerra o de los guerreros. Se escribe mediante pictogramas en sentido vertical, utilizada principalmente por los /mugot/ en sus escritos militares.
+- **[Gornash-Kagsha](gornash-kagsha.md)**: La lengua de la guerra o de los guerreros. Se escribe mediante pictogramas en sentido vertical, utilizada principalmente por los /mugot/ en sus registros militares.
 
 ## Raíces Semánticas
 

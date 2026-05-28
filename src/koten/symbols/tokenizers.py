@@ -89,6 +89,14 @@ def tokenize_goxjix(text: str, root_mapping: dict[str, list]) -> list[str]:
                 tokens.append(char)
             i += 1
         else:
+            # Digrafo consonantico especial (sh)
+            if i + 1 < len(text):
+                digraph = text[i:i+2]
+                if digraph == "sh" and digraph in root_mapping:
+                    tokens.append(digraph)
+                    i += 2
+                    continue
+
             # Consonante: try C+vowel pair or C+single vowel if those exist in mapping
             if i + 1 < len(text) and text[i+1] in vowels:
                 # Try C + vowel pair first

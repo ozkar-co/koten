@@ -1,6 +1,7 @@
 # Reglas
 
 Sistema de rol basado en **xD6 + Fate Acelerado**.
+Utiliza dos dados de 6 caras y un sistema de trasfondo y rasgos enfocado en ser narrativo y tener mecanicas simples.
 
 ## Principios
 
