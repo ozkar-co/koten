@@ -4,7 +4,7 @@
 
 En tu turno puedes elegir una de las siguientes:
 
-### 1. Ayuda / Crear Ventaja
+### 1. Ayuda y Crear Ventaja
 
 Actúas para beneficiar a otro personaje o crear una ventaja circunstancial:
 - Tiras tu rasgo apropiado contra la dificultad
@@ -16,7 +16,7 @@ Ejemplos:
 - Preparar una emboscada
 - Dar un discurso inspirador
 
-### 2. Superar / Resolver
+### 2. Superar y Resolver
 
 Interfiere con obstáculos, resuelve problemas, o consigues información:
 - Tiras el rasgo aplicable contra el obstáculo

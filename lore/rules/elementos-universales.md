@@ -40,7 +40,7 @@ Ejemplo:
 - Rasgos: "Atmósfera Sobrenatural", "Acústica Extraña", "Guardianes Espectrales"
 - Consecuencia: "Estructura severamente dañada" (efectos impredecibles)
 
-## Problemas / Situaciones
+## Problemas y Situaciones
 
 **Trasfondo**: Origen del conflicto, historia  
 **Rasgos**: Facetas del problema que pueden ser atacadas  

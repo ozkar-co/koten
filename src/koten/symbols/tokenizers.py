@@ -2,6 +2,14 @@
 
 from __future__ import annotations
 
+
+SPACE_TOKEN = " "
+
+
+def _append_space_token(tokens: list[str], root_mapping: dict[str, list]) -> None:
+    if SPACE_TOKEN in root_mapping:
+        tokens.append(SPACE_TOKEN)
+
 def tokenize_lapag(text: str, root_mapping: dict[str, list]) -> list[str]:
     """
     Lapag: consonante+vocal (overlay) or vocal alone (= silencio+vocal).
@@ -25,9 +33,8 @@ def tokenize_lapag(text: str, root_mapping: dict[str, list]) -> list[str]:
             at_word_start = False
             i += 1
         elif char == " ":
-            # Espacio
-            if char in root_mapping:
-                tokens.append(char)
+            # Separador de palabra
+            _append_space_token(tokens, root_mapping)
             at_word_start = True
             i += 1
         else:
@@ -63,8 +70,7 @@ def tokenize_goxjix(text: str, root_mapping: dict[str, list]) -> list[str]:
         char = text[i]
         
         if char == " ":
-            if char in root_mapping:
-                tokens.append(char)
+            _append_space_token(tokens, root_mapping)
             i += 1
         elif char == "'":
             # Comilla = silencio explícito
@@ -134,8 +140,7 @@ def tokenize_negelsh(text: str, root_mapping: dict[str, list]) -> list[str]:
         char = text[i]
 
         if char == " ":
-            if " " in root_mapping:
-                tokens.append(" ")
+            _append_space_token(tokens, root_mapping)
             i += 1
             continue
 
@@ -160,14 +165,16 @@ def tokenize_idoling(text: str, root_mapping: dict[str, list]) -> list[str]:
     Handles digraphs ts, sh. Only returns tokens in root_mapping.
     """
     text = text.lower().strip()
-    if " " in text:
-        tokens = text.split()
-        return [t for t in tokens if t in root_mapping]
     
     # Handle digraphs
     tokens: list[str] = []
     i = 0
     while i < len(text):
+        if text[i] == " ":
+            _append_space_token(tokens, root_mapping)
+            i += 1
+            continue
+
         # Try digraph first
         if i + 1 < len(text):
             pair = text[i:i+2]
@@ -259,8 +266,9 @@ def tokenize_gornash_kagsha(text: str, root_mapping: dict[str, list]) -> list[st
             i += 1
             continue
         
-        # Skip spaces
+        # Word separator token
         if char == " ":
+            _append_space_token(tokens, root_mapping)
             i += 1
             continue
         
