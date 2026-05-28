@@ -9,7 +9,7 @@
 
 ## Inventario de símbolos
 
-El sistema consta de un **total de 21 símbolos**. El primer símbolo corresponde directamente a la vocal i (a diferencia de otros idiomas no presenta un simbolo para el sonido).
+El sistema consta de un **total de 23 símbolos**. El primer símbolo corresponde directamente a la vocal i (a diferencia de otros idiomas no presenta un simbolo para el sonido).
 
 | Grafía | Sintaxis especial | Tipo de fonema |
 | --- | --- | --- |
