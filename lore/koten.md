@@ -5,7 +5,7 @@
 
 /I/tero/
 
-/G/kubeich/
+/G/kubeish/
 
 /D/shulap/
 
