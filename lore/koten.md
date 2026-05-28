@@ -11,7 +11,7 @@
 
 /J/o'mateue/
 
-/K/gornach_rag_larugtar/
+/K/gornash-rag-larugtar/
 
 /N/beart/
 
