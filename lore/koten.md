@@ -9,7 +9,7 @@
 
 /D/shulap/
 
-/J/omateue/
+/J/o'mateue/
 
 /K/gornach_rag_larugtar/
 
@@ -32,4 +32,14 @@ Aún hay muchos misterios por descubrir en los confines del mundo conocido. Ante
 ---
 
 ### Sistema de Juego y Mecánicas Base
+
+Koten se juega con un sistema narrativo híbrido de **xD6 + Fate Acelerado**, centrado en construir una historia compartida por encima de la competencia mecánica.
+
+Aspectos más importantes:
+
+- El objetivo principal es la creación de historia y el consenso en mesa.
+- Casi cualquier elemento del mundo (personajes, criaturas, objetos o lugares) puede tener trasfondo, rasgos, estrés y consecuencias.
+- La defensa es automática, por lo que el foco del turno está en las decisiones y acciones ofensivas, tácticas o narrativas.
+- La rendición siempre es una opción negociable, permitiendo resolver conflictos sin aniquilación total.
+- El éxito no se mide solo por ganar una tirada, sino por mantener el ritmo, la tensión y la diversión del grupo.
 
