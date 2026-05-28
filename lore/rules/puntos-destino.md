@@ -5,12 +5,12 @@
 ### 1 Punto de Destino
 
 - **Reroll**: Tira de nuevo un dado que acabas de lanzar
-- **Limpiar Estrés**: Quita 1 punto de estrés
+- **Limpiar Estrés**: Quitar todos los puntos de estrés
 
 ### 2 Puntos de Destino
 
-- **Recuperar una Consecuencia**: Elimina una consecuencia menor o reduce una mayor
-- **Crear Coincidencia**: El Master crea una coincidencia favorable en la escena (requiere su aprobación)
+- **Recuperar una Consecuencia**: Elimina una consecuencia de nivel bajo o reducir una mayor
+- **Crear Coincidencia**: Se crea una coincidencia favorable en la escena (requiere su aprobación)
 
 ### 3 Puntos de Destino
 
