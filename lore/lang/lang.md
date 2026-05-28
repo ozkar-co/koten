@@ -32,7 +32,7 @@ Para representar las raíces se usará su sonido aproximado y la siguiente tabla
 
 100 raíces básicas encapsulan todos los posibles conceptos que se pueden expresar en las lenguas de /koten/, se usa la lengua común, pero con la anterior tabla pueden traducirse a las demás lenguas.
 
-c: diferente, alterado, contrario, otro
+sh: diferente, alterado, contrario, otro
 d: aire, aliento, esencia, espíritu
 t: todo, abundancia, universo, vida
 s: divino, sagrado, sobrenatural, luz, radiante
@@ -48,18 +48,18 @@ f: consumir, ingerir, comer, beber
 y: fuego, calor, feminidad
 p: agua, líquido, fluido, humedad, masculino
 x: círculo, ciclo, alrededor
-cd: grande, pesado, alto, importante
-cf: reptil, anfibio, insecto, bicho
-cs: maldición, oscuridad, profano
-ck: implemento, dispositivo, máquina, herramienta
-cr: extraño, inusual, loco
-cl: nuevo, descubrir, más
-cn: diversión, arte, entretenimiento, juguetón
-cm: igual, similar, parecido
-cg: pequeño, corto, poco, joven
-cb: no, negativo, malo, irrelevante
-cy: dorado, roto, desordenado, alterado
-cx: plano, superficie, horizontal
+shd: grande, pesado, alto, importante
+shf: reptil, anfibio, insecto, bicho
+shs: maldición, oscuridad, profano
+shk: implemento, dispositivo, máquina, herramienta
+shr: extraño, inusual, loco
+shl: nuevo, descubrir, más
+shn: diversión, arte, entretenimiento, juguetón
+shm: igual, similar, parecido
+shg: pequeño, corto, poco, joven
+shb: no, negativo, malo, irrelevante
+shy: dorado, roto, desordenado, alterado
+shx: plano, superficie, horizontal
 dt: nombre, palabra
 ds: color, colorido, pintado
 dk: pájaro, criatura voladora

@@ -22,7 +22,25 @@ class RootCandidate:
 
 
 def canonical_root(root: str) -> str:
-    return "".join(sorted(root.strip().lower()))
+    text = root.strip().lower()
+    tokens: list[str] = []
+    i = 0
+
+    while i < len(text):
+        if text.startswith("sh", i):
+            tokens.append("sh")
+            i += 2
+            continue
+
+        char = text[i]
+        # Historical alias: c represents the sh consonant in Lapag roots.
+        if char == "c":
+            tokens.append("sh")
+        else:
+            tokens.append(char)
+        i += 1
+
+    return "".join(sorted(tokens))
 
 
 def normalize_word(word: str) -> str:

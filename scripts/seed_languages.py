@@ -44,11 +44,11 @@ TRANSLATION_HEADER = [
 ]
 
 TRANSLATION_ROWS = [
-    ["c", "m", "s", "l", "m", "rag"],
+    ["sh", "m", "s", "l", "m", "rag"],
     ["d", "t", "f", "s", "k", "lar"],
     ["t", "k", "l", "m", "t", "kor"],
     ["s", "p", "m", "d", "s", "gor"],
-    ["k", "c", "c", "t", "b", "gar"],
+    ["k", "sh", "sh", "t", "b", "gar"],
     ["r", "n", "t", "n", "f", "rek"],
     ["l", "g", "d", "j", "x", "kag"],
     ["n", "b", "p", "u", "r", "lok"],
@@ -58,7 +58,7 @@ TRANSLATION_ROWS = [
     ["b", "r", "k", "i", "n", "ket"],
     ["f", "s", "n", "a", "y", "gul"],
     ["y", "y", "s", "e", "g", "lug"],
-    ["p", "x", "k", "b", "c", "sha"],
+    ["p", "x", "k", "b", "sh", "sha"],
     ["x", "f", "t", "g", "j", "ruk"],
 ]
 
@@ -66,9 +66,7 @@ GORNASH_ALIASES: dict[str, list[str]] = {
     "m": ["nash"],
 }
 
-NEGELSH_ALIASES: dict[str, list[str]] = {
-    "c": ["sh"],
-}
+NEGELSH_ALIASES: dict[str, list[str]] = {}
 
 SEMANTIC_ROOTS_TEXT = """
 c: diferente, alterado, contrario, otro
