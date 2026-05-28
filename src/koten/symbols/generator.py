@@ -13,6 +13,8 @@ from koten.symbols.tokenizers import get_tokenizer
 
 def _nt(token: str) -> str:
     """Normalize a token for symbol lookup: strip and lowercase, no sorting."""
+    if token == " ":
+        return " "
     return token.strip().lower()
 
 

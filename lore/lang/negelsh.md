@@ -56,7 +56,7 @@ El Negelsh deriva directamente del inglés. Para adaptar frases, vocabulario y e
 
 
 * **Negación:** Se estructura anteponiendo la partícula /N/no/ al verbo.
-* **Estructuras interrogativas:** Toda pregunta debe iniciar obligatoriamente con la partícula /N/do/ seguida de la frase (/N/do_lou_be_happy?/).
+* **Estructuras interrogativas:** Toda pregunta debe iniciar obligatoriamente con la partícula /N/do/ seguida de la frase (/N/do lou be happy?/).
 
 ### Sustantivos y partículas conexas
 
@@ -64,9 +64,9 @@ El Negelsh deriva directamente del inglés. Para adaptar frases, vocabulario y e
 * **Pluralización:** Todos los plurales se forman de manera regular añadiendo el sufijo /N/es/.
 * **Pronombres:** Existe un único pronombre: /N/lou/ (singular) y /N/loues/ (plural).
 * **Relaciones gramaticales:**
-* **Posesivo:** Se marca mediante el uso de /N/of/ (Ejemplo: /N/book_of_lou/).
-* **Destino:** Se marca mediante el uso de /N/at/ (Ejemplo: /N/lou_dus_go_at_store/).
-* **Propósito:** Se marca mediante el uso de /N/for/ (Ejemplo: /N/lou_uil_go_for_eat/).
+* **Posesivo:** Se marca mediante el uso de /N/of/ (Ejemplo: /N/book of lou/).
+* **Destino:** Se marca mediante el uso de /N/at/ (Ejemplo: /N/lou dus go at store/).
+* **Propósito:** Se marca mediante el uso de /N/for/ (Ejemplo: /N/lou uil go for eat/).
 
 
 * **Comparativos:** El sistema se limita exclusivamente a dos operadores comparativos: /N/mor/ (más) y /N/les/ (menos).

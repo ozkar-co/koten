@@ -8,6 +8,8 @@ from PIL import Image
 
 
 def _nt(token: str) -> str:
+    if token == " ":
+        return " "
     return token.strip().lower()
 
 
