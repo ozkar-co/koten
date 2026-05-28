@@ -24,7 +24,7 @@ Permisos:
 Rol para direccion de partidas y supervision narrativa.
 
 Permisos:
-- Ver secretos del mundo
+- Ver secreto del mundo
 - Administrar partidas (crear, editar estado, cerrar)
 - Gestionar personajes de su partida
 - Consultar herramientas de referencia
@@ -73,7 +73,6 @@ Tabla resumen:
 | Recurso | Admin | Master | Jugador |
 |---------|-------|--------|---------|
 | Ver secretos | Si | Si | No |
-| Editar secretos | Si | No | No |
 | Editor diccionario | Si | No | No |
 | Creador de palabras | Si | No | No |
 | Administrar partidas | Si | Si | Parcial |
