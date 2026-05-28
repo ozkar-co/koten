@@ -4,7 +4,7 @@ La mayoría de lenguas de /koten/ siguen un sistema similar en el que los sonido
 
 A estos sonidos consonantes y sus agrupaciones se les da el nombre de raíces, cada raíz encierra algunos significados relacionados y permite interpretar el sentido de una palabra aunque sea desconocida, o traducir palabras a partir de raíces relacionadas.
 
-El /N/negelsh/ tiene algunas palabras que usan este sistema, pero también palabras provenientes de otro idioma, uno antiguo, del que ya no existen registros (Inglés). El /idoling/ es el único idioma que no usa para nada el sistema de raíces, es el idioma de la magia y muy pocos lo dominan. (Ido)
+El /N/negelsh/ tiene algunas palabras que usan este sistema, pero también palabras provenientes de otro idioma, uno antiguo, del que ya no existen registros (Inglés). El /I/idoling/ es el único idioma que no usa para nada el sistema de raíces, es el idioma de la magia y muy pocos lo dominan. (Ido)
 
 Para representar las raíces se usará su sonido aproximado y la siguiente tabla de equivalencias entre lenguajes, se parte de la lengua más extendida.
 
@@ -39,7 +39,7 @@ El dígrafo `sh` representa el sonido /sh/.
 
 - **[Dekayun](dekayun.md)**: El lenguaje del bosque, hablado por los /alish/. Tiene un sonido más suave y líquido, adaptado a su filosofía armónica con la naturaleza.
 
-- **[Negelsh](negelsh.md)**: El lenguaje de las montañas, hablado principalmente por los /nerum/. Contiene palabras del antiguo /inglés/, un idioma olvidado del que apenas quedan registros.
+- **[Negelsh](negelsh.md)**: El lenguaje de las montañas, hablado principalmente por los /nerum/. Contiene palabras de un idioma antiguo, casi olvidado, del que apenas quedan registros.
 
 - **[Idoling](idoling.md)**: El lenguaje de los sabios. Lengua sagrada de la magia, no sigue el sistema de raíces del resto de idiomas. Solo unos pocos lo dominan, principalmente hechiceros y sabios.
 
