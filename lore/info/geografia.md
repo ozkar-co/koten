@@ -53,3 +53,4 @@ Territorio de los /kalchad/ y criaturas solitarias, lugares de ruinas olvidadas 
 - **Montaña Sagrada de los Denjom**: Centro espiritual de los clanes nómadas, accesible solo a los /denjom/.
 - **Zonas Volcánicas**: Hábitat de los /yodki/ y criaturas de fuego.
 - **Archipielago /tapiga/**: Refugio de paz y comercio.
+- **Rio Grande /pobijad/**: Un gran rio rodeado de un denso bosque al noroeste dl continente.
