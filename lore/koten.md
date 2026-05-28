@@ -1,4 +1,4 @@
-# Koten.
+# Koten
 ## El lugar donde nace la vida.
 
 Es un mundo que sustenta diversas formas de vida, que hacen lo que pueden para sobrevivir, hay quienes han optado por la violencia, quienes han construido fortalezas, otros que se han apartado a vivir en lugares lejanos o quienes con su habilidad se han ganado el respeto de los demás seres.

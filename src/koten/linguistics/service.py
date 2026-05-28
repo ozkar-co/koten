@@ -65,7 +65,33 @@ def _split_gornash_kagsha(text: str, known_roots: set[str]) -> list[str]:
     return tokens
 
 
+def _split_jobide_consonant_slots(word: str) -> list[str]:
+    """Split Jobid'e into CV syllables and return the consonant slot of each syllable.
+
+    Jobid'e syllables are always parsed as fixed pairs. The first symbol of every
+    pair is treated as consonantal by position, even if it is a vowel or apostrophe.
+    """
+    text = word.lower().strip().replace(" ", "")
+    if not text:
+        return []
+
+    # Canonical transliteration allows omitting the final apostrophe vowel.
+    if len(text) % 2 == 1:
+        text += "'"
+
+    roots: list[str] = []
+    i = 0
+    while i < len(text):
+        roots.append(text[i])
+        i += 2
+
+    return roots
+
+
 def _split_units(word: str, language_code: str, known_roots: set[str] | None = None) -> list[str]:
+    if language_code == "jobide":
+        return _split_jobide_consonant_slots(word)
+
     text = normalize_word(word)
     if language_code in {"gornash_kagsha", "negelsh"}:
         return _split_gornash_kagsha(text, known_roots or set())
