@@ -10,22 +10,22 @@ Para representar las raíces se usará su sonido aproximado y la siguiente tabla
 
 | 0 | Lapag | Gox'jix | Dekayun | Jobid'e | Negelsh | Gornash-Kagsha |
 |---|---|---|---|---|---|---|
-| c | /c/ | /G/m/ | /D/s/ | /J/l'''''/ | /N/m/ | /K/rag/ |
-| d | /d/ | /G/t/ | /D/f/ | /J/s'''''/ | /N/k/ | /K/lar/ |
-| t | /t/ | /G/k/ | /D/l/ | /J/m'''''/ | /N/t/ | /K/kor/ |
-| s | /s/ | /G/p/ | /D/m/ | /J/d'''''/ | /N/s/ | /K/gor/ |
-| k | /k/ | /G/c/ | /D/c/ | /J/t'''''/ | /N/b/ | /K/gar/ |
-| r | /r/ | /G/n/ | /D/t/ | /J/n'''''/ | /N/f/ | /K/rek/ |
-| l | /l/ | /G/g/ | /D/d/ | /J/j'''''/ | /N/x/ | /K/kag/ |
-| n | /n/ | /G/b/ | /D/p/ | /J/u'''''/ | /N/r/ | /K/lok/ |
-| m | /m/ | /G/j/ | /D/j/ | /J/o'''''/ | /N/d/ | /K/nach/ |
-| j | /j/ | /G/d/ | /D/b/ | /J/f'''''/ | /N/l/ | /K/dur/ |
-| g | /g/ | /G/l/ | /D/y/ | /J/y'''''/ | /N/p/ | /K/tar/ |
-| b | /b/ | /G/r/ | /D/k/ | /J/i'''''/ | /N/n/ | /K/ket/ |
-| p | /p/ | /G/s/ | /D/n/ | /J/a'''''/ | /N/y/ | /K/gul/ |
-| y | /y/ | /G/y/ | /D/s/ | /J/e'''''/ | /N/g/ | /K/lug/ |
-| p | /p/ | /G/x/ | /D/k/ | /J/b'''''/ | /N/c/ | /K/sha/ |
-| x | /x/ | /G/f/ | /D/t/ | /J/g'''''/ | /N/j/ | /K/ruk/ |
+| c | /c/ | /G/m/ | /D/s/ | /J/l'''''''/ | /N/m/ | /K/rag/ |
+| d | /d/ | /G/t/ | /D/f/ | /J/s'''''''/ | /N/k/ | /K/lar/ |
+| t | /t/ | /G/k/ | /D/l/ | /J/m'''''''/ | /N/t/ | /K/kor/ |
+| s | /s/ | /G/p/ | /D/m/ | /J/d'''''''/ | /N/s/ | /K/gor/ |
+| k | /k/ | /G/c/ | /D/c/ | /J/t'''''''/ | /N/b/ | /K/gar/ |
+| r | /r/ | /G/n/ | /D/t/ | /J/n'''''''/ | /N/f/ | /K/rek/ |
+| l | /l/ | /G/g/ | /D/d/ | /J/j'''''''/ | /N/x/ | /K/kag/ |
+| n | /n/ | /G/b/ | /D/p/ | /J/u'''''''/ | /N/r/ | /K/lok/ |
+| m | /m/ | /G/j/ | /D/j/ | /J/o'''''''/ | /N/d/ | /K/nach/ |
+| j | /j/ | /G/d/ | /D/b/ | /J/f'''''''/ | /N/l/ | /K/dur/ |
+| g | /g/ | /G/l/ | /D/y/ | /J/y'''''''/ | /N/p/ | /K/tar/ |
+| b | /b/ | /G/r/ | /D/k/ | /J/i'''''''/ | /N/n/ | /K/ket/ |
+| p | /p/ | /G/s/ | /D/n/ | /J/a'''''''/ | /N/y/ | /K/gul/ |
+| y | /y/ | /G/y/ | /D/s/ | /J/e'''''''/ | /N/g/ | /K/lug/ |
+| p | /p/ | /G/x/ | /D/k/ | /J/b'''''''/ | /N/c/ | /K/sha/ |
+| x | /x/ | /G/f/ | /D/t/ | /J/g'''''''/ | /N/j/ | /K/ruk/ |
 
 El dígrafo `sh` representa el sonido /sh/.
 
