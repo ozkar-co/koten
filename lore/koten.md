@@ -2,17 +2,11 @@
 ## El lugar donde nace la vida
 
 /koten/
-
 /I/tero/
-
 /G/kubeich/
-
 /D/shulap/
-
 /J/o'mateue/
-
 /K/gornash-rag-larugtar/
-
 /N/beart/
 
 ---
@@ -33,7 +27,7 @@ Aún hay muchos misterios por descubrir en los confines del mundo conocido. Ante
 
 ### Sistema de Juego y Mecánicas Base
 
-Koten se juega con un sistema narrativo híbrido de **xD6 + Fate Acelerado**, centrado en construir una historia compartida por encima de la competencia mecánica.
+Koten se juega con dos dados de 6 caras y un sistema de trasfondo y rasgos centrado en ser muy narrativo, más que en mecánicas complejas.
 
 Aspectos más importantes:
 
