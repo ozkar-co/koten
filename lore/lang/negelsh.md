@@ -2,71 +2,88 @@
 
 ## Escritura
 
-- Direccion: horizontal (izquierda a derecha)
-- Unidad principal: silaba
-- **Sin silencio** (no existe este simbolo)
-- **5 vocales independientes** — no hay sobreposicion, cada vocal es un glifo propio:
-  - i, u, e, a, o
+* **Dirección:** Horizontal (izquierda a derecha).
+* **Unidad principal:** Sílaba.
+* **Sin silencio:** No existe un símbolo o glifo para representar el silencio.
+* **Vocales independientes:** 5 vocales con glifos propios e independientes (sin sobreposición u *overlay*): i, u, e, a, o.
 
-## Inventario de simbolos
+## Inventario de símbolos
 
-- i /N/i/
-- u /N/u/
-- e /N/e/
-- a /N/a/
-- o /N/o/
-- sh /N/sh/
-- d /N/d/
-- t /N/t/
-- s /N/s/
-- k /N/k/
-- r /N/r/
-- l /N/l/
-- n /N//n/
-- m /N/m/
-- j /N/j/
-- g /N/g/
-- b /N/b/
-- f /N/f/
-- y /N/y/
-- p /N/p/
-- x /N/x/
-- ? /N/?/
+El sistema consta de un **total de 21 símbolos**. El primer símbolo corresponde directamente a la vocal i (a diferencia de otros idiomas no presenta un simbolo para el sonido).
 
-**Total: 23 simbolos**. El primero es directamente la vocal `i` (sin silencio).
+| Grafía | Sintaxis especial | Tipo de fonema |
+| --- | --- | --- |
+| **i** | /N/i/ | Vocal |
+| **u** | /N/u/ | Vocal |
+| **e** | /N/e/ | Vocal |
+| **a** | /N/a/ | Vocal |
+| **o** | /N/o/ | Vocal |
+| **sh** | /N/sh/ | Consonante |
+| **d** | /N/d/ | Consonante |
+| **t** | /N/t/ | Consonante |
+| **s** | /N/s/ | Consonante |
+| **k** | /N/k/ | Consonante |
+| **r** | /N/r/ | Consonante |
+| **l** | /N/l/ | Consonante |
+| **n** | /N/n/ | Consonante |
+| **m** | /N/m/ | Consonante |
+| **j** | /N/j/ | Consonante |
+| **g** | /N/g/ | Consonante |
+| **b** | /N/b/ | Consonante |
+| **f** | /N/f/ | Consonante |
+| **y** | /N/y/ | Consonante |
+| **p** | /N/p/ | Consonante |
+| **x** | /N/x/ | Consonante |
+| **?** | /N/?/ | Simbolo |
 
-## Reglas de composicion
+## Reglas de composición
 
-- Cada simbolo es independiente; no hay overlay
-- Recorte: 32 px simetrico a izquierda y derecha
+* **Independencia gráfica:** Cada símbolo se posiciona de forma independiente; no se utiliza el mecanismo de sobreposición (*overlay*).
 
-## Notas
+## Gramática y adaptación desde el inglés
 
-Este idioma viene directamente derivado del ingles, para adaptar frases o palabras se pueden seguir las siguientes recomendaciones:
-- no se usan articulos
-- siempre se habla en tercera persona
-- el prural siempre se forma con el sufijo es
-- tienen un solo pronombre: lou/loues
-- los verbos siempre se usan en infinitivos y sin la particula "to"
-- se usa una particula antes del verbo par indicar el tiempo, dus para el presente, jas para el pasado, uil para el futuro
-- una pregunta siempre se inicia con do
-- para la negacion se usa no + verbo
-- el posesivo se marca con "of" (/N/book of lou/)
-- un destino con "at" (/N/lou dus go at store/)
-- proposito con "for" (/N/lou uil go for eat/)
-- solo hay dos comparativos /N/mor/ y /N/les/
-- siempre se usa voz activa
+El Negelsh deriva directamente del inglés. Para adaptar frases, vocabulario y estructuras, se aplican las siguientes reglas obligatorias:
 
-- Tienen indicadores tonales al final de cada frase como:
-- /N/yay/
-- /N/grr/
-- /N/ah?/
-- /N/hum/
-- /N/wow/
-- /N/uf/
-- /N/aha/
-- /N/yiks/
-- /N/neh/
-- /N/phew/
-- /N/ugh/
-- /N/nuhuh/
+### Sintaxis y estructura verbal
+
+* **Voz activa:** Toda construcción debe emplear estrictamente la voz activa.
+* **Perspectiva:** Se habla invariablemente en tercera persona.
+* **Forma verbal:** Los verbos se utilizan siempre en su forma infinitiva, omitiendo la partícula inglesa *to*.
+* **Marcadores de tiempo:** El tiempo gramatical se especifica anteponiendo una partícula obligatoria antes del verbo:
+* **Presente:** /N/dus/
+* **Pasado:** /N/jas/
+* **Futuro:** /N/uil/
+
+
+* **Negación:** Se estructura anteponiendo la partícula /N/no/ al verbo.
+* **Estructuras interrogativas:** Toda pregunta debe iniciar obligatoriamente con la partícula /N/do/ seguida de la frase (/N/do_lou_be_happy?/).
+
+### Sustantivos y partículas conexas
+
+* **Artículos:** No se utilizan artículos en ninguna construcción.
+* **Pluralización:** Todos los plurales se forman de manera regular añadiendo el sufijo /N/es/.
+* **Pronombres:** Existe un único pronombre: /N/lou/ (singular) y /N/loues/ (plural).
+* **Relaciones gramaticales:**
+* **Posesivo:** Se marca mediante el uso de /N/of/ (Ejemplo: /N/book_of_lou/).
+* **Destino:** Se marca mediante el uso de /N/at/ (Ejemplo: /N/lou_dus_go_at_store/).
+* **Propósito:** Se marca mediante el uso de /N/for/ (Ejemplo: /N/lou_uil_go_for_eat/).
+
+
+* **Comparativos:** El sistema se limita exclusivamente a dos operadores comparativos: /N/mor/ (más) y /N/les/ (menos).
+
+### Indicadores tonales
+
+Cada frase debe finalizar con un indicador tonal que denota la actitud o el contexto emocional del enunciado:
+
+* /N/yay/
+* /N/grr/
+* /N/ah?/
+* /N/hum/
+* /N/wow/
+* /N/uf/
+* /N/aha/
+* /N/yiks/
+* /N/neh/
+* /N/phew/
+* /N/ugh/
+* /N/nuhuh/
