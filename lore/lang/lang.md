@@ -4,27 +4,28 @@ La mayoría de lenguas de /koten/ siguen un sistema similar en el que los sonido
 
 A estos sonidos consonantes y sus agrupaciones se les da el nombre de raíces, cada raíz encierra algunos significados relacionados y permite interpretar el sentido de una palabra aunque sea desconocida, o traducir palabras a partir de raíces relacionadas.
 
-El /negelsh/ tiene algunas palabras que usan este sistema, pero también palabras provenientes de otro idioma, uno antiguo, del que ya no existen registros (Inglés). El /idoling/ es el único idioma que no usa para nada el sistema de raíces, es el idioma de la magia y muy pocos lo dominan. (Ido)
+El /N/negelsh/ tiene algunas palabras que usan este sistema, pero también palabras provenientes de otro idioma, uno antiguo, del que ya no existen registros (Inglés). El /idoling/ es el único idioma que no usa para nada el sistema de raíces, es el idioma de la magia y muy pocos lo dominan. (Ido)
 
 Para representar las raíces se usará su sonido aproximado y la siguiente tabla de equivalencias entre lenguajes, se parte de la lengua más extendida.
 
-lapag	gox'jix	dekayun	jobid'e	negelsh	gornash-kagsha
-c	m	s	l	m	rag
-d	t	f	s	k	lar
-t	k	l	m	t	kor
-s	p	m	d	s	gor
-k	c	c	t	b	gar
-r	n	t	n	f	rek
-l	g	d	j	x	kag
-n	b	p	u	r	lok
-m	j	j	o	d	nach
-j	d	b	f	l	dur
-g	l	y	y	p	tar
-b	r	k	i	n	ket
-p	s	n	a	y	gul
-y	y	s	e	g	lug
-p	x	k	b	c	sha
-x	f	t	g   j   ruk
+| 0 | Lapag | Gox'jix | Dekayun | Jobid'e | Negelsh | Gornash-Kagsha |
+|---|---|---|---|---|---|---|
+| c | /c/ | /G/m/ | /D/s/ | /J/l'''''/ | /N/m/ | /K/rag/ |
+| d | /d/ | /G/t/ | /D/f/ | /J/s'''''/ | /N/k/ | /K/lar/ |
+| t | /t/ | /G/k/ | /D/l/ | /J/m'''''/ | /N/t/ | /K/kor/ |
+| s | /s/ | /G/p/ | /D/m/ | /J/d'''''/ | /N/s/ | /K/gor/ |
+| k | /k/ | /G/c/ | /D/c/ | /J/t'''''/ | /N/b/ | /K/gar/ |
+| r | /r/ | /G/n/ | /D/t/ | /J/n'''''/ | /N/f/ | /K/rek/ |
+| l | /l/ | /G/g/ | /D/d/ | /J/j'''''/ | /N/x/ | /K/kag/ |
+| n | /n/ | /G/b/ | /D/p/ | /J/u'''''/ | /N/r/ | /K/lok/ |
+| m | /m/ | /G/j/ | /D/j/ | /J/o'''''/ | /N/d/ | /K/nach/ |
+| j | /j/ | /G/d/ | /D/b/ | /J/f'''''/ | /N/l/ | /K/dur/ |
+| g | /g/ | /G/l/ | /D/y/ | /J/y'''''/ | /N/p/ | /K/tar/ |
+| b | /b/ | /G/r/ | /D/k/ | /J/i'''''/ | /N/n/ | /K/ket/ |
+| p | /p/ | /G/s/ | /D/n/ | /J/a'''''/ | /N/y/ | /K/gul/ |
+| y | /y/ | /G/y/ | /D/s/ | /J/e'''''/ | /N/g/ | /K/lug/ |
+| p | /p/ | /G/x/ | /D/k/ | /J/b'''''/ | /N/c/ | /K/sha/ |
+| x | /x/ | /G/f/ | /D/t/ | /J/g'''''/ | /N/j/ | /K/ruk/ |
 
 El dígrafo `sh` representa el sonido /sh/.
 
