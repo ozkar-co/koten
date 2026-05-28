@@ -35,6 +35,7 @@ El sistema consta de un **total de 21 símbolos**. El primer símbolo correspond
 | **p** | /N/p/ | Consonante |
 | **x** | /N/x/ | Consonante |
 | **?** | /N/?/ | Simbolo |
+| **.** | /N/./ | Simbolo |
 
 ## Reglas de composición
 
