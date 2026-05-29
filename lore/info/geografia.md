@@ -8,29 +8,27 @@ El continente principal, /kanoga/, alberga la mayor concentración de poblacione
 
 La geografía de Koten no es meramente un telón de fondo: es un personaje activo en la historia. Las montañas aisladas, los mares peligrosos y los territorios malditos han definido la historia de las razas, sus relaciones y sus destinos. Comprender el mundo es comprender los conflictos y alianzas que lo habitan.
 
-## Continentes y Regiones Principales
+## Regiones Principales
 
 ### Kanoga
 El más grande continente del mundo. Su mitad oeste concentra casi toda la población conocida, siendo el centro de civilización y comercio.
 
-#### Zona Este (Tierras Heladas)
+### Tierras Heladas
 La mitad este de Kanoga se va haciendo progresivamente más fría según se avanza hacia el este. Las leyendas hablan de un mar de hielo, un vasto territorio congelado que pocos se atreven a explorar. Nadie que se haya aventurado en esas tierras ha vuelto con vida para contar su historia.
 
-#### Zona Noroeste (Archipiélago Tapiga)
+### Archipiélago Tapiga
 En el mar que llaman /topats/, a noroeste de Kanoga, se encuentra el archipiélago de /tapiga/. Es un lugar de tierras fértiles, climas templados y días de paz, frecuentemente visitado por navegantes y mercaderes.
 
-### Shoseg - Las Tierras Malditas
-Un continente situado al suroeste del mapa conocido. Es un lugar donde solo habitan la muerte, la enfermedad y la destrucción. Muy pocos osan aventurarse allí, y quienes lo hacen rara vez regresan. Se dice que fue maldecido en tiempos antiguos.
+### Las Tierras Malditas
+Un continente situado al suroeste del mapa conocido, llamado /shoseg/. Es un lugar donde solo habitan la muerte, la enfermedad y la destrucción. Muy pocos osan aventurarse allí, y quienes lo hacen rara vez regresan. Se dice que fue maldecido en tiempos antiguos.
 
-### Mares y Océanos
-
-#### Topats
+### Mar de Topats
 El mar que rodea el archipiélago de Tapiga, conocido como zona de navegación relativamente segura para los Perim y otras razas navegantes.
 
-#### Toposme - El Mar de las Sombras
+### Toposme - El Mar de las Sombras
 Un vasto océano al oeste, considerado la última barrera antes de los dominios de la muerte. Es legendario por su peligrosidad y el misterio que lo rodea. Casi nadie ha regresado de sus aguas, y quienes lo han hecho traen consigo historias de horror y, frecuentemente, la muerte misma.
 
-## Características Geográficas por Región
+## Características Geográficas
 
 ### Zonas Montañosas
 Habitadas principalmente por los /nerum/, con sistemas de túneles intrincados y profundas minas que se extienden bajo tierra.

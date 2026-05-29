@@ -32,6 +32,8 @@ Para representar las raíces se usará su sonido aproximado y la siguiente tabla
 
 100 raíces básicas encapsulan todos los posibles conceptos que se pueden expresar en las lenguas de /koten/, se usa la lengua común, pero con la anterior tabla pueden traducirse a las demás lenguas.
 
+Estas son las 100 raices que encierran los conceptos base o puntos de contacto entre las distintas lenguas:
+
 | Raíz | Significado | Raíz | Significado | Raíz | Significado |
 |---|---|---|---|---|---|
 | sh | diferente, alterado, contrario, otro | d | aire, aliento, esencia, espíritu | t | todo, abundancia, universo, vida |
