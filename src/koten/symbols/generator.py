@@ -222,6 +222,7 @@ class SymbolGenerator:
         self,
         word: str,
         language_code: str,
+        target_height: Optional[int] = None,
         spacing_x: Optional[int] = None,
         spacing_y: Optional[int] = None,
     ) -> Image.Image:
@@ -241,22 +242,31 @@ class SymbolGenerator:
             raise ValueError("No valid roots in word")
 
         if writing_mode == "columnar_right":
-            return self._render_columnar(
+            image = self._render_columnar(
                 roots=roots,
                 config=config,
                 spacing_x=spacing_x,
                 spacing_y=spacing_y,
             )
+        else:
+            symbols = self._compose_symbols(roots, config)
+            if not symbols:
+                raise ValueError("No valid roots in word")
 
-        symbols = self._compose_symbols(roots, config)
-        if not symbols:
-            raise ValueError("No valid roots in word")
+            if writing_mode == "circular_clockwise_4":
+                image = self._render_circular_clockwise_4(
+                    symbols=symbols,
+                    spacing_x=spacing_x,
+                    spacing_y=spacing_y,
+                )
+            else:
+                image = self._render_horizontal(symbols=symbols, spacing_x=spacing_x)
 
-        if writing_mode == "circular_clockwise_4":
-            return self._render_circular_clockwise_4(
-                symbols=symbols,
-                spacing_x=spacing_x,
-                spacing_y=spacing_y,
-            )
+        if target_height is not None:
+            if target_height <= 0:
+                raise ValueError("target_height must be greater than 0")
+            if image.height != target_height:
+                new_width = max(1, round(image.width * (target_height / image.height)))
+                image = image.resize((new_width, target_height), Image.Resampling.LANCZOS)
 
-        return self._render_horizontal(symbols=symbols, spacing_x=spacing_x)
+        return image

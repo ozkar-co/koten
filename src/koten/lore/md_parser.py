@@ -93,7 +93,7 @@ def _replace_koten_word(match: re.Match) -> str:
         else DEFAULT_LANGUAGE
     )
     normalized_word = _strip_accents(word)
-    image_url = f"/word/{language}/{quote(normalized_word, safe='')}"
+    image_url = f"/word/{language}/{quote(normalized_word, safe='')}?small=1"
     return (
         f'<span class="koten-word" data-language="{html.escape(language, quote=True)}" '
         f'data-word="{html.escape(normalized_word, quote=True)}">'
