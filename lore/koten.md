@@ -1,19 +1,7 @@
 # Koten
 ## El lugar donde nace la vida
 
-/koten/
-
-/I/tero/
-
-/G/kubeish/
-
-/D/shulap/
-
-/J/o'mateue/
-
-/K/gornash-rag-larugtar/
-
-/N/beart/
+![Koten](/image/koten.jpg)
 
 ---
 
