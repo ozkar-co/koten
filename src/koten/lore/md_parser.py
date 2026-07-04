@@ -41,9 +41,17 @@ DEFAULT_LANGUAGE = "lapag"
 # Matches /PREFIX/word/ or /word/
 # PREFIX is a single uppercase letter from LANGUAGE_PREFIXES keys
 _PREFIX_PATTERN = "|".join(re.escape(k) for k in LANGUAGE_PREFIXES)
+# Word content must stay on one line; allowing newlines caused false matches such as
+# `/Consecuencias**` swallowing text until the next `/` in `**Estrés/Consecuencias**`.
 _KOTEN_RE = re.compile(
-    r"/(?:(" + _PREFIX_PATTERN + r")/)?([^/\s][^/]*)/",
+    r"/(?:(" + _PREFIX_PATTERN + r")/)?([^/\s\n][^/\n]*)/",
     flags=re.IGNORECASE,
+)
+_LIST_ITEM_RE = re.compile(
+    r"^[ \t]*(?:[-*+]|\d+\.)\s",
+)
+_LIST_MARKER_RE = re.compile(
+    r"^(?P<indent>[ \t]*)(?P<marker>(?:[-*+])|\d+\.)\s+(?P<body>.*)$",
 )
 _IMAGE_LINE_RE = re.compile(
     r"(?m)^(?P<indent>[ \t]*)(?P<source>[A-Za-z0-9_.-]+\.(?:png|jpg|jpeg|gif|webp)(?:\?type=(?:full|thumb))??)[ \t]*$"
@@ -51,8 +59,90 @@ _IMAGE_LINE_RE = re.compile(
 _MARKDOWN_IMAGE_RE = re.compile(
     r"!\[(?P<alt>[^\]]*)\]\((?P<source>[^)\s]+)\)"
 )
-_PLACEHOLDER_PREFIX = "@@KOTEN_WORD_PLACEHOLDER_"
+_PLACEHOLDER_PREFIX = "@@KPH"
 _PLACEHOLDER_SUFFIX = "@@"
+_MARKDOWN_EXTENSIONS = ["extra", "sane_lists"]
+
+
+def _collapse_blank_lines_in_lists(text: str) -> str:
+    """Keep list blocks contiguous when authors leave a single blank line between items."""
+    lines = text.splitlines()
+    out: list[str] = []
+
+    for index, line in enumerate(lines):
+        if line.strip():
+            out.append(line)
+            continue
+
+        blank_run = 1
+        next_index = index + 1
+        while next_index < len(lines) and not lines[next_index].strip():
+            blank_run += 1
+            next_index += 1
+
+        previous = out[-1] if out else ""
+        next_line = lines[next_index] if next_index < len(lines) else ""
+
+        if (
+            blank_run == 1
+            and _LIST_ITEM_RE.match(previous)
+            and next_line
+            and _LIST_ITEM_RE.match(next_line)
+        ):
+            continue
+
+        out.extend([""] * blank_run)
+
+    result = "\n".join(out)
+    if text.endswith("\n"):
+        result += "\n"
+    return result
+
+
+def _normalize_nested_lists(text: str) -> str:
+    """Indent list items that follow a parent item ending with a colon."""
+    lines = text.splitlines()
+    out: list[str] = []
+    nesting = False
+    parent_indent: str | None = None
+
+    for line in lines:
+        if not line.strip():
+            nesting = False
+            parent_indent = None
+            out.append(line)
+            continue
+
+        match = _LIST_MARKER_RE.match(line)
+        if (
+            match
+            and nesting
+            and parent_indent is not None
+            and match.group("indent") == parent_indent
+        ):
+            marker = match.group("marker")
+            body = match.group("body")
+            line = f"{parent_indent}    {marker} {body}"
+
+        out.append(line)
+
+        if match:
+            if match.group("body").rstrip().endswith(":"):
+                nesting = True
+                parent_indent = match.group("indent")
+        else:
+            nesting = False
+            parent_indent = None
+
+    result = "\n".join(out)
+    if text.endswith("\n"):
+        result += "\n"
+    return result
+
+
+def _prepare_markdown(text: str) -> str:
+    text = _collapse_blank_lines_in_lists(text)
+    return _normalize_nested_lists(text)
 
 
 def _strip_accents(text: str) -> str:
@@ -124,21 +214,25 @@ def parse_lore_md(text: str) -> str:
         placeholders.append(_replace_markdown_image(match))
         return f"{_PLACEHOLDER_PREFIX}{len(placeholders) - 1}{_PLACEHOLDER_SUFFIX}"
 
+    prepared = _prepare_markdown(text)
+
     # Render Markdown around inert placeholders, then restore the generated HTML.
-    substituted = _IMAGE_LINE_RE.sub(replace_image_with_placeholder, text)
+    substituted = _IMAGE_LINE_RE.sub(replace_image_with_placeholder, prepared)
     substituted = _MARKDOWN_IMAGE_RE.sub(replace_markdown_image_with_placeholder, substituted)
     substituted = _KOTEN_RE.sub(replace_with_placeholder, substituted)
 
-    # Step 2: render standard Markdown → HTML
-    html = markdown.markdown(
+    rendered = markdown.markdown(
         substituted,
-        extensions=["tables", "fenced_code"],
+        extensions=_MARKDOWN_EXTENSIONS,
     )
 
     for index, replacement in enumerate(placeholders):
-        html = html.replace(f"{_PLACEHOLDER_PREFIX}{index}{_PLACEHOLDER_SUFFIX}", replacement)
+        rendered = rendered.replace(
+            f"{_PLACEHOLDER_PREFIX}{index}{_PLACEHOLDER_SUFFIX}",
+            replacement,
+        )
 
-    return html
+    return rendered
 
 
 def parse_lore_file(path: str) -> str:
