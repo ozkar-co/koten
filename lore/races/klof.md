@@ -4,6 +4,8 @@ Son conocidos en su propia lengua como /gul-ragor/, pero en el resto del mundo s
 
 Son irracionales, extremadamente salvajes y agresivos. Cazan en jaurías, atacan, despedazan y devoran a sus presas sin distinguir entre enemigos o aliados, por lo que incluso llegan a atacar a los mismos /mugot/.
 
+Esta raza vive muy pocos /ani/.
+
 ## Ficha Técnica
 
 ### Nombres en idiomas
