@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koten</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>Koten</h1>
+          <p class="subtitle">El Lugar donde nace la vida</p>
+        </div>
+        <nav id="site-nav" class="site-nav" aria-label="Menu principal">
+          <a class="btn btn-pill" href="/admin/login">Login</a>
+        </nav>
+      </header>
+
+      <div id="main-layout" class="layout">
+        <aside id="sidebar" class="sidebar hidden"></aside>
+
+        <main class="content">
+          <section id="lore-view">
+            <article id="lore-content" class="lore-content panel"></article>
+          </section>
+
+          <section id="lexicon-view" class="hidden"></section>
+
+          <section id="tools-view" class="hidden"></section>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
