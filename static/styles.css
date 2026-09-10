@@ -12,7 +12,8 @@
   --white: #fff;
   --bg-warm: #fff8d8;
   --bg-cool: #e7f2ef;
-  --overlay-gray-alpha: rgba(0, 0, 0, 0.78);
+  --shadow-hard: rgba(0, 0, 0, 0.78);
+  --shadow-soft: rgba(0, 0, 0, 0.15);
   --panel-frosted: rgba(255, 253, 247, 0.8);
   --white-border-soft: rgba(255, 255, 255, 0.25);
 
@@ -192,11 +193,39 @@ img {
   display: inline-block;
   vertical-align: middle;
   margin: 0 2px;
+  position: relative;
+  cursor: help;
 }
 
 .koten-word img {
   max-height: 1.5em;
   width: auto;
+}
+
+.koten-word::after {
+  content: attr(data-word);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px var(--shadow-soft);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 10;
+}
+
+.koten-word:hover::after,
+.koten-word:focus-within::after {
+  opacity: 1;
 }
 
 /* Global image modal */
@@ -207,7 +236,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--overlay-gray-alpha);
+  background: var(--shadow-hard);
   cursor: zoom-out;
   padding: 1rem;
 }
@@ -331,7 +360,7 @@ td {
 
 th {
   background: var(--white);
-  box-shadow: 0 2px 4px var(--overlay-gray-alpha);
+  box-shadow: 0 2px 4px var(--shadow-hard);
   font-weight: 600;
 }
 
