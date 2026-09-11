@@ -11,6 +11,7 @@ No solo los personajes jugadores tienen profundidad. Cualquier elemento puede te
 **Consecuencias**: Puede romperse, maldecirse, consumirse
 
 Ejemplo:
+
 - Nombre: *La Espada de Keldir*
 - Trasfondo: fue forjada en volcán e inbuhida con magia de fuego.
 - Rasgos: "Esapda Flamigera"
@@ -23,6 +24,7 @@ Ejemplo:
 **Estrés/Consecuencias**: Pueden ser heridos progresivamente
 
 Ejemplo:
+
 - Nombre: *El Señor Sombrio*
 - Trasfondo: antiguo rey destronado
 - Rasgos: "Mago Oscuro", "Liderazgo Tiránico", "Ejército de Sombras"
@@ -35,6 +37,7 @@ Ejemplo:
 **Estrés/Consecuencias**: Pueden ser "dañados" narrativamente
 
 Ejemplo:
+
 - Nombre: *La Catedral Olvidada*
 - Trasfondo: Construida por orden de un culto, abandonada hace siglos
 - Rasgos: "Atmósfera Sobrenatural", "Acústica Extraña", "Guardianes Espectrales"
@@ -47,6 +50,7 @@ Ejemplo:
 **Estrés/Consecuencias**: Se pueden "resolver" progresivamente
 
 Ejemplo:
+
 - Nombre: *Envenenado*
 - Trasfondo: Se ha producido por una cortadura con un arma envenenada
 - Rasgos: "Veneno Necrotico nivel Experto", hace 1 ataque cada turno.
@@ -59,6 +63,7 @@ Ejemplo:
 **Estrés/Consecuencias**: Pueden ser heridos o volverse problemáticos
 
 Ejemplo:
+
 - Nombre: *Kael el Mercenario*
 - Trasfondo: Debe dinero, busca honor y redención
 - Rasgos: "Maestro de armas", "Instinto de Supervivencia", "Código del Guerrero"
@@ -67,6 +72,7 @@ Ejemplo:
 ## Aplicación Práctica
 
 Usa esto para:
+
 - Hacer enemigos memorables (tienen motivaciones)
 - Crear conflictos complejos (múltiples rasgos a resolver)
 - Recompensar creatividad (atacar un rasgo del problema de forma ingeniosa)

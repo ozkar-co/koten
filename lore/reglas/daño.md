@@ -29,6 +29,7 @@ Cuando el daño supera tu estrés actual (máximo 3), o viene de un triunfo, cau
 ## Muerte
 
 Cuando **todos tus rasgos descienden a 0** por acumulación de consecuencias:
+
 - Mueres o quedas incapacitado
 - Es permanente a menos que negocies con el Master
 

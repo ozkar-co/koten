@@ -18,6 +18,7 @@ Estos aspectos forman la base de tu personaje y son el corazón de todas las dec
 A partir de los 6 aspectos, creas entre **4 y 7 Rasgos** que representan tus competencias. Estos pueden derivar directamente de los aspectos o ser combinaciones de ellos.
 
 Ejemplos:
+
 - "Guardia de la Frontera" (Pasado + Presente)
 - "Amable Gigante del Bosque" (Motivación + Fisico)
 - "Excluido por el Sistema" (Debilidad + Carácter)
@@ -36,6 +37,7 @@ Esto asegura que todos los rasgos sean significativos pero ninguno sea abrumador
 Comienza con **3 Puntos de Destino** (máximo 12).
 
 Usa manualmente para:
+
 - Reroll de una tirada
 - Acelerar la recuperacion de 1 punto de estrés
 - Crear una coincidencia favorable (en conjunto con el Master)

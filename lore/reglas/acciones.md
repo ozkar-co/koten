@@ -12,6 +12,7 @@ Actúas para beneficiar a otro personaje o crear una ventaja circunstancial:
 - En **fallo**: Nada sucede o empeoras la situación
 
 Ejemplos:
+
 - Cubrir a un aliado en combate
 - Preparar una emboscada
 - Dar un discurso inspirador
@@ -19,11 +20,13 @@ Ejemplos:
 ### 2. Superar y Resolver
 
 Interfiere con obstáculos, resuelve problemas, o consigues información:
+
 - Tiras el rasgo aplicable contra el obstáculo
 - En **éxito**: Superas el problema
 - En **fallo**: Queda sin resolver o se complica
 
 Ejemplos:
+
 - Forzar una cerradura
 - Navegar en alta mar
 - Encontrar información en una biblioteca
@@ -31,6 +34,7 @@ Ejemplos:
 ### 3. Atacar
 
 Intenta infligir daño o causar consecuencias:
+
 - Tiras tu rasgo de combate contra el oponente
 - El oponente elige que rasgo usará para defenderse y tira los dados.
 - En **éxito o más**: El oponente recibe estrés o consecuencias

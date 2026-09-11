@@ -5,6 +5,7 @@
 La magia está ligada a un **rasgo específico**. No es una habilidad separada, sino una forma de usar un rasgo mágico existente.
 
 Ejemplos de rasgos mágicos:
+
 - "Mago de Fuego"
 - "Chamán del Bosque"
 - "Curandero Sobrenatural"
@@ -12,6 +13,7 @@ Ejemplos de rasgos mágicos:
 ## Uso en Combate
 
 Se usa igual que cualquier ataque:
+
 - Tiras el rasgo mágico contra defensa del objetivo
 - Sigue las mismas reglas de daño y consecuencias
 - Puede causar estrés o consecuencias adicionales si el Master lo decide
@@ -19,6 +21,7 @@ Se usa igual que cualquier ataque:
 ## Uso Fuera de Combate
 
 La verdadera utilidad de la magia está en **resolver situaciones** sin violencia:
+
 - Invocar lluvia
 - Leer mentes
 - Crear ilusiones
@@ -44,6 +47,7 @@ Un rasgo mágico puede tener "3 usos por sesión", "hasta que medites 1 hora", a
 ## Límites
 
 La magia no puede:
+
 - Cambiar el resultado de una tirada
 - Automáticamente resolver conflictos (aún requiere tirada)
 - Anular la muerte si el Master no lo permite

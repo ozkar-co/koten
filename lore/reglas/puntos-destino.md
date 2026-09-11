@@ -22,6 +22,7 @@
 Comienza cada sesión con 3 Puntos de Destino más cualquiera que no hayas gastado (hasta máximo 12).
 
 El Master otorga entre 0 y 3 puntos por sesión según:
+
 - Juego especialmente memorable
 - Fidelidad al trasfondo
 - Momentos cinematográficos

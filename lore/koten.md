@@ -1,7 +1,7 @@
 # Koten
 # El lugar donde nace la vida
 
-![Koten](/image/koten.jpg)}
+![Koten](/image/koten.jpg)
 
 ## Panorama General
 

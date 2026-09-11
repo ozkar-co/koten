@@ -13,6 +13,7 @@ Como Master de Juego, tu rol es:
 ## Otorgar Puntos de Destino
 
 A criterio tuyo, entre 0 y 3 por sesión:
+
 - Juego especialmente memorable
 - Fidelidad magistral al trasfondo
 - Momentos cinematográficos o sorprendentes
@@ -22,10 +23,12 @@ A criterio tuyo, entre 0 y 3 por sesión:
 ## Dificultades
 
 ### Base
+
 - Mundo: 12
 - Oposición: Dado contra dado
 
 ### Modificadores (Penalizadores)
+
 - -1: Retador
 - -2: Difícil
 - -3: Muy difícil
@@ -36,6 +39,7 @@ Si es una acción fácil o automática narrativamente, no tires - simplemente su
 ## NPCs y Enemigos
 
 Todos los NPCs pueden tener:
+
 - **Trasfondo** - Motivaciones, historia
 - **Rasgos** - Competencias y habilidades
 - **Estrés/Consecuencias** - Pueden ser dañados como jugadores
@@ -46,6 +50,7 @@ Los enemigos menores se  simplifican: 1-2 rasgos, estrés bajo.
 ## Crear Drama
 
 La narración siempre gana:
+
 - Si una tirada mata la trama, rehazla o negocia resultado
 - Las consecuencias deben llevar la historia adelante
 - Fallar no necerariamente esta mal, simplemente crea nuevas complicaciones
