@@ -1,10 +1,9 @@
-import { fetchText, getLoreDocument, getLoreIndex, normalizeLoreHtml } from "../service.js";
+import { fetchText, getLoreDocument, getLoreIndex, loreRoute, normalizeLoreHtml } from "../service.js";
 
 export function createLoreViewController({
   sidebar,
   loreContent,
 }) {
-  let currentLoreType = null;
   let sectionMeta = [];
   let sectionMenus = new Map();
   let homeDocument = null;
@@ -78,13 +77,11 @@ export function createLoreViewController({
 
   function createLoreMenuItem({ slug, title }, type) {
     const li = document.createElement("li");
-    const btn = document.createElement("button");
-    btn.className = "btn-ghost";
-    btn.textContent = title;
-    btn.addEventListener("click", () => {
-      loadLoreDocument(type, slug, title);
-    });
-    li.appendChild(btn);
+    const link = document.createElement("a");
+    link.className = "btn-ghost";
+    link.href = loreRoute(type, slug);
+    link.textContent = title;
+    li.appendChild(link);
     return li;
   }
 
@@ -98,13 +95,11 @@ export function createLoreViewController({
       sectionNode.className = "menu-section hidden";
 
       const heading = document.createElement("h3");
-      const headingButton = document.createElement("button");
-      headingButton.className = "btn-ghost";
-      headingButton.textContent = section.title;
-      headingButton.addEventListener("click", () => {
-        loadLoreDocument(section.key, section.rootSlug, section.title);
-      });
-      heading.appendChild(headingButton);
+      const headingLink = document.createElement("a");
+      headingLink.className = "btn-ghost";
+      headingLink.href = loreRoute(section.key, section.rootSlug);
+      headingLink.textContent = section.title;
+      heading.appendChild(headingLink);
 
       const list = document.createElement("ul");
       section.documents
@@ -173,7 +168,6 @@ export function createLoreViewController({
   }
 
   async function loadHomeIntro() {
-    currentLoreType = null;
     loreContent.innerHTML = "<p>Cargando documento...</p>";
 
     try {
@@ -183,6 +177,7 @@ export function createLoreViewController({
 
       const html = await fetchText(`/lore/${homeDocument.slug}`);
       loreContent.innerHTML = normalizeLoreHtml(html);
+      resolveLoreLinks(loreContent, null);
       document.title = `Koten | ${homeDocument.title}`;
     } catch (error) {
       loreContent.innerHTML = `<p>${error.message}</p>`;
@@ -191,30 +186,23 @@ export function createLoreViewController({
 
   async function loadLoreDocument(type, slug, title) {
     try {
-      currentLoreType = type;
       loreContent.innerHTML = "<p>Cargando documento...</p>";
       const html = await getLoreDocument(type, slug);
       loreContent.innerHTML = normalizeLoreHtml(html);
+      resolveLoreLinks(loreContent, type);
       document.title = `Koten | ${title}`;
     } catch (error) {
       loreContent.innerHTML = `<p>${error.message}</p>`;
     }
   }
 
-  function findLoreDocumentByTypeAndSlug(type, slug) {
-    if (!type) return null;
-    const section = sectionMeta.find((item) => item.key === type);
-    if (!section) return null;
-    const match = section.documents.find((item) => item.slug === slug);
-    if (!match) return null;
-    return { type: section.key, title: match.title, slug };
-  }
-
-  function parseMarkdownLink(href) {
+  function parseMarkdownLink(href, type) {
     const cleanHref = href.split("#")[0].split("?")[0].trim();
     if (!cleanHref || !cleanHref.endsWith(".md")) return null;
 
-    const parts = cleanHref.split("/").filter(Boolean);
+    const parts = cleanHref
+      .split("/")
+      .filter((part) => part && part !== "." && part !== "..");
     const file = parts[parts.length - 1];
     const slug = file.replace(/\.md$/i, "");
     if (!slug) return null;
@@ -223,42 +211,17 @@ export function createLoreViewController({
       return { type: parts[0], slug };
     }
 
-    if (!currentLoreType) {
-      return null;
-    }
+    if (!type) return null;
 
-    return { type: currentLoreType, slug };
+    return { type, slug };
   }
 
-  function interceptMarkdownLinks(onNavigate) {
-    loreContent.addEventListener("click", async (event) => {
-      const link = event.target.closest("a");
-
-      if (!link) {
-        return;
+  function resolveLoreLinks(container, type) {
+    container.querySelectorAll("a[href]").forEach((link) => {
+      const target = parseMarkdownLink(link.getAttribute("href") || "", type);
+      if (target) {
+        link.href = loreRoute(target.type, target.slug);
       }
-
-      const href = link.getAttribute("href") || "";
-      const target = parseMarkdownLink(href);
-
-      if (!target) {
-        return;
-      }
-
-      event.preventDefault();
-
-      if (onNavigate) {
-        onNavigate(target.type, target.slug);
-        return;
-      }
-
-      const fromIndex = findLoreDocumentByTypeAndSlug(target.type, target.slug);
-      if (!fromIndex) {
-        loreContent.innerHTML = `<p>No se pudo resolver el enlace: ${href}</p>`;
-        return;
-      }
-
-      await loadLoreDocument(fromIndex.type, target.slug, fromIndex.title);
     });
   }
 
@@ -269,6 +232,5 @@ export function createLoreViewController({
     loadSectionRoot,
     loadSectionDocument,
     showSectionMenu,
-    interceptMarkdownLinks,
   };
 }

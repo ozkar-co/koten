@@ -73,25 +73,26 @@ function initGlobalImageModal() {
   });
 }
 
-function createTopNavButton(target, label, isActive = false) {
-  const button = document.createElement("button");
-  button.className = `btn btn-pill site-nav-btn${isActive ? " btn-active" : ""}`;
-  button.dataset.target = target;
-  button.textContent = label;
-  return button;
+function createTopNavLink(target, label, isActive = false) {
+  const link = document.createElement("a");
+  link.className = `btn btn-pill site-nav-btn${isActive ? " btn-active" : ""}`;
+  link.dataset.target = target;
+  link.href = target === "home" ? "/" : `/${target}`;
+  link.textContent = label;
+  return link;
 }
 
 function renderTopNavigation(sections) {
   sectionTargets = sections.map((section) => section.key);
 
-  siteNav.querySelectorAll("button.site-nav-btn").forEach((button) => button.remove());
+  siteNav.querySelectorAll("a.site-nav-btn").forEach((link) => link.remove());
 
   const loginLink = siteNav.querySelector('a[href="/admin/login"]');
   const nodes = [
-    createTopNavButton("home", homeDocument.title, true),
-    ...sections.map((section) => createTopNavButton(section.key, section.title)),
-    createTopNavButton("lexicon", "Lexicon"),
-    createTopNavButton("tools", "Tools"),
+    createTopNavLink("home", homeDocument.title, true),
+    ...sections.map((section) => createTopNavLink(section.key, section.title)),
+    createTopNavLink("lexicon", "Lexicon"),
+    createTopNavLink("tools", "Tools"),
   ];
 
   nodes.forEach((node) => {
@@ -100,18 +101,22 @@ function renderTopNavigation(sections) {
 }
 
 function setActiveTopMenu(target) {
-  siteNav.querySelectorAll("button.site-nav-btn").forEach((btn) =>
-    btn.classList.toggle("btn-active", btn.dataset.target === target)
+  siteNav.querySelectorAll("a.site-nav-btn").forEach((link) =>
+    link.classList.toggle("btn-active", link.dataset.target === target)
   );
 }
 
 function currentRoute() {
-  return window.location.pathname.split("/").filter(Boolean);
-}
-
-function navigateTo(path) {
-  history.pushState({}, "", path);
-  renderRoute();
+  return window.location.pathname
+    .split("/")
+    .filter(Boolean)
+    .map((part) => {
+      try {
+        return decodeURIComponent(part);
+      } catch {
+        return part;
+      }
+    });
 }
 
 function showOnly(view) {
@@ -149,10 +154,15 @@ async function renderSection(section, slug) {
   sidebar.classList.remove("hidden");
   loreViewController.showSectionMenu(section);
 
-  if (slug) {
-    await loreViewController.loadSectionDocument(section, slug);
-  } else {
+  if (!slug || slug === section) {
     await loreViewController.loadSectionRoot(section);
+    return;
+  }
+
+  try {
+    await loreViewController.loadSectionDocument(section, slug);
+  } catch {
+    renderNotFound();
   }
 }
 
@@ -185,24 +195,9 @@ async function renderRoute() {
   await renderSection(first, second);
 }
 
-function initNavigation() {
-  siteNav.addEventListener("click", (event) => {
-    const button = event.target.closest("button.site-nav-btn");
-    if (!button) return;
-
-    const target = button.dataset.target;
-    if (target === "home") navigateTo("/");
-    else navigateTo(`/${target}`);
-  });
-
-  window.addEventListener("popstate", renderRoute);
-}
-
 async function bootstrap() {
   loreViewController = createLoreViewController({ sidebar, loreContent });
-  initNavigation();
   initGlobalImageModal();
-  loreViewController.interceptMarkdownLinks((type, slug) => navigateTo(`/${type}/${slug}`));
 
   const loreIndex = await loreViewController.loadLoreIndex();
   homeDocument = loreIndex.home;

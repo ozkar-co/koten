@@ -47,6 +47,10 @@ export async function getLoreDocument(type, slug) {
   return fetchText(`/lore/${type}/${slug}`);
 }
 
+export function loreRoute(type, slug) {
+  return !slug || slug === type ? `/${type}` : `/${type}/${slug}`;
+}
+
 export async function renderMarkdown(text) {
   const response = await fetch(`${API_BASE}/lore/render`, {
     method: "POST",
