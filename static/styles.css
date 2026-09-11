@@ -348,6 +348,7 @@ img {
 table {
   border-collapse: collapse;
   margin-inline: auto;
+  margin-bottom: 1rem;
 }
 
 th,

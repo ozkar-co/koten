@@ -71,28 +71,42 @@ En su mercado interno, y en los intercambios con sus aliados, manejan precios mu
 | /paxgob/ | Plata | Común | 288 acero | 1 plata |
 | /yaxgob/ | Oro | Común | 3456 acero | 12 plata |
 
+## Culturas sin Dinero
+
+No todas las culturas de /koten/ usan monedas:
+
+- Los **/elemir/**: no usan dinero entre ellos. Tienen arcas comunes y todo lo comparten; solo emplean monedas para comerciar con otras razas.
+- Los **/mugot/**: no usan dinero ni comercian. Obtienen todo por la fuerza, asesinando y robando.
+
 ## Equivalencias
 
 ### Relaciones directas
 
-| Equivalencia | Relación |
-|---|---|
-| 1 plomo | 12 aluminio |
-| 1 bronce | 12 plomo = 144 aluminio |
-| 1 plata | 12 bronce |
-| 1 oro | 12 plata |
-| 1 platino | 12 oro |
-| 1 hierro | 1/2 de acero = 1/12 de latón |
-| 1 acero | 2 hierro = 6 aluminio |
-| 1 cobre | 12 acero = 1/2 de bronce = 6 plomo |
-| 1 latón | 12 hierro = 1/4 de bronce |
-| 1 titanio | 6 bronce = 72 plomo |
-| 1 vidrio | 1/12 de aluminio |
-| 1 plástico | 3 vidrio = 1/4 de aluminio = 1/12 de hierro |
+| Unidad  | Vidrio | Plástico | Aluminio | Hierro | Acero | Plomo | Latón | Cobre | Bronce |
+|---|---|---|---|---|---|---|---|---|---|
+| **Vidrio** | 1 | 1/3 | 1/12 | 1/36 | 1/72 | — |  —  | — | — |
+| **Plástico** | 3 | 1 | 1/4 | 1/12 | 1/24 | 1/48 | — |  —  | — |
+| **Aluminio** | 12 | 4 | 1 | 1/3 | 1/6 | 1/12 | 1/36 | 1/72 |  —  |
+| **Hierro** | 36 | 12 | 3 | 1 | 1/2 | 1/4 | 1/12 | 1/24 | 1/48 |
+| **Acero** | 72 | 24 | 6 | 2 | 1 | 1/2 | 1/6 | 1/12 | 1/24 |
+| **Plomo** | 144 | 48 | 12 | 4 | 2 | 1 | 1/3 | 1/6 | 1/12 |
+| **Latón** | 432 | 144 | 36 | 12 | 6 | 3 | 1 | 1/2 | 1/4 |
+| **Cobre** | 864 | 288 | 72 | 24 | 12 | 6 | 2 | 1 | 1/2 |
+
+| Unidad | Aluminio | Plomo | Latón | Cobre | Bronce | Titanio | Plata | Oro | Platino |
+|---|---|---|---|---|---|---|---|---|---|
+| **Plomo** | 12 | 1 | 1/3 | 1/6 | 1/12 | 1/72 | — | — | — |
+| **Latón** | 36 | 3 | 1 | 1/2 | 1/4 | 1/24 | 1/48 | — | — |
+| **Cobre** | 72 | 6 | 2 | 1 | 1/2 | 1/12 | 1/24 |  —  | — |
+| **Bronce** | 144 | 12 | 4 | 2 | 1 | 1/6 | 1/12 | — | — |
+| **Titanio** | 864 | 72 | 24 | 12 | 6 | 1 | 1/2 | 1/24 |  —  |
+| **Plata** | 1.7k | 144 | 48 | 24 | 12 | 2 | 1 | 1/12 | — |
+| **Oro** | 21k | 1.7k | 576 | 288 | 144 | 24 | 12 | 1 | 1/12 |
+| **Platino** | 249k | 21k | 7k | 3.5k | 1.7k | 288 | 144 | 12 | 1 |
 
 ### Tabla de consulta (ordenada por valor)
 
-| Nombre | Material | Valor (aluminio = 1) |
+| Nombre | Material | Valor |
 |---|---|---|
 | /gobap/ | Vidrio | 1/12 |
 | /bagux/ | Plástico | 1/4 |
@@ -110,7 +124,52 @@ En su mercado interno, y en los intercambios con sus aliados, manejan precios mu
 
 ## Prácticas de Comercio y Tributo
 
-- Sistema de intercambio: [pendiente]
-- Impuestos o tributos: [pendiente]
-- Prácticas de trueque: [pendiente]
-- Regulaciones comerciales por región: [pendiente]
+### Intercambio
+
+Muchas culturas aceptan tanto trueques como monedas. En última instancia, el valor de las monedas es intrínseco al material del que están hechas; se usan como medio de intercambio, pero los intercambios directos también son comunes.
+
+### Tributos
+
+Cada cultura tiene su propia forma de tributar:
+
+- **Talla**: un valor fijo que depende de sus tierras o de la naturaleza de su negocio (según su tamaño).
+- **Corvea**: en algunas culturas no hay impuesto monetario, pero cada ciudadano debe cumplir una cantidad de jornadas de trabajo en tiempos distintos.
+- **Pago de gremio**: el más común de todos; un pago fijo por pertenecer a un gremio y operar en una ciudad o poblado.
+
+Los pagos suelen hacerse cada 4 lunas, es decir, una vez por /mori/, tiempo equivalente a 2 meses. Mientras que el Corvea se calcula por /ani/ y depende de que el trabajador sea llamado o no a cumplir su deber.
+
+para la talla depende del tamaño del negocio aproximadamente:
+
+- Pequeño: Parcela productora o taller unipersonal, paga 36 Monedas
+- Modesta: Granja o Taberna urbana, paga 96 Monedas
+- Grande: Hacienda o Posada, paga 288 monedas
+
+El pago de asociacion gremial depende del nivel de especializacion del trabajador y del tipo de gremio, mientras que el Corvea es inversamente proporcinal al nivel de especializacion:
+
+- Peón: 24 monedas por /mori/ y un /mori/ completo de corvea al /ani/
+- Aprendiz: 60 monedas y tres /luri/ (lunas) de corvea al /ani/.
+- Artesano: 144 monedas y dos /luri/ de corvea al /ani/
+- Especialista: 288 monedas y un /luri/ de corvea al /ani/
+- Maestro: 864 monedas y 6 /dosi/ (dias) de corvea al /ani/
+
+### Costo de Vida y Valor del Trabajo
+
+El pago de salarios por el trabajo realizado depende del nivel de especializacion
+
+| Trabajador | Jornal por día de trabajo | En monedas de aluminio |
+|---|---|---|
+| Peón | 1 /shegab/ | 12 Monedas |
+| Aprendiz | 1 /shegab/ + 6 /gobag/ | 18 Monedas |
+| Artesano | 3 /shegab/ | 36 Monedas |
+| Especialista | 1 /gobsayud/ | 72 Monedas |
+| Maestro | 1 /rixgob/ | 144 Monedas |
+
+### Precios de Productos Comunes
+
+| Servicio / Bien | Calidad Pobre | Calidad Modesta  | Calidad Confortable | Calidad De Lujo |
+|---|---|---|---|---|
+| **Comida Individual** | 1 Monedas | 2 Monedas | 6 Monedas | 24 Monedas |
+| **Ración Diaria** | 3 Monedas | 6 Monedas | 18 Monedas | 60 Monedas |
+| **Noche en Posada** | 1 Monedas | 3 Monedas | 9 Monedas | 36 Monedas |
+| **Jarra de Cerveza** | 1/2 Monedas | 2 Monedas | 3 Monedas | 12 Monedas |
+| **Subsistencia Basica** | 6 Monedas | 12 Monedas | 36 monedas | 144 Monedas |

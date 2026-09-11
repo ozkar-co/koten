@@ -43,8 +43,10 @@ DEFAULT_LANGUAGE = "lapag"
 _PREFIX_PATTERN = "|".join(re.escape(k) for k in LANGUAGE_PREFIXES)
 # Word content must stay on one line; allowing newlines caused false matches such as
 # `/Consecuencias**` swallowing text until the next `/` in `**Estrés/Consecuencias**`.
+# The opening slash must not follow a word character (letter/digit), otherwise
+# fractions such as `1/3 plástico | 1/12` pair their slashes as delimiters.
 _KOTEN_RE = re.compile(
-    r"/(?:(" + _PREFIX_PATTERN + r")/)?([^/\s\n][^/\n]*)/",
+    r"(?<!\w)/(?:(" + _PREFIX_PATTERN + r")/)?([^/\s\n][^/\n]*)/",
     flags=re.IGNORECASE,
 )
 _LIST_ITEM_RE = re.compile(

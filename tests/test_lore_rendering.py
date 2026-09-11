@@ -39,6 +39,16 @@ def test_parse_lore_md_does_not_treat_slashes_in_bold_labels_as_koten_words() ->
     assert "**" not in html
 
 
+def test_parse_lore_md_does_not_treat_fractions_as_koten_words() -> None:
+    html = parse_lore_md("| /gobap/ | Vidrio | Local | 1/3 plástico | 1/12 aluminio |")
+
+    assert html.count('<span class="koten-word"') == 1
+    assert 'data-word="gobap"' in html
+    assert "1/3" in html
+    assert "1/12" in html
+    assert "plastico | 1" not in html
+
+
 def test_parse_lore_md_renders_ordered_list_with_slash_in_bold_label() -> None:
     html = parse_lore_md("5. **Carácter/Mentalidad** - Personalidad")
 
