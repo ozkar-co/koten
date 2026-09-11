@@ -1,6 +1,6 @@
 # Drayim
 
-Tan abundantes como los /alish/, suelen vivir en desiertos y llanuras, pero pueden adaptarse a vivir en cualquier clima mientras sea fácil mantener un fuego encendido. Evitan lugares demasiado húmedos, como bosques y pantanos, y encuentran la nieve demasiado molesta.
+Tan abundantes como los /alish/, los /drayim/ suelen vivir en desiertos y llanuras, pero pueden adaptarse a vivir en cualquier clima mientras sea fácil mantener un fuego encendido. Evitan lugares demasiado húmedos, como bosques y pantanos, y encuentran la nieve demasiado molesta.
 
 Viven aproximadamente 120 /ani/ y conservan su fuerza hasta el último de sus días. No alcanzan la madurez hasta su primera muda de escamas, que ocurre aproximadamente a los 20 /ani/. Hasta ese momento suelen ser muy frágiles. Cada 20 /ani/, en promedio, deben mudar de escamas, y es un proceso que buscan pasar en soledad. Conforme envejecen, es menos frecuente.
 
